@@ -1,0 +1,23 @@
+
+  .masthead{
+  margin-bottom:0;
+  height: 93vh;
+  overflow: auto;
+  font-family:lato;
+  font-style:normal;
+  background-image: url('succulents.jpg');
+  background-size:cover;
+  background-attachment:fixed
+  }
+  .mastTitle{
+  height:10%;
+   position:absolute;
+    bottom:110px;
+    left:40vh;
+  }
+  nav.navbar{
+  font-family:libre-franklin;
+  }
+  .top.active{
+  color:green !important;
+  }

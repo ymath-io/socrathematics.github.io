@@ -1,0 +1,11 @@
+.center{
+text-align: center;}
+body {
+font-family:lato;
+}
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: prim;
+  border-color: #007bff;
+}
