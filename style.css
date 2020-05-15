@@ -1,11 +1,52 @@
-.center{
-text-align: center;}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
 body {
 font-family:lato;
 }
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: prim;
-  border-color: #007bff;
+  background-color: var(--green);
+  border-color: var(--green);}
+
+.page-link {
+    color:var(--green);
 }
+
+.page-link:hover{
+    color: #1e7e34;}
+
+.nav-link {
+    color:var(--green);
+}
+
+.nav-item.active .nav-link {
+    background-color:var(--green);
+    color: #fff;
+}
+
+.nav-link:hover{
+    color: #1e7e34;}
+
+a:link{
+    color:var(--green);
+}
+
+.link {
+color:var(--green);
+}
+
+a:link:hover{
+color: #1e7e34;
+text-decoration:none;
+}
+
+
+
+

@@ -9,15 +9,50 @@
   background-size:cover;
   background-attachment:fixed
   }
+    .masthead-sub{
+  margin-bottom:0;
+  height: 20vh;
+  overflow: auto;
+  font-family:lato;
+  font-style:normal;
+  background-image: url('succulents.jpg');
+  background-size:cover;
+  background-attachment:fixed
+  }
   .mastTitle{
   height:10%;
    position:absolute;
     bottom:110px;
     left:40vh;
+    font-size:5vh
   }
+    .mastTitle-2{
+  height:10%;
+   position:absolute;
+    bottom:40px;
+    left:40vh;
+    font-size:2.3vh;
+    opacity:0.8;
+  }
+    .mastTitle-sub{
+  height:10%;
+   position:absolute;
+    top:35px;
+    left:40vh;
+    font-size:5vh
+  }
+    .mastTitle-sub-2{
+  height:10%;
+   position:absolute;
+    left:40vh;
+    font-size:2.3vh;
+    opacity:0.8;
+    top:95px
+  }
+
   nav.navbar{
   font-family:libre-franklin;
   }
   .top.active{
-  color:green !important;
+  color: var(--green) !important;
   }

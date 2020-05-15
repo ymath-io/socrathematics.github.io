@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" class="bg-dark" style="">
 <head>
-  <title>Trigonometry</title>
+  <title>Law of Sines</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="icon" href="../favicon.png">
-  <link rel="stylesheet" href="../fonts.css">
-  <link rel="stylesheet" href="../header.css">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../../favicon.png">
+  <link rel="stylesheet" href="../../fonts.css">
+  <link rel="stylesheet" href="../../header.css">
+  <link rel="stylesheet" href="../../style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!--mathjax-->
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <style>
   .fakeimg {
     height: 200px;
@@ -32,7 +42,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="/"><img src="../favicon.png" height=40" width="40"> <span class="sr-only">(current)</span></a>
+    <a class="navbar-brand" href="/"><img src="../../favicon.png" height=40" width="40"> <span class="sr-only">(current)</span></a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
         <a class="nav-link " href="/modular-arithmetic">Modular Arithmetic</a>
@@ -60,17 +70,17 @@
       <h3>Subtopics</h3>
       <p>Topics within Trigonometry</p>
       <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="../">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../functions">Functions</a>
+        </li>
         <li class="nav-item active">
-          <a class="nav-link active" href="">Home</a>
+          <a class="nav-link active" href="">Law of Sines</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="functions">Functions</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="law-of-sines">Law of Sines</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="law-of-cosines">Extended Law of Sines</a>
+          <a class="nav-link disabled" href="ext-law-of-sines">Extended Law of Sines</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="law-of-cosines">Law of Cosines</a>
@@ -82,29 +92,27 @@
 
     <div class="col-sm-8">
       <div>
-      <h2 class="bg-white"></h2>
+      <h2 class="bg-white">LAW OF SINES</h2>
       </div>
-      <h3>trig•o•nom•e•try</h3>
-      <h4>(noun)</h4>
-      <ol>
-        <li>The branch of mathematics dealing with the relations of the sides and angles of triangles and with the relevant functions of any angles</li>
-        <li>A branch of joke-making involving signs, reasons, and reasonably tan gentlemen.
-        </li>
-      </ol>
-      <pre>
+      <p>In <a href="../functions/" class="link" >Functions</a>, we learned about trigonometry in right triangles. Now, let’s look at a triangle with unknown angles:</p>
+<img src="triangle.png">
 
+      <p>There are a few relationships that we can derive from this triangle. For example:</p>
 
+<p>$\sin{a} = \frac{A}{Y} \rightarrow A=Y\sin{a}$</p>
+      <p>$\sin{b} = \frac{B}{X} \rightarrow B=X\sin{b}$</p>
 
+      <p>Now, we have:</p>
 
+      <p>$A=X \sin{B}= Y\sin{a}$</p>
+<p>Omitting the first equality and dividing both sides by XY gives:
+      <p>$\frac{\sin{a}}{X} = \frac{\sin{b}}{Y} $</p>
 
+<p>If we repeat this process by drawing any other altitude, we get the following:
+<p>$\frac{\sin{a}}{X} = \frac{\sin{b}}{Y}= \frac{\sin{c}}{Z} $</p>
 
-
-
-
-
-
-
-      </pre>
+This is called the Law of Sines. Can you conduct the remainder of the proof on your own?</p>
+      <script>MathJax.typeset();</script>
 
     </div>
   </div>

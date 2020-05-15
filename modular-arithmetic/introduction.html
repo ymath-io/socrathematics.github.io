@@ -22,9 +22,9 @@
 
 <body>
 
-<div class="container-fluid text-center bg-transparent text-light masthead">
-  <h1 class="mastTitle" style="font-size:5vh"><b>SOCRATHEMATICS</b></h1>
-  <p class="mastTitle" style="font-size:2.3vh;opacity:0.8;bottom:40px"><b>Learn math. Effortlessly.</b></p>
+<div class="container-fluid text-center bg-transparent text-light masthead-sub">
+  <h1 class="mastTitle-sub" ><b>SOCRATHEMATICS</b></h1>
+  <p class="mastTitle-sub-2" ><b>Learn math. Effortlessly.</b></p>
 
 </div>
 <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top" id="navigation" style="height: 7vh;overflow: auto;padding-left:40vh">
@@ -59,15 +59,15 @@
     <div class="col-sm-3">
       <h3>Subtopics</h3>
       <p>Topics within Modular Arithmetic</p>
-      <ul class="nav  nav-pills flex-column">
+      <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link " href="./">Home</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Introduction</a>
+          <a class="nav-link" href="introduction">Introduction</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Chapter 1</a>
+          <a class="nav-link disabled" href="#">Chapter 1 - Coming Soon</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#">Chapter 2 - Coming Soon</a>
@@ -143,14 +143,14 @@ generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
 </div>
       <nav aria-label="Page navigation">
   <ul class="pagination justify-content-center border-success">
-    <li class="page-item ">
+    <li class="page-item text-success">
       <a class="page-link text-success" href="./"  aria-disabled="true">Previous</a>
     </li>
-    <li class="page-item"><a class="page-link text-success" href="./">1</a></li>
-    <li class="page-item active"><a class="page-link border-success" href="#">2</a></li>
-    <li class="page-item"><a class="page-link text-success" href="">3</a></li>
+    <li class="page-item"><a class="page-link" href="./">1</a></li>
+    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="">3</a></li>
     <li class="page-item">
-      <a class="page-link text-success" href="#">Next</a>
+      <a class="page-link" href="#">Next</a>
     </li>
   </ul>
 </nav>
