@@ -5,7 +5,7 @@
   overflow: auto;
   font-family:lato;
   font-style:normal;
-  background-image: url('succulents.jpg');
+  background-image: url('/succulents.jpg');
   background-size:cover;
   background-attachment:fixed
   }
@@ -15,7 +15,7 @@
   overflow: auto;
   font-family:lato;
   font-style:normal;
-  background-image: url('succulents.jpg');
+  background-image: url('/succulents.jpg');
   background-size:cover;
   background-attachment:fixed
   }
