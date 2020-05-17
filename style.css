@@ -30,6 +30,12 @@ font-family:lato;
     background-color:var(--green);
     color: #fff;
 }
+
+.nav-item .active.nav-link {
+    background-color:var(--green);
+    color: #fff;
+}
+
 .nav-item .active.nav-link:not(.top) {
     background-color:var(--green);
     color: #fff;
