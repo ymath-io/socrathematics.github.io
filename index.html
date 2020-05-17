@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="style.css">
-
+  <script src="searches.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -41,16 +41,17 @@
         <a class="nav-link" href="/trigonometry">Trigonometry</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Calculus</a>
+        <a class="nav-link" href="/calculus">Calculus</a>
       </li>
       <li class="nav-item" >
         <a class="nav-link" href="#">Request a Course</a>
       </li>
-    </ul>
+    </ul><!--
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+      <input class="form-control mr-sm-2"  placeholder="Search" aria-label="Search" id="search-input">
+      <button class="btn btn-outline-success my-2 my-sm-0" onclick="search()">Search</button>
+
+    </form>-->
   </div>
 </nav>
 
@@ -82,7 +83,7 @@
   <div class="card-body">
     <h5 class="card-title">Calculus</h5>
     <p class="card-text">Equip yourself with calculus - it's not scary.</p>
-    <a href="trigonometry" class="btn btn-success">Learn now</a>
+    <a href="calculus" class="btn btn-success">Learn now</a>
   </div>
       </div>
     </div>
