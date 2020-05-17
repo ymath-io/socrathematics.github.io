@@ -26,11 +26,6 @@ font-family:lato;
     color:var(--green);
 }
 
-.nav-item.active .nav-link {
-    background-color:var(--green);
-    color: #fff;
-}
-
 .nav-item .active.nav-link {
     background-color:var(--green);
     color: #fff;
