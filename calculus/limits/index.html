@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-dark" style="">
+<head>
+  <title>Limits</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="icon" href="../../favicon.png">
+  <link rel="stylesheet" href="../../fonts.css">
+  <link rel="stylesheet" href="../../header.css">
+  <link rel="stylesheet" href="../../style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!--mathjax-->
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+
+<div class="container-fluid text-center bg-transparent text-light masthead-sub">
+    <h1 class="mastTitle-sub" ><b>SOCRATHEMATICS</b></h1>
+  <p class="mastTitle-sub-2" ><b>Learn math. Effortlessly.</b></p>
+
+</div>
+<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top" id="navigation" style="height: 7vh;overflow: auto;padding-left:40vh">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="/"><img src="../../favicon.png" height=40" width="40"> <span class="sr-only">(current)</span></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link " href="/modular-arithmetic">Modular Arithmetic</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/trigonometry">Trigonometry</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active top" href="/calculus">Calculus</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Request a Course</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-3" >
+      <h3 style="position:fixed">Calculus</h3>
+      <pre>
+      </pre>
+      <p style="position:fixed">Topics within Calculus</p>
+      <pre style="height:2vh"></pre>
+      <nav class="nav nav-pills flex-column" style="position:fixed">
+        <li class="nav-item">
+          <a class="nav-link" href="../">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="../limits">Limits</a>
+            <nav class="nav nav-pills flex-column" id="spyhere">
+        <li class="nav-item">
+          <a class="nav-link ml-3 my-1 disabled" href="definition">Definition</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-3 my-1 disabled" href="practice">Practice</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link ml-3 my-1 disabled" href="applications">Applications</a>
+        </li>
+      </nav>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="../derivatives">Derivatives</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link disabled" href="../integrals">Integrals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Chapter 4 - Coming Soon</a>
+        </li>
+      </nav>
+      <hr class="d-sm-none">
+    </div>
+
+    <div class="col-sm-8">
+      <div class="container" >
+      <h2>LIMITS</h2>
+        <p>Limits are the basis for almost everything in Calculus. By the time you get to derivatives, you'll be doing limits and you won't even know it.</p>
+        <p>To become familiar with what a limit is, let's consider the function</p>
+        <p>$$f(x) = \frac{x^2-1}{x-1}.$$</p>
+        <p>What is the value of this function at $x=1$?</p>
+        <input type="text" id="txt_1" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
+        <pre></pre>
+        <p><a
+                class="btn btn-success text-light" id="button1" data-toggle="collapse" href="#sec1" aria-expanded="false" aria-controls="Collapse">Continue
+        </a></p>
+<div class="collapse" id="sec1">
+  <p>The function $f(x)$ is undefined at $x=1$. But the function is defined at 0.9 and 1.1:</p>
+  <p>$$f(0.9) = 1.9$$$$f(1.1)=2.1$$</p>
+  <p>In fact, the function is defined for any $x=1\pm\epsilon$, where $\epsilon \neq 0$.</p>
+  <p>In this lesson, we will be considering the case when $\epsilon$ is very close, but not equal to 0.</p>
+  <iframe src="https://www.desmos.com/calculator/ti0fuxp3s6?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0 id="graph1"></iframe>
+  <button type="reset" onclick="document.getElementById('graph1').src = document.getElementById('graph1').src" class="btn btn-outline-success" style="width:500px">Reset</button>
+  <p>Try dragging the black point to $x=1$ in the above graph, and you will notice that the point disappears.</p>
+  <p>However, notice that it "looks like" $$f(1)=2.$$</p>
+  <p>So, we can say that</p>
+  <p>$$\lim_{x\to 1} f(x) = 2.$$</p>
+  <p>The english for this is "As $x$ approaches 1, $f(x)$ approaches 2."</p>
+  <p>Another possible interpretation is "The limit of $f(x)$ as $x$ approaches 1 is 2."</p>
+  <p>This does not mean that $f(1)=2$, but rather that if $x$ is very close to $1$, then $f(x)$ is very close to $2$.</p>
+  <p>Notice that the graphed function is linear. What linear function does it look like?</p>
+  <input type="text" id="txt_2" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
+  <pre></pre>
+<p><a
+                class="btn btn-success text-light" id="button2" data-toggle="collapse" href="#sec2" aria-expanded="false" aria-controls="Collapse">Continue
+        </a></p>
+</div>
+        <script>$('#sec1').on('hidden.bs.collapse', function (event) {
+
+        var elem1 = document.getElementById("button1");
+        elem1.innerHTML = "Continue";
+        //addComp(0);
+        document.location  = "./";
+        })
+        $('#sec1').on('show.bs.collapse', function (event) {
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        var elem1 = document.getElementById("button1");
+        elem1.innerHTML = "Hide";
+        //addComp(1);
+        document.location  = "./#sec1";
+        })
+        </script>
+      </div>
+<div class="collapse container" id="sec2">
+<p>The function covers <i>almost</i> all points covered by the function $x+1$.</p>
+  <p>We can confirm this by performing the following operation:</p>
+  <p>$$\frac{x^2-1}{x-1} = \frac{(x-1)(x+1)}{x-1} = x+1$$</p>
+  <p class="alert alert-warning"><b>Important!</b> This kind of math is only allowed in limits. Notice how we divided the top and bottom of the fraction by $x-1$ - we only did this knowing that x is very close to, but not equal to 1.</p>
+  <p>Now try this: $$\lim_{x\to 2} \frac{x^2-5x+6}{x-2}.$$</p>
+  <input type="text" placeholder="Type your answer here" class="form-control form-control-sm">
+  <pre></pre>
+<p><a
+                class="btn btn-success text-light" id="button3" data-toggle="collapse" href="#sec3" aria-expanded="false" aria-controls="Collapse">Continue
+        </a></p>
+</div>
+        <script>$('#sec2').on('hide.bs.collapse', function (event) {
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        var elem2 = document.getElementById("button2");
+        elem2.innerHTML = "Continue";
+        //addComp(1);
+        document.location  = "./#sec1";
+        })
+        $('#sec2').on('show.bs.collapse', function (event) {
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        var elem2 = document.getElementById("button2");
+        elem2.innerHTML = "Hide";
+        //addComp(2);
+        document.location  = "./#sec2";
+        })
+        </script>
+
+<div class="collapse container" id="sec3">
+
+<p>The answer is $-1$.</p>
+  <p>As we said before, it is okay to divide by non-constants in limits. So, we can say</p>
+  <p>$$\lim_{x\to 2} \frac{x^2-5x+6}{x-2} = \lim_{x\to 2} x-3.$$</p>
+  <p>We can just plug in $x=2$ here to find </p>
+  <p>$$\lim_{x\to 2} \frac{x^2-5x+6}{x-2} = -1.$$</p>
+
+</div>
+        <script>$('#sec3').on('hide.bs.collapse', function (event) {
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        var elem3 = document.getElementById("button3");
+        elem3.innerHTML = "Continue";
+        //addComp(2);
+        document.location  = "./#sec2";
+        })
+        $('#sec3').on('show.bs.collapse', function (event) {
+        event.stopPropagation();
+        event.stopImmediatePropagation();
+        var elem3 = document.getElementById("button3");
+        elem3.innerHTML = "Hide";
+        //addComp(3);
+        document.location  = "./#sec3";
+        })
+        </script>
+
+    </div>
+  </div>
+</div>
+<script src="keepScroll.js"></script>
+<pre>
+
+
+
+
+
+</pre>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer Stuff</p>
+</div>
+
+</body>
+</html>
