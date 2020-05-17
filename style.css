@@ -31,7 +31,7 @@ font-family:lato;
     color: #fff;
 }
 
-.nav-item .active.nav-link:not(.top) {
+.nav-item.active :not(.top).nav-link {
     background-color:var(--green);
     color: #fff;
 }
