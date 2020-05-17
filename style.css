@@ -30,7 +30,10 @@ font-family:lato;
     background-color:var(--green);
     color: #fff;
 }
-
+.nav-item .active.nav-link:not(.top) {
+    background-color:var(--green);
+    color: #fff;
+}
 .nav-link:hover{
     color: #1e7e34;}
 
@@ -41,12 +44,22 @@ a:link{
 .link {
 color:var(--green);
 }
-
+.link:hover{
+color: #1e7e34;
+text-decoration:none;
+}
 a:link:hover{
 color: #1e7e34;
 text-decoration:none;
 }
-
+/* In progress: building an automatic dark mode.
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #272727;
+    color: #ccc;
+  }
+}
+*/
 
 
 
