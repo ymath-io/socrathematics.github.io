@@ -20,49 +20,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <title>SOCRATHEMATICS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn Calculus, Trigonometry, and more.">
+  <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="icon" href="favicon.png">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="style.css">
-  <script src="searches.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
-  }
-  </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="dreamerslab-jquery.actual-d38580c/jquery.actual.js"></script>
+
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<div class="container-fluid text-center bg-transparent text-light masthead">
+<div class="container-fluid text-center bg-transparent text-light masthead" id="masthead">
     <h1 class="mastTitle" ><b>SOCRATHEMATICS</b></h1>
   <p class="mastTitle-2" ><b>Learn math. Effortlessly.</b></p>
 
 </div>
-<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top" id="navigation" style="height: 7vh;overflow: auto;padding-left:40vh">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg bg-light navbar-light  sticky-top" id="navigation" style="overflow: auto;">
+  <button class="navbar-toggler collapsed" type="button" onclick="scrollToMenu();" id="navToggle" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand top active" href="./"><img src="favicon.png" height=40" width="40"> <span class="sr-only">(current)</span></a>
+    <a class="navbar-brand top active row-m" href="./"><img src="favicon.png" height="40" width="40"> <span class="sr-only">(current)</span></a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
+      <li class="nav-item row-m">
         <a class="nav-link" href="/modular-arithmetic">Modular Arithmetic</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item row-m">
         <a class="nav-link" href="/trigonometry">Trigonometry</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item row-m" >
         <a class="nav-link" href="/calculus">Calculus</a>
       </li>
-      <li class="nav-item" >
+      <li class="nav-item row-m">
         <a class="nav-link" href="#">Request a Course</a>
       </li>
     </ul><!--
@@ -77,7 +77,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="container" style="margin-top:30px">
   <div class="row">
     <div class="col-sm-4">
-      <div class="card" style="width: 18rem;height:24rem;">
+      <div class="card" >
   <img src="modular-arithmetic/MA.jpeg" class="card-img-top" alt="Modular Arithmetic">
   <div class="card-body">
     <h5 class="card-title">Modular Arithmetic</h5>
@@ -87,7 +87,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="card" style="width: 18rem;height:24em;">
+      <div class="card" style="">
   <img src="trigonometry/T.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Trigonometry</h5>
@@ -97,7 +97,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="card" style="width: 18rem;height:24em;">
+      <div class="card" >
   <img src="calculus/C.jpg" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Calculus</h5>
@@ -116,6 +116,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p>Footer</p>
 </div>
+  <script>
+function updateMast(){
+if (document.getElementById('navToggle').getAttribute('aria-expanded') == 'true'){
+  console.log("thinks its closed");
+  var navH = $('#navigation').actual('outerHeight');}
+  if (document.getElementById('navToggle').getAttribute('aria-expanded') == 'false'){
+  console.log("thinks its closed");
+  var navH = $('#navigation').outerHeight();}
+  var wH = $( window ).height();
+  console.log(wH);
+  var newH = wH-navH;
+  console.log(navH);
+  console.log(ratio);
+  document.getElementById('masthead').style.height = newH+"px";}
 
+function scrollToMenu(){
+var wH = $( window ).height();
+console.log('hi');
+var navBar = document.getElementById('navigation');
+navBar.scrollIntoView();
+var target = wH - navH;
+//window.scrollTo(0,navH);
+console.log(navH);
+}
+
+  var navH = $('#navigation').actual('outerHeight');
+  var wH = $( window ).height();
+  console.log(wH);
+  var ratio = 100*(1 - navH/wH);
+  console.log(navH);
+  console.log(ratio);
+  document.getElementById('masthead').style.height = ratio+"vh";
+</script>
 </body>
 </html>
+

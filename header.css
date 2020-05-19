@@ -1,24 +1,86 @@
+@media (min-width: 300px) {
 
-  .masthead{
-  margin-bottom:0;
-  height: 93vh;
-  overflow: auto;
-  font-family:lato;
-  font-style:normal;
-  background-image: url('https://socrathematics.github.io/succulents.jpg');
-  background-size:cover;
-  background-attachment:fixed
+  .mastTitle{
+  height:10%;
+   position:absolute;
+    bottom:110px;
+    left:20vw;
+    font-size:3vh
   }
-    .masthead-sub{
-  margin-bottom:0;
-  height: 20vh;
-  overflow: auto;
-  font-family:lato;
-  font-style:normal;
-  background-image: url('https://socrathematics.github.io/succulents.jpg');
-  background-size:cover;
-  background-attachment:fixed
+    .mastTitle-2{
+  height:10%;
+   position:absolute;
+    bottom:40px;
+    left:20vw;
+    font-size:2vh;
+    opacity:0.8;
   }
+    .mastTitle-sub{
+  height:10%;
+   position:absolute;
+    top:35px;
+    left:40vh;
+    font-size:5vh
+  }
+    .mastTitle-sub-2{
+  height:10%;
+   position:absolute;
+    left:40vh;
+    font-size:2.3vh;
+    opacity:0.8;
+    top:95px
+  }
+
+  nav.navbar{
+  font-family:libre-franklin;
+  }
+  .top.active{
+  color: var(--green) !important;
+  }
+  }
+@media (min-width: 768px) {
+
+  .mastTitle{
+  height:10%;
+   position:absolute;
+    bottom:110px;
+    left:20vw;
+    font-size:5vh
+  }
+    .mastTitle-2{
+  height:10%;
+   position:absolute;
+    bottom:40px;
+    left:20vw;
+    font-size:2.3vh;
+    opacity:0.8;
+  }
+    .mastTitle-sub{
+  height:10%;
+   position:absolute;
+    top:35px;
+    left:40vh;
+    font-size:5vh
+  }
+    .mastTitle-sub-2{
+  height:10%;
+   position:absolute;
+    left:40vh;
+    font-size:2.3vh;
+    opacity:0.8;
+    top:95px
+  }
+
+  nav.navbar{
+  font-family:libre-franklin;
+  }
+  .top.active{
+  color: var(--green) !important;
+  }
+  }
+
+@media (min-width: 1200px) {
+
   .mastTitle{
   height:10%;
    position:absolute;
@@ -55,4 +117,26 @@
   }
   .top.active{
   color: var(--green) !important;
+  }
+  }
+
+.masthead{
+  margin-bottom:0;
+  height: 95vh;
+  overflow: auto;
+  font-family:lato;
+  font-style:normal;
+  background-image: url('https://socrathematics.github.io/succulents.jpg');
+  background-size:cover;
+  background-attachment:fixed
+  }
+    .masthead-sub{
+  margin-bottom:0;
+  height: 20vh;
+  overflow: auto;
+  font-family:lato;
+  font-style:normal;
+  background-image: url('https://socrathematics.github.io/succulents.jpg');
+  background-size:cover;
+  background-attachment:fixed
   }

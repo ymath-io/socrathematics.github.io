@@ -26,12 +26,11 @@ font-family:lato;
     color:var(--green);
 }
 
-.nav-item :not(.top).active.nav-link {
+.nav-item.active .nav-link {
     background-color:var(--green);
     color: #fff;
 }
-
-.nav-item.active :not(.top).nav-link {
+.nav-item .active.nav-link:not(.top) {
     background-color:var(--green);
     color: #fff;
 }
@@ -61,6 +60,12 @@ text-decoration:none;
   }
 }
 */
+@media (min-width: 768px) {
+.card{
+width: 30vw;height:24em;}
+}
 
-
-
+@media (min-width: 992px) {
+.card{
+width: 18rem;height:24em;}
+}
