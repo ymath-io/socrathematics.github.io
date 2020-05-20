@@ -20,6 +20,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <title>Limits</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="icon" href="../../favicon.png">
   <link rel="stylesheet" href="../../fonts.css">
@@ -93,9 +96,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="../limits">Limits</a>
-            <nav class="nav nav-pills flex-column" id="spyhere">
+            <nav class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link ml-3 my-1 disabled" href="definition">Definition</a>
+          <a class="nav-link ml-3 my-1" href="definition">Definition</a>
         </li>
         <li class="nav-item">
           <a class="nav-link ml-3 my-1 disabled" href="practice">Practice</a>
@@ -120,7 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="col-sm-8">
       <div class="container" >
-      <h2>LIMITS</h2>
+      <h2>What is a limit?</h2>
         <p>Limits are the basis for almost everything in Calculus. By the time you get to derivatives, you'll be doing limits and you won't even know it.</p>
         <p>To become familiar with what a limit is, let's consider the function</p>
         <p>$$f(x) = \frac{x^2-1}{x-1}.$$</p>
@@ -133,8 +136,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="collapse" id="sec1">
   <p>The function $f(x)$ is undefined at $x=1$. But the function is defined at 0.9 and 1.1:</p>
   <p>$$f(0.9) = 1.9$$$$f(1.1)=2.1$$</p>
-  <p>In fact, the function is defined for any $x=1\pm\epsilon$, where $\epsilon \neq 0$.</p>
-  <p>In this lesson, we will be considering the case when $\epsilon$ is very close, but not equal to 0.</p>
+  <p>In fact, the function is defined for any $x=1\pm\delta$, where $\delta \neq 0$.</p>
+  <p>In this lesson, we will be considering the case when $\delta$ is very close, but not equal to 0.</p>
   <iframe src="https://www.desmos.com/calculator/ti0fuxp3s6?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0 id="graph1"></iframe>
   <button type="reset" onclick="document.getElementById('graph1').src = document.getElementById('graph1').src" class="btn btn-outline-success" style="width:500px">Reset</button>
   <p>Try dragging the black point to $x=1$ in the above graph, and you will notice that the point disappears.</p>
@@ -174,7 +177,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p>$$\frac{x^2-1}{x-1} = \frac{(x-1)(x+1)}{x-1} = x+1$$</p>
   <p class="alert alert-warning"><b>Important!</b> This kind of math is only allowed in limits. Notice how we divided the top and bottom of the fraction by $x-1$ - we only did this knowing that x is very close to, but not equal to 1.</p>
   <p>Now try this: $$\lim_{x\to 2} \frac{x^2-5x+6}{x-2}.$$</p>
-  <input type="text" placeholder="Type your answer here" class="form-control form-control-sm">
+  <input type="text" id="txt_3" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
   <pre></pre>
 <p><a
                 class="btn btn-success text-light" id="button3" data-toggle="collapse" href="#sec3" aria-expanded="false" aria-controls="Collapse">Continue

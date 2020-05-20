@@ -20,8 +20,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <title>Limits</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="icon" href="../favicon.png">
+  <link rel="icon" href="../../../favicon.png">
   <link rel="stylesheet" href="../../../fonts.css">
   <link rel="stylesheet" href="../../../header.css">
   <link rel="stylesheet" href="../../../style.css">
@@ -118,16 +121,115 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="col-sm-8">
       <div class="container" >
-      <h2>What is a limit?</h2>
-
-
-
+      <h2>Formal Definition</h2>
+        <!-- Section 1-->
+        <p>Aside from the intuitive definition we just saw, there is also a formal definition of a limit, known as the delta-epsilon definition.</p>
+        <iframe src="https://www.desmos.com/calculator/zn8cexcigg?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+        <!-- End Section 1-->
+        <input type="text" id="lim_def_1" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
+        <pre></pre>
+        <p><a
+                class="btn btn-success text-light" id="button1" data-toggle="collapse" href="#sec1" aria-expanded="false" aria-controls="Collapse">Continue
+        </a></p>
+<div class="collapse" id="sec1">
+  <!-- Section 2-->
+  <p>The function $f(x)$ is undefined at $x=1$. But the function is defined at 0.9 and 1.1:</p>
+  <p>$$f(0.9) = 1.9$$$$f(1.1)=2.1$$</p>
+  <p>In fact, the function is defined for any $x=1\pm\epsilon$, where $\epsilon \neq 0$.</p>
+  <p>In this lesson, we will be considering the case when $\epsilon$ is very close, but not equal to 0.</p>
+  <iframe src="https://www.desmos.com/calculator/ti0fuxp3s6?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0 id="graph1"></iframe>
+  <button type="reset" onclick="document.getElementById('graph1').src = document.getElementById('graph1').src" class="btn btn-outline-success" style="width:500px">Reset</button>
+  <p>Try dragging the black point to $x=1$ in the above graph, and you will notice that the point disappears.</p>
+  <p>However, notice that it "looks like" $$f(1)=2.$$</p>
+  <p>So, we can say that</p>
+  <p>$$\lim_{x\to 1} f(x) = 2.$$</p>
+  <p>The english for this is "As $x$ approaches 1, $f(x)$ approaches 2."</p>
+  <p>Another possible interpretation is "The limit of $f(x)$ as $x$ approaches 1 is 2."</p>
+  <p>This does not mean that $f(1)=2$, but rather that if $x$ is very close to $1$, then $f(x)$ is very close to $2$.</p>
+  <p>Notice that the graphed function is linear. What linear function does it look like?</p>
+  <!-- End Section 2-->
+  <input type="text" id="lim_def_2" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
+  <pre></pre>
+<p><a
+                class="btn btn-success text-light" id="button2" data-toggle="collapse" href="#sec2" aria-expanded="false" aria-controls="Collapse">Continue
+        </a></p>
+</div>
       </div>
+<div class="collapse container" id="sec2">
+<p>The function covers <i>almost</i> all points covered by the function $x+1$.</p>
+  <p>We can confirm this by performing the following operation:</p>
+  <p>$$\frac{x^2-1}{x-1} = \frac{(x-1)(x+1)}{x-1} = x+1$$</p>
+  <p class="alert alert-warning"><b>Important!</b> This kind of math is only allowed in limits. Notice how we divided the top and bottom of the fraction by $x-1$ - we only did this knowing that x is very close to, but not equal to 1.</p>
+  <p>Now try this: $$\lim_{x\to 2} \frac{x^2-5x+6}{x-2}.$$</p>
+  <input type="text" id="lim_def_3" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
+  <pre></pre>
+<p><a
+                class="btn btn-success text-light" id="button3" data-toggle="collapse" href="#sec3" aria-expanded="false" aria-controls="Collapse">Continue
+        </a></p>
+</div>
+
+<div class="collapse container" id="sec3">
+
+<p>The answer is $-1$.</p>
+  <p>As we said before, it is okay to divide by non-constants in limits. So, we can say</p>
+  <p>$$\lim_{x\to 2} \frac{x^2-5x+6}{x-2} = \lim_{x\to 2} x-3.$$</p>
+  <p>We can just plug in $x=2$ here to find </p>
+  <p>$$\lim_{x\to 2} \frac{x^2-5x+6}{x-2} = -1.$$</p>
+
+</div>
+        <script>
+        $('#sec1').on('hidden.bs.collapse', function (event) {
+
+        var elem1 = document.getElementById("button1");
+        elem1.innerHTML = "Continue";
+        c2 = document.getElementById("sec2");
+        c2.className = "collapse";
+        b2 = document.getElementById("button2");
+        b2.setAttribute("aria-expanded","false");
+        b2.innerHTML = "Continue";
+        document.location  = "./";
+        })
+        $('#sec1').on('show.bs.collapse', function (event) {
+        var elem1 = document.getElementById("button1");
+        elem1.innerHTML = "Hide";
+        //addComp(1);
+        document.location  = "./#sec1";
+        })
+        $('#sec2').on('hide.bs.collapse', function (event) {
+        var elem2 = document.getElementById("button2");
+        elem2.innerHTML = "Continue";
+        c3 = document.getElementById("sec3");
+        c3.className = "collapse";
+        b3 = document.getElementById("button3");
+        b3.setAttribute("aria-expanded","false");
+        b3.innerHTML = "Continue";
+        document.location  = "./#sec1";
+        })
+        $('#sec2').on('show.bs.collapse', function (event) {
+        var elem2 = document.getElementById("button2");
+        elem2.innerHTML = "Hide";
+        //addComp(2);
+        document.location  = "./#sec2";
+        })
+        $('#sec3').on('hide.bs.collapse', function (event) {
+        var elem3 = document.getElementById("button3");
+        elem3.innerHTML = "Continue";
+        document.location  = "./#sec2";
+        })
+        $('#sec3').on('show.bs.collapse', function (event) {
+        var elem3 = document.getElementById("button3");
+        elem3.innerHTML = "Hide";
+        //addComp(3);
+        document.location  = "./#sec3";
+        })
+        </script>
 
     </div>
   </div>
 </div>
-<pre style="height:50vh">
+<script src="keepScroll.js"></script>
+<pre>
+
 
 
 

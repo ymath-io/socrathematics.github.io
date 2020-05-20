@@ -1,5 +1,5 @@
 function addComp(level){
-    var extension = `/gibgi/calculus/limits/?level=${encodeURIComponent(level)}`;
+    var extension = `/gibgi/calculus/limits/definition/?level=${encodeURIComponent(level)}`;
     window.location = extension;
     console.log(level)
     }
@@ -27,20 +27,33 @@ function preserveOpen(level){
         b3.setAttribute("aria-expanded","true");
         b3.innerHTML = "Hide";*/}
     }
-
-if (document.location == "https://socrathematics.github.io/calculus/limits/#sec1"){
+/*
+if (document.location == "https://socrathematics.github.io/calculus/limits/definition/#sec1"){
     preserveOpen(1);
 }
-if (document.location == "https://socrathematics.github.io/calculus/limits/#sec2"){
+if (document.location == "https://socrathematics.github.io/calculus/limits/definition/#sec2"){
     preserveOpen(2);
 }
-if (document.location == "https://socrathematics.github.io/calculus/limits/#sec3"){
+if (document.location == "https://socrathematics.github.io/calculus/limits/definition/#sec3"){
+    preserveOpen(3);
+}*/
+
+if (document.location == "http://localhost:63342/gibgi/calculus/limits/definition/#sec1"){
+    preserveOpen(1);
+}
+if (document.location == "http://localhost:63342/gibgi/calculus/limits/definition/#sec2"){
+    preserveOpen(2);
+}
+if (document.location == "http://localhost:63342/gibgi/calculus/limits/definition/#sec3"){
     preserveOpen(3);
 }
 
-        document.getElementById("txt_1").value = getSavedValue("txt_1");    // set the value to this input
-        document.getElementById("txt_2").value = getSavedValue("txt_2");   // set the value to this input
-        document.getElementById("txt_3").value = getSavedValue("txt_3");
+
+
+
+        document.getElementById("lim_def_1").value = getSavedValue("lim_def_1");    // set the value to this input
+        document.getElementById("lim_def_2").value = getSavedValue("lim_def_2");   // set the value to this input
+        document.getElementById("lim_def_3").value = getSavedValue("lim_def_3");
         /* Here you can add more inputs to set value. if it's saved */
 
         //Save the value function - save it to localStorage as (ID, VALUE)
