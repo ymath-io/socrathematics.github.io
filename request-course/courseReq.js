@@ -48,8 +48,11 @@ const config = {
         form.addEventListener('submit', function (evt) {
             evt.preventDefault();
             firebasePush(inputCourse, inputWhy);
-
+            inputCourse.value = "";
+            inputWhy.value = "";
             //shows alert if everything went well.
-            return alert('Your Course Request has been submitted.');
+            document.querySelector("#tyCont").className = "alert alert-success";
+            document.querySelector("#tyCont").innerHTML = "<b>Your course request has been submitted!</b> Thank you for your contribution.";
+            return null;
         })
     }
