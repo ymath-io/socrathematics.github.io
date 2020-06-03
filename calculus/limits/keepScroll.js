@@ -28,13 +28,13 @@ function preserveOpen(level){
         b3.innerHTML = "Hide";*/}
     }
 
-if (document.location == "https://socrathematics.github.io/calculus/limits/#sec1"){
+if (document.location == "https://socrathematics.github.io/calculus/limits/#sec1" || document.location == "http://localhost:63342/gibgi/calculus/limits/#sec1"){
     preserveOpen(1);
 }
-if (document.location == "https://socrathematics.github.io/calculus/limits/#sec2"){
+if (document.location == "https://socrathematics.github.io/calculus/limits/#sec2" || document.location == "http://localhost:63342/gibgi/calculus/limits/#sec2"){
     preserveOpen(2);
 }
-if (document.location == "https://socrathematics.github.io/calculus/limits/#sec3"){
+if (document.location == "https://socrathematics.github.io/calculus/limits/#sec3" || document.location == "http://localhost:63342/gibgi/calculus/limits/#sec3"){
     preserveOpen(3);
 }
 
@@ -57,3 +57,39 @@ if (document.location == "https://socrathematics.github.io/calculus/limits/#sec3
             }
             return localStorage.getItem(v);
         }
+
+$('#sec3').on('hidden.bs.collapse', function (event) {
+        var elem3 = document.getElementById("button3");
+        elem3.innerHTML = "Continue";
+        $('#sec3').collapse('hide');
+        document.location  = "./#sec2";
+
+        })
+        $('#sec3').on('show.bs.collapse', function (event) {
+        var elem3 = document.getElementById("button3");
+        elem3.innerHTML = "Hide";
+        document.location  = "./#sec3";
+        })
+$('#sec2').on('hidden.bs.collapse', function (event) {
+        var elem2 = document.getElementById("button2");
+        elem2.innerHTML = "Continue";
+        document.location  = "./#sec1";
+
+        })
+        $('#sec2').on('show.bs.collapse', function (event) {
+        var elem2 = document.getElementById("button2");
+        elem2.innerHTML = "Hide";
+        document.location  = "./#sec2";
+        })
+$('#sec1').on('hidden.bs.collapse', function (event) {
+
+        var elem1 = document.getElementById("button1");
+        elem1.innerHTML = "Continue";
+        document.location  = "./";
+
+        })
+        $('#sec1').on('show.bs.collapse', function (event) {
+        var elem1 = document.getElementById("button1");
+        elem1.innerHTML = "Hide";
+        document.location  = "./#sec1";
+        })
