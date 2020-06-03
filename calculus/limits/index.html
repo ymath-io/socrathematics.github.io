@@ -23,15 +23,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
   <link rel="icon" href="../../favicon.png">
   <link rel="stylesheet" href="../../fonts.css">
   <link rel="stylesheet" href="../../header.css">
   <link rel="stylesheet" href="../../style.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!--mathjax-->
   <script>
 MathJax = {
@@ -153,25 +154,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p><a
                 class="btn btn-success text-light" id="button2" data-toggle="collapse" href="#sec2" aria-expanded="false" aria-controls="Collapse">Continue
         </a></p>
-</div>
-        <script>$('#sec1').on('hidden.bs.collapse', function (event) {
-
-        var elem1 = document.getElementById("button1");
-        elem1.innerHTML = "Continue";
-        //addComp(0);
-        document.location  = "./";
-        })
-        $('#sec1').on('show.bs.collapse', function (event) {
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        var elem1 = document.getElementById("button1");
-        elem1.innerHTML = "Hide";
-        //addComp(1);
-        document.location  = "./#sec1";
-        })
-        </script>
-      </div>
-<div class="collapse container" id="sec2">
+</div></div>
+<div class="collapse" id="sec2">
 <p>The function covers <i>almost</i> all points covered by the function $x+1$.</p>
   <p>We can confirm this by performing the following operation:</p>
   <p>$$\frac{x^2-1}{x-1} = \frac{(x-1)(x+1)}{x-1} = x+1$$</p>
@@ -183,25 +167,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 class="btn btn-success text-light" id="button3" data-toggle="collapse" href="#sec3" aria-expanded="false" aria-controls="Collapse">Continue
         </a></p>
 </div>
-        <script>$('#sec2').on('hide.bs.collapse', function (event) {
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        var elem2 = document.getElementById("button2");
-        elem2.innerHTML = "Continue";
-        //addComp(1);
-        document.location  = "./#sec1";
-        })
-        $('#sec2').on('show.bs.collapse', function (event) {
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        var elem2 = document.getElementById("button2");
-        elem2.innerHTML = "Hide";
-        //addComp(2);
-        document.location  = "./#sec2";
-        })
-        </script>
 
-<div class="collapse container" id="sec3">
+<div class="collapse" id="sec3">
 
 <p>The answer is $-1$.</p>
   <p>As we said before, it is okay to divide by non-constants in limits. So, we can say</p>
@@ -210,23 +177,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p>$$\lim_{x\to 2} \frac{x^2-5x+6}{x-2} = -1.$$</p>
 
 </div>
-        <script>$('#sec3').on('hide.bs.collapse', function (event) {
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        var elem3 = document.getElementById("button3");
-        elem3.innerHTML = "Continue";
-        //addComp(2);
-        document.location  = "./#sec2";
-        })
-        $('#sec3').on('show.bs.collapse', function (event) {
-        event.stopPropagation();
-        event.stopImmediatePropagation();
-        var elem3 = document.getElementById("button3");
-        elem3.innerHTML = "Hide";
-        //addComp(3);
-        document.location  = "./#sec3";
-        })
-        </script>
 
     </div>
   </div>
@@ -242,6 +192,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p>Footer Stuff</p>
 </div>
-
 </body>
 </html>
