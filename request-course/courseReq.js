@@ -35,7 +35,9 @@ const config = {
         var mailsRef = firebase.database().ref('courseRequests').push().set(
             {
                 Course: course.value,
-                What: why.value
+                What: why.value,
+                Progress:0,
+                Done:false
             }
         );
 

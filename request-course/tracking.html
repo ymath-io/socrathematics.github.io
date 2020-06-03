@@ -17,7 +17,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PF58PDC');</script>
 <!-- End Google Tag Manager -->
-  <title>SOCRATHEMATICS</title>
+  <title>CR Tracker</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Learn Calculus, Trigonometry, and more.">
@@ -36,8 +36,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src="dreamerslab-jquery.actual-d38580c/jquery.actual.js"></script>
 <script async="" defer="" src="https://survey.g.doubleclick.net/async_survey?site=to4ks7vefdptsz3qdjfqaqvx3m"></script>
 
+
 </head>
-<body>
+<body class="">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -55,16 +56,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="navbar-brand  row-m" href="./"><img src="../favicon.png" height="40" width="40"> <span class="sr-only">(current)</span></a>
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item row-m">
-        <a class="nav-link" href="../modular-arithmetic">Modular Arithmetic</a>
+        <a class="nav-link" href="/modular-arithmetic">Modular Arithmetic</a>
       </li>
       <li class="nav-item row-m">
-        <a class="nav-link" href="../trigonometry">Trigonometry</a>
+        <a class="nav-link" href="/trigonometry">Trigonometry</a>
       </li>
       <li class="nav-item row-m" >
-        <a class="nav-link" href="../calculus">Calculus</a>
+        <a class="nav-link" href="/calculus">Calculus</a>
       </li>
-      <li class="nav-item row-m">
-        <a class="nav-link top active " href="">Request a Course</a>
+      <li class="nav-item  row-m">
+        <a class="nav-link top active" href="">Request a Course</a>
       </li>
     </ul><!--
     <form class="form-inline my-2 my-lg-0">
@@ -75,21 +76,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </nav>
 
-<div class="container" style="margin-top:30px">
-    <h1>Request a Course</h1>
-    <p>If there is a course you want published on the site, just send me a course request and I'll put it on my agenda!
-        <br>Please try to be as specific as possible about the material you want covered/explained.</p>
-    <form id="CRForm">
-  <div class="form-group">
-      <input type="text" class="form-control mr-lg-2 mb-sm-2" id="inputCourse" placeholder="Course Topic">
-  </div>
-    <div class="form-group">
-        <textarea type="text" class=" form-control my-lg-2" id="inputWhy"  style="height:200px;vertical-align:top;" placeholder="Explain what you want covered in the course."></textarea>
+<div class="container " style="margin-top:30px">
+    <h1>Course Request Tracker</h1>
+    <p>Here you may keep a track of pending requests.</p>
+    <div class="container " id="crCards">
+<div class="spinner-border text-success" role="status">
+  <span class="sr-only">Loading...</span>
 </div>
-    <button type="submit" class="  btn btn-success mr-2  mb-sm-2">Submit</button>
-</form>
+    </div>
 </div>
 <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </pre>
@@ -120,7 +134,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
-<script type="text/javascript" src="courseReq.js"></script>
+<script type="text/javascript" src="courseLister.js"></script>
 </body>
 </html>
 
