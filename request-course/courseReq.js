@@ -2,12 +2,24 @@
 
 //grab a form
 const form = document.querySelector('#CRForm');
-
+var uadd = $.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+});
 //grab an input
 const inputCourse = document.querySelector('#inputCourse');
 const inputWhy = document.querySelector('#inputWhy');
 console.log(form);
 console.log("got the components")
+
+var d = new Date();
+var someMillisecondValue = d.getTime();
+var date = new Date(someMillisecondValue);
+var minute = date.getMinutes();
+var hour = date.getHours();
+var day = date.getDate();
+var month = date.getMonth();
+var year = date.getFullYear();
+var tstr = [minute, hour, day, month, year].join(" ");
 
 //config your firebase push
 const config = {
@@ -38,7 +50,9 @@ const config = {
                 What: why.value,
                 Progress:0,
                 Done:false,
-                Rejected:false
+                Rejected:false,
+                IP: uadd,
+                Time: tstr
             }
         );
 
