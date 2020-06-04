@@ -37,7 +37,8 @@ const config = {
                 Course: course.value,
                 What: why.value,
                 Progress:0,
-                Done:false
+                Done:false,
+                Rejected:false
             }
         );
 

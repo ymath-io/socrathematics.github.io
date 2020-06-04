@@ -1,4 +1,6 @@
-
+:root {
+  --primary: --green;
+}
 .center {
   display: block;
   margin-left: auto;
@@ -61,11 +63,26 @@ text-decoration:none;
 }
 */
 @media (min-width: 768px) {
-.card{
+:not(.no-def).card{
 width: 30vw;height:24em;}
 }
 
 @media (min-width: 992px) {
-.card{
+:not(.no-def).card{
 width: 18rem;height:24em;}
 }
+
+.green-icon{
+filter: invert(44%) sepia(87%) saturate(442%) hue-rotate(81deg) brightness(100%) contrast(85%);}
+.green-btn:hover .green-icon{
+filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(308deg) brightness(103%) contrast(101%);}
+.green-btn:hover{
+background: var(--green);}
+.red-icon{
+filter: invert(16%) sepia(89%) saturate(3117%) hue-rotate(343deg) brightness(96%) contrast(90%);}
+.red-btn:hover .red-icon{
+filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(308deg) brightness(103%) contrast(101%);}
+.red-btn:hover{
+background: var(--red);}
+
+

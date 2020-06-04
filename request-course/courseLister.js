@@ -15,17 +15,29 @@ const config = {
     measurementId: "G-2QEQZPCEZR"
 };
 
-
+//listing the courses
+var db = firebase.database();
 var ref = firebase.database().ref();
 var data = "";
 ref.on("value", function(snapshot) {
    data = snapshot.val().courseRequests;
    console.log(data);
-   document.getElementById("crCards").innerHTML = "";
-   var d;
-   for (d in data){
-    console.log(data[d]["Course"]);
 
+
+   var d;
+   var loctar;
+   document.getElementById("crCards").innerHTML = "";
+   document.getElementById("crCardsDone").innerHTML = "";
+   document.getElementById("crCardsRej").innerHTML = "";
+   for (d in data){
+   loctar = document.getElementById("crCards");
+   if (data[d]["Done"]=="true"){
+    loctar = document.getElementById("crCardsDone")}
+    if (data[d]["Rejected"]==true){
+    loctar = document.getElementById("crCardsRej");
+    console.log(data[d]["Course"])}
+
+    console.log(data[d]["Course"]);
     var card = document.createElement("DIV");
     card.className = "card bg-light  no-def mt-2";
     var cardbody = document.createElement("DIV");
@@ -36,6 +48,7 @@ ref.on("value", function(snapshot) {
     title.innerHTML = data[d]["Course"];
     var subtext = document.createElement("P");
     subtext.innerHTML = data[d]["What"];
+    subtext.style = "white-space: pre-wrap;";
     var sliderHolder = document.createElement("DIV");
     sliderHolder.className = "col-3";
     var sliderLabel = document.createElement("LABEL");
@@ -54,9 +67,9 @@ ref.on("value", function(snapshot) {
     desc.appendChild(subtext);
     cardbody.appendChild(desc);
     cardbody.appendChild(sliderHolder);
-    cardbody.innerHTML += '<div class="col-1"> <button type="button" class="btn btn-light red-btn mt-2"> <img src="../icons/x.svg" class="red-icon"></button> <button type="button" class="btn btn-light mt-3"> <img src="../icons/check.svg" class="green-icon"></button> </div>'
+    cardbody.innerHTML += '<div class="col-1"> <button type="button" id=R'+d+' class="btn btn-light red-btn mt-2"> <img src="../icons/x.svg" class="red-icon"></button> <button type="button" id=D'+d+' class="btn btn-light green-btn mt-3"> <img src="../icons/check.svg" class="green-icon"></button> </div>'
     card.appendChild(cardbody);
-    document.getElementById("crCards").appendChild(card);
+    loctar.appendChild(card);
     console.log(card)
 
     document.getElementById(d).oninput = function() {
@@ -68,6 +81,15 @@ ref.on("value", function(snapshot) {
   this.setAttribute('value',this.value);
 });
     }
+    /*
+    var id;
+    var ids = ["crCards", "crCardsDone","crCardsRej"];
+    for (id in ids){
+    console.log(ids[id]);
+    if (document.getElementById(ids[id]).innerHTML == ""){
+    console.log(ids[id]);
+    $("#"+ids[id]).style.display = "none";}
+    }*/
 }, function (error) {
    console.log("Error: " + error.code);
 });
