@@ -47,13 +47,18 @@ const config = {
 //push on form submit
     if (form) {
         form.addEventListener('submit', function (evt) {
+        if (inputCourse.value != ""  || inputWhy.value != "" || inputCourse.value != null  || inputWhy.value != null){
             evt.preventDefault();
             firebasePush(inputCourse, inputWhy);
             inputCourse.value = "";
             inputWhy.value = "";
             //shows alert if everything went well.
             document.querySelector("#tyCont").className = "alert alert-success";
-            document.querySelector("#tyCont").innerHTML = "<b>Your course request has been submitted!</b> Thank you for your contribution.";
+            document.querySelector("#tyCont").innerHTML = "<b>Your course request has been submitted!</b> Thank you for your contribution.";}
+        else{
+        document.querySelector("#tyCont").className = "alert alert-danger";
+            document.querySelector("#tyCont").innerHTML = "<b>Sorry!</b> You must fill all of the blanks.";}
+
             return null;
         })
     }
