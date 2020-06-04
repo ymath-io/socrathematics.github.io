@@ -1,8 +1,4 @@
-function addComp(level){
-    var extension = `/gibgi/calculus/limits/definition/?level=${encodeURIComponent(level)}`;
-    window.location = extension;
-    console.log(level)
-    }
+
 
 function preserveOpen(level){
     if (level>=1){
@@ -27,33 +23,20 @@ function preserveOpen(level){
         b3.setAttribute("aria-expanded","true");
         b3.innerHTML = "Hide";*/}
     }
-/*
-if (document.location == "https://socrathematics.github.io/calculus/limits/definition/#sec1"){
-    preserveOpen(1);
-}
-if (document.location == "https://socrathematics.github.io/calculus/limits/definition/#sec2"){
-    preserveOpen(2);
-}
-if (document.location == "https://socrathematics.github.io/calculus/limits/definition/#sec3"){
-    preserveOpen(3);
-}*/
 
-if (document.location == "http://localhost:63342/gibgi/calculus/limits/definition/#sec1"){
+if (document.location == "https://socrathematics.github.io/calculus/limits/definition/#sec1" || document.location == "http://localhost:63342/gibgi/calculus/limits/definition/#sec1"){
     preserveOpen(1);
 }
-if (document.location == "http://localhost:63342/gibgi/calculus/limits/definition/#sec2"){
+if (document.location == "https://socrathematics.github.io/calculus/limits/definition/#sec2" || document.location == "http://localhost:63342/gibgi/calculus/limits/definition/#sec2"){
     preserveOpen(2);
 }
-if (document.location == "http://localhost:63342/gibgi/calculus/limits/definition/#sec3"){
+if (document.location == "https://socrathematics.github.io/calculus/limits/definition/#sec3" || document.location == "http://localhost:63342/gibgi/calculus/limits/definition/#sec3"){
     preserveOpen(3);
 }
 
-
-
-
-        document.getElementById("lim_def_1").value = getSavedValue("lim_def_1");    // set the value to this input
-        document.getElementById("lim_def_2").value = getSavedValue("lim_def_2");   // set the value to this input
-        document.getElementById("lim_def_3").value = getSavedValue("lim_def_3");
+        document.getElementById("txt_1").value = getSavedValue("txt_1");    // set the value to this input
+        document.getElementById("txt_2").value = getSavedValue("txt_2");   // set the value to this input
+        document.getElementById("txt_3").value = getSavedValue("txt_3");
         /* Here you can add more inputs to set value. if it's saved */
 
         //Save the value function - save it to localStorage as (ID, VALUE)
@@ -70,3 +53,39 @@ if (document.location == "http://localhost:63342/gibgi/calculus/limits/definitio
             }
             return localStorage.getItem(v);
         }
+
+$('#sec3').on('hidden.bs.collapse', function (event) {
+        var elem3 = document.getElementById("button3");
+        elem3.innerHTML = "Continue";
+        $('#sec3').collapse('hide');
+        document.location  = "./#sec2";
+
+        })
+        $('#sec3').on('show.bs.collapse', function (event) {
+        var elem3 = document.getElementById("button3");
+        elem3.innerHTML = "Hide";
+        document.location  = "./#sec3";
+        })
+$('#sec2').on('hidden.bs.collapse', function (event) {
+        var elem2 = document.getElementById("button2");
+        elem2.innerHTML = "Continue";
+        document.location  = "./#sec1";
+
+        })
+        $('#sec2').on('show.bs.collapse', function (event) {
+        var elem2 = document.getElementById("button2");
+        elem2.innerHTML = "Hide";
+        document.location  = "./#sec2";
+        })
+$('#sec1').on('hidden.bs.collapse', function (event) {
+
+        var elem1 = document.getElementById("button1");
+        elem1.innerHTML = "Continue";
+        document.location  = "./";
+
+        })
+        $('#sec1').on('show.bs.collapse', function (event) {
+        var elem1 = document.getElementById("button1");
+        elem1.innerHTML = "Hide";
+        document.location  = "./#sec1";
+        })
