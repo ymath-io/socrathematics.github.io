@@ -19,13 +19,13 @@
   height:10%;
    position:absolute;
     top:35px;
-    left:40vh;
+    left:4vh;
     font-size:5vh
   }
     .mastTitle-sub-2{
   height:10%;
    position:absolute;
-    left:40vh;
+    left:4vh;
     font-size:2.3vh;
     opacity:0.8;
     top:95px
@@ -33,6 +33,7 @@
 
   nav.navbar{
   font-family:libre-franklin;
+  padding-left:4vh;
   }
   .top.active{
   color: var(--green) !important;
@@ -73,12 +74,53 @@
 
   nav.navbar{
   font-family:libre-franklin;
+  padding-left:4vh;
   }
   .top.active{
   color: var(--green) !important;
   }
   }
+@media (min-width: 1024px) {
 
+  .mastTitle{
+  height:10%;
+   position:absolute;
+    bottom:110px;
+    left:4vh;
+    font-size:5vh
+  }
+    .mastTitle-2{
+  height:10%;
+   position:absolute;
+    bottom:40px;
+    left:4vh;
+    font-size:2.3vh;
+    opacity:0.8;
+  }
+    .mastTitle-sub{
+  height:10%;
+   position:absolute;
+    top:8vh;
+    left:4vh;
+    font-size:5vh
+  }
+    .mastTitle-sub-2{
+  height:10%;
+   position:absolute;
+    left:4vh;
+    font-size:2.3vh;
+    opacity:0.8;
+    top:14vh;
+  }
+
+  nav.navbar{
+  font-family:libre-franklin;
+  padding-left:4vh;
+  }
+  .top.active{
+  color: var(--green) !important;
+  }
+  }
 @media (min-width: 1200px) {
 
   .mastTitle{
@@ -114,6 +156,7 @@
 
   nav.navbar{
   font-family:libre-franklin;
+  padding-left:40vh;
   }
   .top.active{
   color: var(--green) !important;
@@ -122,7 +165,7 @@
 
 .masthead{
   margin-bottom:0;
-  height: 95vh;
+  height: 90vh;
   overflow: auto;
   font-family:lato;
   font-style:normal;
@@ -140,3 +183,4 @@
   background-size:cover;
   background-attachment:fixed
   }
+

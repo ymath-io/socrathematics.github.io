@@ -21,9 +21,8 @@ var ref = firebase.database().ref();
 var data = "";
 ref.on("value", function(snapshot) {
    data = snapshot.val().courseRequests;
-   console.log(data);
-
-
+   //console.log(data);
+   var rejb;
    var d;
    var loctar;
    document.getElementById("crCards").innerHTML = "";
@@ -31,15 +30,16 @@ ref.on("value", function(snapshot) {
    document.getElementById("crCardsRej").innerHTML = "";
    for (d in data){
    loctar = document.getElementById("crCards");
-   if (data[d]["Done"]=="true"){
+   if (data[d]["Done"]==true){
     loctar = document.getElementById("crCardsDone")}
     if (data[d]["Rejected"]==true){
     loctar = document.getElementById("crCardsRej");
-    console.log(data[d]["Course"])}
+    //console.log(data[d]["Course"])
+    }
 
-    console.log(data[d]["Course"]);
+    //console.log(data[d]["Course"]);
     var card = document.createElement("DIV");
-    card.className = "card bg-light  no-def mt-2";
+    card.className = "card bg-light  no-def mt-2 mb-2";
     var cardbody = document.createElement("DIV");
     cardbody.className = "card-body row";
     var desc = document.createElement("DIV");
@@ -54,32 +54,30 @@ ref.on("value", function(snapshot) {
     var sliderLabel = document.createElement("LABEL");
     sliderLabel.setAttribute("for",d);
     sliderLabel.innerHTML = "Completion";
-    var slider = document.createElement("INPUT");
-    slider.type = "range";
+    var slider = document.createElement("DIV");
+    slider.className = "progress";
     slider.id = d;
-    slider.step = "10";
-    slider.setAttribute("value", data[d]["Progress"]);
-    console.log(data[d]["Progress"]);
-    slider.className = "form-control-range";
+    var bar = document.createElement("DIV")
+
+    //bar.outerHTML  = `<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>`;
+    bar.className = "progress-bar bg-success";
+    bar.role = "progressbar";
+    bar.setAttribute("aria-valuemin","0");
+    bar.setAttribute("aria-valuemax","100");
+    bar.setAttribute("aria-valuenow", data[d]["Progress"]);
+    bar.setAttribute("style", "width:"+data[d]["Progress"]+"%");
+    slider.appendChild(bar);
     sliderHolder.appendChild(sliderLabel);
     sliderHolder.appendChild(slider);
     desc.appendChild(title);
     desc.appendChild(subtext);
     cardbody.appendChild(desc);
     cardbody.appendChild(sliderHolder);
-    cardbody.innerHTML += '<div class="col-1"> <button type="button" id=R'+d+' class="btn btn-light red-btn mt-2"> <img src="../icons/x.svg" class="red-icon"></button> <button type="button" id=D'+d+' class="btn btn-light green-btn mt-3"> <img src="../icons/check.svg" class="green-icon"></button> </div>'
+    cardbody.innerHTML += `<div class="col-1">
+     <button type="button" id="R`+ d +`" onclick="rejC('`+d+`',`+data[d]['Rejected']+`)" class="btn btn-light red-btn mt-2"> <img src="../icons/x.svg" class="red-icon"></button> <button type="button" id="D'+d+'" onclick="donC('`+d+`',`+data[d]['Done']+`)" class="btn btn-light green-btn mt-3"> <img src="../icons/check.svg" class="green-icon"></button> </div>`
     card.appendChild(cardbody);
     loctar.appendChild(card);
-    console.log(card)
 
-    document.getElementById(d).oninput = function() {
-        var val = document.getElementById(d).getAttribute("value"); //gets the oninput value
-        //document.getElementById('output').innerHTML = val //displays this value to the html page
-        console.log(val)
-        };
-    document.getElementById(d).addEventListener('change',function() {
-  this.setAttribute('value',this.value);
-});
     }
     /*
     var id;
@@ -94,3 +92,26 @@ ref.on("value", function(snapshot) {
    console.log("Error: " + error.code);
 });
 
+function rejC (id,isRej) {
+        //update["/courseRequests/"+id+"/Rejected"] = true;
+        var dbloc = db.ref("courseRequests/"+id)
+        dbloc.update({"Rejected":!isRej});
+        if (!isRej){
+        dbloc.update({"Done":false});
+        }
+        console.log("I deleted the course request!");
+        return null;
+
+    }
+
+function donC (id,isDon) {
+        //update["/courseRequests/"+id+"/Rejected"] = true;
+        var dbloc = db.ref("courseRequests/"+id)
+        dbloc.update({"Done":!isDon});
+        if (!isDon){
+        dbloc.update({"Rejected":false});
+        }
+        console.log("I finished the course request!");
+        return null;
+
+    }

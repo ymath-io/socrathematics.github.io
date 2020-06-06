@@ -38,7 +38,8 @@ const config = {
                 What: why.value,
                 Progress:0,
                 Done:false,
-                Rejected:false
+                Rejected:false,
+                Status:"inconsideration"
             }
         );
 

@@ -9,15 +9,15 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <link rel="icon" href="/favicon.png">
-  <link rel="stylesheet" href="/fonts.css">
-  <link rel="stylesheet" href="/header.css">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/gibgi/fonts.css">
+  <link rel="stylesheet" href="/gibgi/header.css">
+  <link rel="stylesheet" href="/gibgi/style.css">
     <title>Password Protected Page</title>
     <style>
 
-        
 
-        
+
+
 
         #passArea > * {
             margin: 5px auto;
@@ -27,7 +27,7 @@
             height: 40px;
             font-size: 30px;
         }
-        
+
         #messageWrapper {
             float: left;
             line-height: 30px;
@@ -60,12 +60,39 @@
             color: #999;
         }
     </style>
-      <script src="/menu.js"></script>
+
   </head>
   <body class="">
     <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
     <div id="dialogWrap">
-        <div id="dialogWrapCell" class="card  mt-5">
+        <div class="container-fluid text-center bg-transparent text-light masthead-sub">
+    <h1 class="mastTitle-sub " ><a href="/" style="text-decoration:none;color:white;"><b>SOCRATHEMATICS</b></a></h1>
+  <p class="mastTitle-sub-2" ><b>Learn math. Effortlessly.</b></p>
+
+</div>
+<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top" id="navigation" style="overflow: auto;padding-left:40vh">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="/"><img src="/favicon.png" height=40" width="40"> <span class="sr-only">(current)</span></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="/modular-arithmetic" id="mod">Modular Arithmetic</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/trigonometry" id="trig">Trigonometry</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/calculus" id="calc">Calculus</a>
+      </li>
+      <li class="nav-item" >
+        <a class="nav-link" href="/request-course" id="rc">Request a Course</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+        <div id="dialogWrapCell" class="card  mx-auto mt-5">
             <div id="mainDialog" class="card-body col">
                 <div id="dialogText" class="alert alert-info row">This page is password protected.</div>
                 <div id="passArea" class="row">
