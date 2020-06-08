@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-dark" style="">
+<html lang="en" class="bg-white" style="">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
@@ -68,13 +68,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a class="nav-link active" href="">Limits</a>
             <nav class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link ml-3 my-1" href="definition">Definition</a>
+        <div class="nav-link ml-3 my-1" onclick="document.location='definition'" style="cursor: pointer;"><a href="definition" class="text-success">Definition</a><a style="float:right;vertical-align:center" class="badge text-light badge-success">New</a></div>
         </li>
         <li class="nav-item">
-          <a class="nav-link ml-3 my-1" href="practice">Practice</a>
+          <div class="nav-link ml-3 my-1" onclick="document.location='practice'" style="cursor: pointer;"><a class="text-success" href="practice">Practice</a><a style="float:right;vertical-align:center" class="badge text-light badge-success">New</a></div>
         </li>
           <li class="nav-item">
-          <a class="nav-link ml-3 my-1 disabled" href="applications">Applications</a>
+          <a class="nav-link ml-3 my-1 " href="applications">Applications</a>
         </li>
       </nav>
         </li>
@@ -100,9 +100,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>What is the value of this function at $x=1$?</p>
         <input type="text" id="txt_1" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
         <pre></pre>
-        <p><a
-                class="btn btn-success text-light" id="button1" data-toggle="collapse" href="#sec1" aria-expanded="false" aria-controls="Collapse">Continue
-        </a></p>
+        <p><a class="btn btn-success text-light" id="button1" data-toggle="collapse" href="#sec1" aria-expanded="false" aria-controls="Collapse">Continue</a></p>
 <div class="collapse" id="sec1">
   <p>The function $f(x)$ is undefined at $x=1$. But the function is defined at 0.9 and 1.1:</p>
   <p>$$f(0.9) = 1.9$$$$f(1.1)=2.1$$</p>
@@ -151,15 +149,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 <script src="keepScroll.js"></script>
-<pre>
 
-
-
-
-
-</pre>
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer Stuff</p>
-</div>
 </body>
 </html>

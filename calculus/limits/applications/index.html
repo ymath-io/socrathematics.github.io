@@ -1,0 +1,140 @@
+<html><head><title>Applications</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163408633-2');
+</script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PF58PDC');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <link rel="icon" href="../../../favicon.png">
+  <link rel="stylesheet" href="../../../fonts.css">
+  <link rel="stylesheet" href="../../../header.css">
+  <link rel="stylesheet" href="../../../style.css">
+
+    <!--mathjax-->
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$']]
+  }
+};
+
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head><body><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src="../../../menu.js"></script>
+<script>activate("calc")</script>
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Calculus</h3><p>Topics within Calculus</p><nav class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="../">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="../">Limits</a>
+            <nav class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link ml-3 my-1" href="../definition">Definition</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-3 my-1" href="../practice">Practice</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link ml-3 my-1 active" href="">Applications</a>
+        </li>
+      </nav>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="../derivatives">Derivatives</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link disabled" href="../integrals">Integrals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Chapter 4 - Coming Soon</a>
+        </li>
+      </nav>
+      <hr class="d-sm-none">
+    </div>
+
+    <div class="col-sm-8">
+      <div class="container">
+      <h2>Applications</h2><p style="white-space: pre-wrap;">Remember in the beginning, we said that when we get to derivatives, we'll be doing limits all the time?
+Now is the time to learn some useful limits that you are going to rely heavily on in the future.
+The first one of these is $$\lim_{x\to 0}\frac{\sin{x}}{x}.$$
+The solution to this limit is not immediately obvious, so we are going to take a detour and review something that you (should have) learned in Precalculus.
+
+<iframe src="https://www.desmos.com/calculator/jmllvl6cqk?embed" class="graph" width="500px" height="500px" style="border: 1px solid #ccc" frameborder="0"></iframe>
+
+In the graph above, we have 3 values : $$\sin{\theta}, \theta, \tan{\theta}.$$
+If you don't immediately have an answer, think for a few minutes about how we could order these three values in an inequality. One possible (wrong) answer is  $$\tan{\theta} &lt; \theta &lt; \sin{\theta}.$$
+Record your answer here before continuing:</p><input type="text" id="txt_1" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
+        <pre></pre>
+        <p><a class="btn btn-success text-light" id="button1" data-toggle="collapse" href="#sec1" aria-expanded="false" aria-controls="Collapse">Continue</a></p>
+<div class="collapse" id="sec1"><p>Looking at the graph tells us that 
+$$\sin{\theta} &lt; \theta &lt; \tan{\theta}.$$ 
+Now, we can use this property to evaluate our limit!
+Dividing by $\sin{\theta}$ gives 
+$$1 &lt; \frac{\theta}{\sin{\theta} &lt; \frac{1}{\cos{\theta}}.$$
+Oops! We have our value, but it's upside down! 
+Well, we can just take the reciprocal of all of them and we'll be good to go, right??
+No [Why not?]. However, we <i>can</i> take the reciprocal, and then reverse the signs. 
+So now, we. have 
+$$\cos{\theta} &lt; \frac{\sin{x}}{x} &lt; 1.$$
+We know for a fact that 
+$$\lim_{x\to 0}\cos{x}=1.$$ 
+So, now we say for sure that 
+$$1 &lt;\lim_{x\to 0} \frac{\sin{x}}{x} &lt; 1.$$ This is pretty redundant, and implies that $$\lim_{x\to 0}\frac{\sin{x}}{x}=1.$$
+Yes, really - it's just 1.
+
+Now, try a two-step limit. Don't forget to use what you just learned!
+
+
+2. $$\lim_{x\to 0}\frac{\tan{x}}{x}$$</p><input type="text" id="txt_2" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
+  <pre></pre>
+<p><a class="btn btn-success text-light" id="button2" data-toggle="collapse" href="#sec2" aria-expanded="false" aria-controls="Collapse">Continue</a></p>
+</div>
+<div class="collapse" id="sec2">
+<p>This is one example of how the limit we just learned can sneak up on you! Here's how we transform it into two problems we can solve:
+$$\lim_{x\to 0}\frac{\tan{x}}{x} =\lim_{x\to 0}\frac{\sin{x}}{x} \cdot \frac{1}{\cos{x}} = \lim_{x\to 0}\frac{\sin{x}}{x} \cdot  \lim_{x\to 0}\frac{1}{\cos{x}} =1\cdot 1=1.$$
+
+One times one is... one? Yep. 
+Check back later for more - Taylor's Series is running through the presses!
+</p>
+</div>
+<pre>
+
+
+
+
+</pre>
+    </div>
+  </div>
+</div>
+<script src="keepScroll.js"></script>
+</div>
+</body></html>
