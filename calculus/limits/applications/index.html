@@ -19,7 +19,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -100,11 +100,11 @@ $$\sin{\theta} &lt; \theta &lt; \tan{\theta}.$$
 Now, we can use this property to evaluate our limit!
 Dividing by $\sin{\theta}$ gives 
 $$1 &lt; \frac{\theta}{\sin{\theta}} &lt; \frac{1}{\cos{\theta}}.$$
-Oops! We have our value, but it's upside down! 
+Oops! We have our value, but it's upside down! Let's plug in $x$ to this anyways, and see what we can do.
 Well, we can just take the reciprocal of all of them and we'll be good to go, right??
-No [Why not?]. However, we <i>can</i> take the reciprocal, and then reverse the signs. 
-So now, we. have 
-$$\cos{\theta} &lt; \frac{\sin{x}}{x} &lt; 1.$$
+  No <a data-toggle="modal" class="text-success" data-target="#exampleModal12" style="cursor:pointer;">[Why not?]</a>. However, we <i>can</i> take the reciprocal, and then reverse the signs.
+So now, we have
+$$\cos{x} &lt; \frac{\sin{x}}{x} &lt; 1.$$
 We know for a fact that 
 $$\lim_{x\to 0}\cos{x}=1.$$ 
 So, now we say for sure that 
@@ -114,7 +114,27 @@ Yes, really - it's just 1.
 Now, try a two-step limit. Don't forget to use what you just learned!
 
 
-2. $$\lim_{x\to 0}\frac{\tan{x}}{x}$$</p><input type="text" id="txt_2" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
+2. $$\lim_{x\to 0}\frac{\tan{x}}{x}$$</p>
+  <div class="modal fade" id="exampleModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel12" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel12">Why not?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Do you agree that $$1<2<3?$$
+        Do you also agree that $$1<0.5<0.\overline{3}?$$
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <input type="text" id="txt_2" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
   <pre></pre>
 <p><a class="btn btn-success text-light" id="button2" data-toggle="collapse" href="#sec2" aria-expanded="false" aria-controls="Collapse">Continue</a></p>
 </div>

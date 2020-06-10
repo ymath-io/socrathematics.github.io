@@ -36,7 +36,7 @@ if (window.location.hash == "#sec3"){
 
         document.getElementById("txt_1").value = getSavedValue("txt_1");    // set the value to this input
         document.getElementById("txt_2").value = getSavedValue("txt_2");   // set the value to this input
-        document.getElementById("txt_3").value = getSavedValue("txt_3");
+        //document.getElementById("txt_3").value = getSavedValue("txt_3");
         /* Here you can add more inputs to set value. if it's saved */
 
         //Save the value function - save it to localStorage as (ID, VALUE)
