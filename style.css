@@ -54,24 +54,53 @@ a:link:hover{
 color: #1e7e34;
 text-decoration:none;
 }
-/* In progress: building an automatic dark mode.
+/*
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #272727;
     color: #ccc;
   }
-}
-*/
+  .nav-item .nav-link:not(.active){
+  color: #ccc;
+  }
+
+}*/
+
 @media (min-width: 768px) {
 :not(.no-def).card{
 width: 30vw;height:24em;}
+
+.graph{
+height:80vw;
+width:80vw;
+}
+}
+
+@media (max-width: 768px) {
+
+.graph{
+height:80vw;
+width:80vw;
+}
 }
 
 @media (min-width: 992px) {
 :not(.no-def).card{
 width: 18rem;height:24em;}
+.graph{
+height:500px;
+width:500px;
+}
 }
 
+@media (max-width: 992px) {
+.graph{
+height:80vw;
+width:80vw;
+}
+}
+
+p {white-space: pre-wrap;}
 .green-icon{
 filter: invert(44%) sepia(87%) saturate(442%) hue-rotate(81deg) brightness(100%) contrast(85%);}
 .green-btn:hover .green-icon{
@@ -86,3 +115,7 @@ filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(308deg) brightness(103%) 
 background: var(--red);}
 
 
+
+html {
+background: var(--light) !important;
+}
