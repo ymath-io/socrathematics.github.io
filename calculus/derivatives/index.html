@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white" style="">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163408633-2');
+</script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PF58PDC');</script>
+<!-- End Google Tag Manager -->
+  <title>Derivatives</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../../mathquill-0.10.1/mathquill.css"/>
+<script src="../../mathquill-0.10.1/mathquill.js"></script>
+<script>
+var MQ = MathQuill.getInterface(2);
+</script>
+
+  <link rel="icon" href="../../favicon.png">
+  <link rel="stylesheet" href="../../fonts.css">
+  <link rel="stylesheet" href="../../header.css">
+  <link rel="stylesheet" href="../../style.css">
+
+    <!--mathjax-->
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script src="../../menu.js"></script>
+<script>activate("calc");</script>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-3" >
+      <h3>Calculus</h3>
+      <p >Topics within Calculus</p>
+      <nav class="nav nav-pills flex-column" >
+        <li class="nav-item">
+          <a class="nav-link" href="../">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../limits">Limits</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="">Derivatives</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link disabled" href="../integrals">Integrals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Chapter 4 - Coming Soon</a>
+        </li>
+      </nav>
+      <hr class="d-sm-none">
+    </div>
+
+    <div class="col-sm-9">
+      <div class="container" >
+      <h2>Slope of a ... non-linear function!</h2>
+        <p>Okay, so now you're a whiz at limits, but you still don't feel like you're doing Calculus!</p>
+          <p>Yeah, I know - you want to start writing $\frac{dy}{dx}$ and those weird S-shaped signs, that look like $\int$. I know I did!</p>
+          <p>In that case, my friend, we have some good news - we're not so far from all that. Just hang in there.</p>
+          <p>On with the lesson.</p>
+          <pre>
+          </pre>
+          <p>Suppose we have a function $y=3x-5$.</p>
+          <p>What's the slope?</p>
+           <p><b>It's 3, right?</b></p>
+  <p>Good. Just checking.</p>
+          <p>Okay, next question. What's the slope of the line $$y=x^2?$$</p>
+        <input type="text" id="txt_1" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
+        <pre></pre>
+        <p><a class="btn btn-success text-light" id="button1" data-toggle="collapse" href="#sec1" aria-expanded="true" aria-controls="Collapse">Continue</a></p>
+<div class="collapse show" id="sec1">
+<p>What do you mean, you don't know?</p>
+<p>Oh... you mean it keeps changing? Right. When x increases at a constant speed, the speed at which y increases increases.</p>
+    <p>Go back, and read that to yourself a few more times, until it makes sense.</p>
+    <details><summary class="btn btn-outline-success btn-sm">Show/Hide graph</summary><br><br><iframe src="https://www.desmos.com/calculator/kh3mig4qor?embed"  style="border: 1px solid #ccc" class="graph" frameborder=0></iframe><br><br>
+    </details>
+    <p>In the graph above, the blue line is <i>tangent</i> to the parabola at the green point, which is called the <i>point of tangency.</i></p>
+    <p>Try to move the green "tangent" point around and see the change in the slope of the line. Once you get a feel for what's going on, unhide the black line.</p>
+    <p>If we were to zoom in an infinite amount to the point of tangency, we'd have difficulty telling the line and parabola apart, because they get so close together.</p>
+    <p>In fact, you can try it yourself by clicking in the lower right of the graph and zooming in!</p>
+    <p>Because the line and the <i>portion</i> of the parabola are almost the same, we say that the slope of the parabola at the point of tangency is equal to the slope of the tangent.</p>
+    <p>Now, the only task we have is to develop a general equation for the slope of the parabola at any point.</p>
+    <p class="alert alert-info"><b>Note:  </b>As you may have seen elsewhere, $\Delta$ usually stands for "change in". In Calculus, $\delta$ (lowercase $\Delta$) usually means "a very small change in". That's $\delta$ a definition you already know.</p>
+    <p>In the graph below, we have a zoomed-in version of $y=f(x)$, an arbitrary function. We've chosen two values of $x$: </p><p>$a$ and $a+\delta x$.</p>
+    <p>Their respective $y$ values on the graph will be $f(a)$ and $f(a+\delta x)$.</p>
+    <iframe src="https://www.desmos.com/calculator/crcyhxkkmm?embed" width="500px" height="500px" class="graph" style="border: 1px solid #ccc" frameborder=0></iframe>
+    <p>Okay, we're trying a new input style here, so fingers crossed you like it. To type $\delta$ ("change in"), type "\delta", then hit <kbd>space</kbd>.</p>
+    <p>Make sure to write your answers in terms of $f(x)$, $a$, and $\delta x$.</p>
+    <p>The general formula for slope is <span id="answer1" style="color:var(--primary)">\cdots</span>.<svg id="tu1" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+</svg></p>
+
+<script>
+  var answerSpan = document.getElementById('answer1');
+  var answerMathField = MQ.MathField(answerSpan, {
+    handlers: {
+      edit: function() {
+        var enteredMath = answerMathField.latex(); // Get entered math in LaTeX format
+        checkAnswer(enteredMath);
+      }
+    }
+  });
+  function checkAnswer(l){
+    if (l=="\\frac{\\delta y}{\\delta x}"){
+    document.getElementById("answer1").style.color="var(--success)";
+    document.getElementById("tu1").style.display="inline";
+    }
+else{document.getElementById("answer1").style.color="var(--dark)";
+    document.getElementById("tu1").style.display="none";
+    }
+    }
+</script>
+
+    <p>The slope of the line going through the green and blue points can be expressed as <span id="answer2" style="color:var(--dark)">\cdots</span>.<svg id="tu2" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+</svg></p>
+
+<script>
+  var answerSpan2 = document.getElementById('answer2');
+  var answerMathField2 = MQ.MathField(answerSpan2, {
+    handlers: {
+      edit: function() {
+        var enteredMath2 = answerMathField2.latex(); // Get entered math in LaTeX format
+        checkAnswer2(enteredMath2);
+      }
+    }
+  });
+  function checkAnswer2(l){
+    if (l=="\\frac{f\\left(a+\\delta x\\right)-f\\left(a\\right)}{\\delta x}"){
+    document.getElementById("answer2").style.color="var(--success)";
+    document.getElementById("tu2").style.display="inline";
+    }
+else{document.getElementById("answer2").style.color="var(--dark)";
+    document.getElementById("tu2").style.display="none";
+    }
+    }
+</script>
+
+<p><a
+                class="btn btn-success text-light" id="button2" data-toggle="collapse" href="#sec2" aria-expanded="false" aria-controls="Collapse">Continue</a></p>
+</div>
+<div class="collapse" id="sec2">
+<p>The second one was a bit tricky. The answer is $$\frac{f(a+\delta x)-f(a)}{\delta x}.$$</p>
+    <p>The above expression describes the change in the $y$-value, or $f(x)$, and divides it by $\delta x$, or the change in $x$.</p>
+    <p>If we can make $\delta x$ infinitesimally small, then this can help us find the slope at any value of $(x,f(x))$.</p>
+    <p><b>I'm going to go ahead and swap out $x$ for $a$ in the above expression, just to emphasize that this works for any value of $x$.</b></p>
+    <p>$$\frac{f(x+\delta x)-f(x)}{\delta x} = \frac{\delta y}{\delta x}.$$</p>
+    <p>Ah, yes. Where were we? We were going to compute the above when $\delta x$ is infinitesimally small. How do we do that?</p>
+    <p>Remember that <i>infinitesimally small</i> means that the number is approaching $0$, but it's not exactly 0. So we have to evaluate the above when $\delta x$ is approaching $0$.</p>
+    <p>We just learned exactly how to do that using limits!</p>
+    <p>We can set up the limit like this:</p>
+    <p>$$\lim_{\delta x \to 0}\frac{f(x+\delta x)-f(x)}{\delta x}.$$</p>
+    <p>Believe it or not, that's it!</p>
+    <p>When we plug in a definition of $f(x)$, such as $f(x)=x^2$ to the limit, we can evaluate the limit to get another function, which we call $f'(x).</p>
+    <p><b>Quick check:</b>  What is the relationship between $f'(x)$ and $f(x)$?</p>
+  <input type="text" id="txt_3" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
+  <pre></pre>
+<p><a
+                class="btn btn-success text-light" id="button3" data-toggle="collapse" href="#sec3" aria-expanded="false" aria-controls="Collapse">Continue</a></p>
+</div>
+
+<div class="collapse" id="sec3">
+
+<p>The definition of $f'(x)$ goes like this:</p>
+    <p class="text-center">The value of $f'(a)$, for any $a$ within the domain of $f(x)$, evaluates to the instantaneous slope of the function $f(x)$ when $x=a$. </p>
+<p>Basically, if $f(x)$ is your velocity, then $f'(x)$ is your acceleration.</p>
+    <pre>
+    </pre>
+    <p>Now, let's try an example. Let's try to find the slope of $f(x)=x^2$.</p>
+    <p>Step 1: Set up the limit. $$\lim_{\delta x \to 0}\frac{(x+\delta x)^2-x^2}{\delta x}.$$</p>
+    <p>Step 2: Solve the limit! $$\lim_{\delta x \to 0}\frac{x^2 + 2x\delta x + (\delta x)^2-x^2}{\delta x}$$</p>
+    <p>$$=\lim_{\delta x \to 0}\frac{2x\delta x + (\delta x)^2}{\delta x}$$</p>
+    <p>$$=\lim_{\delta x \to 0}2x + \delta x$$</p>
+    <p>And, now that $\delta x$ is out of the denominator, we can substitute $\delta x =0$:</p>
+    <p>$$\frac{\delta y}{\delta x}=2x$$</p>
+</div>
+          <pre>
+
+
+
+
+          </pre>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link " href="../" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="../">Before you go</a></li>
+    <li class="page-item active"><a class="page-link" href="">•</a></li>
+    <li class="page-item disabled"><a class="page-link" href="practice">Practice</a></li>
+    <li class="page-item disabled">
+      <a class="page-link" href="definition" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+     </nav>
+      </div></div>
+  </div>
+</div>
+<script src="keepScroll.js"></script>
+
+</body>
+</html>

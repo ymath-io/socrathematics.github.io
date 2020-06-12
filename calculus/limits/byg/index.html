@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white" style="">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163408633-2');
+</script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PF58PDC');</script>
+<!-- End Google Tag Manager -->
+  <title>Before you go - Limits</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+  <link rel="icon" href="../../../favicon.png">
+  <link rel="stylesheet" href="../../../fonts.css">
+  <link rel="stylesheet" href="../../../header.css">
+  <link rel="stylesheet" href="../../../style.css">
+
+    <!--mathjax-->
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script src="../../../menu.js"></script>
+<script>activate("calc");</script>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-3" >
+      <h3>Calculus</h3>
+      <p >Topics within Calculus</p>
+      <nav class="nav nav-pills flex-column" >
+        <li class="nav-item">
+          <a class="nav-link" href="../../">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="../">Limits</a>
+            <nav class="nav nav-pills flex-column">
+        <li class="nav-item">
+        <div class="nav-link ml-3 my-1" onclick="document.location='../definition'" style="cursor: pointer;"><a href="definition" class="text-success">Definition</a><a style="float:right;vertical-align:center" class="badge text-light badge-success">New</a></div>
+        </li>
+        <li class="nav-item">
+          <div class="nav-link ml-3 my-1" onclick="document.location='../practice'" style="cursor: pointer;"><a class="text-success" href="practice">Practice</a><a style="float:right;vertical-align:center" class="badge text-light badge-success">New</a></div>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link ml-3 my-1 " href="../applications">Applications</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link ml-3 my-1 active " href="">Before you go</a>
+        </li>
+      </nav>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../derivatives">Derivatives</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link disabled" href="../../integrals">Integrals</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Chapter 4 - Coming Soon</a>
+        </li>
+      </nav>
+      <hr class="d-sm-none">
+    </div>
+
+    <div class="col-sm-8">
+      <div class="container" >
+      <h2>Before you go</h2>
+          <p>Before you go off to derivatives (oh, how much fun) there's a few more things you should know.</p>
+          <p> If you skip this, and I know it's tempting, you'll be confused later. I'll reference this page later, so you better read it now instead of coming back to it when you've already started derivatives.</p>
+          <p>That said, these are really just some really nice and simple answers to common problems, just like when you learned in trigonometry that $\sin{30}=\frac{1}{2}$. (You did, <i>right?</i>)</p>
+         <h3>Infinite Series</h3>
+          <h5 class="text-secondary" >Referenced later as <code>IS#</code></h5>
+          <ol>
+              <li id="is1">
+                  <p>$$\ln{(x+1)}=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\cdots\pm\frac{x^{\infty}}{\infty}$$</p>
+              </li>
+              <li id="is2">
+                  <p>$$e^x=1+\frac{x}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!}+\cdots+\frac{x^{\infty}}{\infty!}$$</p>
+              </li>
+          </ol>
+          <h3>Limits Identities</h3>
+          <h5 class="text-secondary">Referenced later as <code>LI#</code></h5>
+          <ol>
+              <li id="li1">
+                  <p>$$\lim_{x\to 0}\frac{a^{x}-1}{x}=\ln{a}$$</p>
+              </li>
+              <li>
+                  <p>$$\lim_{x\to 0}\frac{e^x-1}{x}=1$$</p>
+              </li>
+              <li id="li3">
+                  <p>$$\lim_{x\to 0}\frac{\sin{x}}{x}=1$$</p>
+              </li>
+          </ol>
+          <p class="lead">Can you use <code>LI1</code> to prove <code>LI2</code>?</p>
+          <p> (Hint: Yes you can, now do it!)</p>
+
+</div>
+        <pre>
+
+
+
+        </pre>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link " href="../applications" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="../applications">Applications</a></li>
+    <li class="page-item active"><a class="page-link" href="">•</a></li>
+    <li class="page-item "><a class="page-link" href="../../derivatives">Derivatives</a></li>
+    <li class="page-item ">
+      <a class="page-link" href="../../derivatives" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+     </nav>
+    </div>
+  </div>
+</div>
+<div style="height:10vh"></div>
+<script src="keepScroll.js"></script>
+
+</body>
+ <script>
+    function getDocHeight() {
+    var D = document;
+    return Math.max(
+        D.body.scrollHeight, D.documentElement.scrollHeight,
+        D.body.offsetHeight, D.documentElement.offsetHeight,
+        D.body.clientHeight, D.documentElement.clientHeight
+    );
+}
+$(window).scroll(function() {
+   if($(window).scrollTop()  <= -15) {
+       document.location="../applications";
+   }
+});
+</script>
+</html>

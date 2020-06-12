@@ -1,4 +1,7 @@
-<html><head><title>Applications</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<html style="overscroll-behavior: contain;">
+<head>
+  <title>Applications - Limits</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -66,10 +69,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="nav-item">
           <a class="nav-link ml-3 my-1 active" href="">Applications</a>
         </li>
+      <li class="nav-item">
+          <a class="nav-link ml-3 my-1  " href="../byg">Before you go</a>
+        </li>
       </nav>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="../derivatives">Derivatives</a>
+          <a class="nav-link " href="../derivatives">Derivatives</a>
         </li>
           <li class="nav-item">
           <a class="nav-link disabled" href="../integrals">Integrals</a>
@@ -143,18 +149,48 @@ Now, try a two-step limit. Don't forget to use what you just learned!
 $$\lim_{x\to 0}\frac{\tan{x}}{x} =\lim_{x\to 0}\frac{\sin{x}}{x} \cdot \frac{1}{\cos{x}} = \lim_{x\to 0}\frac{\sin{x}}{x} \cdot  \lim_{x\to 0}\frac{1}{\cos{x}} =1\cdot 1=1.$$
 
 One times one is... one? Yep. 
-Check back later for more - Taylor's Series is running through the presses!
+
 </p>
-</div>
-<pre>
+  pre>
 
 
 
 
 </pre>
+        <pre>
+
+
+
+  </pre>
+  Keep scrolling to continue!
+</div>
+
     </div>
   </div>
 </div>
+
 <script src="keepScroll.js"></script>
+  <script>
+    function getDocHeight() {
+    var D = document;
+    return Math.max(
+        D.body.scrollHeight, D.documentElement.scrollHeight,
+        D.body.offsetHeight, D.documentElement.offsetHeight,
+        D.body.clientHeight, D.documentElement.clientHeight
+    );
+}
+$(window).scroll(function() {
+   if($(window).scrollTop() + window.innerHeight >= $(document).height()+25) {
+       document.location="../byg";
+   }
+});
+
+
+$(window).scroll(function() {
+   if($(window).scrollTop()  <= -15) {
+       document.location="../practice";
+   }
+});
+</script>
 </div>
 </body></html>
