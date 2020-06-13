@@ -57,7 +57,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a class="nav-link" href="../">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active " href="../">Limits</a>
+          <a class="nav-link  " href="../">Limits</a>
             <nav class="nav nav-pills flex-column">
         <li class="nav-item">
           <a class="nav-link ml-3 my-1 active" href="">Definition</a>
@@ -87,6 +87,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="col-sm-8">
+          <!--mathjax-->
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$']]
+  }
+};
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       <div class="container">
       <h2>Formal Definition</h2><p style="white-space: pre-wrap;">Aside from the intuitive definition we just saw, there is also a formal definition of a limit, known as the delta-epsilon definition. Try dragging the $\delta$ (delta) slider below, and notice what happens to the rest of the graph.
         <iframe src="https://www.desmos.com/calculator/zn8cexcigg?embed" width="500px" height="500px" style="border: 1px solid #ccc" id="graph1" frameborder=0></iframe>

@@ -33,17 +33,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="../../../header.css">
   <link rel="stylesheet" href="../../../style.css">
 
-    <!--mathjax-->
-  <script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example3" data-offset="0">
@@ -65,7 +55,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a class="nav-link" href="../../">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="../">Limits</a>
+          <a class="nav-link " href="../">Limits</a>
             <nav class="nav nav-pills flex-column">
         <li class="nav-item">
         <div class="nav-link ml-3 my-1" onclick="document.location='../definition'" style="cursor: pointer;"><a href="definition" class="text-success">Definition</a><a style="float:right;vertical-align:center" class="badge text-light badge-success">New</a></div>
@@ -95,7 +85,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="col-sm-8">
-      <div class="container" >
+      <div class="container content" >
+              <!--mathjax-->
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       <h2>Before you go</h2>
           <p>Before you go off to derivatives (oh, how much fun) there's a few more things you should know.</p>
           <p> If you skip this, and I know it's tempting, you'll be confused later. I'll reference this page later, so you better read it now instead of coming back to it when you've already started derivatives.</p>
@@ -122,13 +123,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li id="li3">
                   <p>$$\lim_{x\to 0}\frac{\sin{x}}{x}=1$$</p>
               </li>
+              <li id="li4">
+                  <p>$$\lim_{x\to 0}\frac{\cos{x}-1}{x}=0$$</p>
+              </li>
+              <li id="li5">
+                  <p>$$\lim_{x\to 0}(1+x)^{\frac{1}{x}}=e$$</p>
+              </li>
           </ol>
-          <p class="lead">Can you use <code>LI1</code> to prove <code>LI2</code>?</p>
+          <p class="lead">Can you use <code>LI1</code> to prove <code>LI2</code>? How about <code>LI3</code> to prove <code>LI4</code>?</p>
           <p> (Hint: Yes you can, now do it!)</p>
 
 </div>
         <pre>
-
 
 
         </pre>
@@ -152,7 +158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
-<div style="height:10vh"></div>
+<div style="height:100vh"></div>
 <script src="keepScroll.js"></script>
 
 </body>

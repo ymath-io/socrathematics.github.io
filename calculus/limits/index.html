@@ -33,17 +33,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="../../header.css">
   <link rel="stylesheet" href="../../style.css">
 
-    <!--mathjax-->
-  <script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example3" data-offset="0">
@@ -68,12 +58,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a class="nav-link active" href="">Limits</a>
             <nav class="nav nav-pills flex-column">
         <li class="nav-item">
-        <div class="nav-link ml-3 my-1" onclick="document.location='definition'" style="cursor: pointer;"><a href="definition" class="text-success">Definition</a><a style="float:right;vertical-align:center" class="badge text-light badge-success">New</a></div>
+        <a class="nav-link ml-3 my-1 text-success" href="definition" >Definition</a>
         </li>
         <li class="nav-item">
-          <div class="nav-link ml-3 my-1" onclick="document.location='practice'" style="cursor: pointer;"><a class="text-success" href="practice">Practice</a><a style="float:right;vertical-align:center" class="badge text-light badge-success">New</a></div>
+          <a class="nav-link ml-3 my-1 text-success" href="practice">Practice</a>
         </li>
-          <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link ml-3 my-1 " href="applications">Applications</a>
         </li>
         <li class="nav-item">
@@ -95,6 +85,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="col-sm-8">
+      <div class="content">
+          <!--mathjax-->
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       <div class="container" >
       <h2>What is a limit?</h2>
         <p>Limits are the basis for almost everything in Calculus. By the time you get to derivatives, you'll be doing limits and you won't even know it.</p>
@@ -109,7 +111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p>$$f(0.9) = 1.9$$$$f(1.1)=2.1$$</p>
   <p>In fact, the function is defined for any $x=1\pm\delta$, where $\delta \neq 0$.</p>
   <p>In this lesson, we will be considering the case when $\delta$ is very close, but not equal to 0.</p>
-  <iframe src="https://www.desmos.com/calculator/ti0fuxp3s6?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0 id="graph1"></iframe>
+  <iframe src="https://www.desmos.com/calculator/ti0fuxp3s6?embed" class="graph" style="border: 1px solid #ccc" frameborder=0 id="graph1"></iframe>
   <button type="reset" onclick="document.getElementById('graph1').src = document.getElementById('graph1').src" class="btn btn-outline-success" style="width:500px">Reset</button>
   <p>Try dragging the black point to $x=1$ in the above graph, and you will notice that the point disappears.</p>
   <p>However, notice that it "looks like" $$f(1)=2.$$</p>
@@ -145,6 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p>$$\lim_{x\to 2} \frac{x^2-5x+6}{x-2} = -1.$$</p>
 
 </div>
+      </div>
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <li class="page-item">

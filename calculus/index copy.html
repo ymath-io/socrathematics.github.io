@@ -32,6 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="../fonts.css">
   <link rel="stylesheet" href="../header.css">
   <link rel="stylesheet" href="../style.css">
+<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
     <!--mathjax-->
   <script>
 MathJax = {
@@ -64,7 +65,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"  href="limits" style="text-decoration:none;" >Limits</a>
+          <div class="nav-link" ><a href="limits" style="text-decoration:none;" class="text-success">Limits </a><a style="float:right;vertical-align:center" class="badge text-light badge-success">2</a></div>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="derivatives">Derivatives</a>
@@ -81,9 +82,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="col-sm-8" id="bod2">
-      <div>
-      <h2 class="">CALCULUS</h2>
-      </div>
+      <div class="content">
+      <h2 class="bg-white">CALCULUS</h2>
+
       <p>So you want to learn Calculus? Well, this is definitely a try-this-at-home type of thing to do. But first, you're going to need the following materials:</p>
         <ul>
             <li>
@@ -102,13 +103,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-
-
-
-
-
-
 </pre>
+      </div>
  <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <li class="page-item disabled">
@@ -127,10 +123,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </ul>
      </nav>
     </div>
+
   </div>
+  <div class="text-center"><button class="btn btn-info isb">Load next page</button>
+  <br><br><br></div>
+
 </div>
-
-
+<script>
+var nextPages = [
+  'limits/index',
+  'limits/definition/index',
+  'limits/practice/index',
+  'limits/applications/index',
+  'limits/byg/index',
+];
+  $('#bod2').infiniteScroll({
+  // options
+  path: function(){return nextPages[ this.loadCount ] + '.html';},
+  append: ".content",
+  history: false,
+  hideNav: ".pagination",
+  button: ".isb",
+  scrollThreshold: false,
+  status: '.page-load-status',
+  history: 'push'
+});
+</script>
 
 </body>
+
 </html>

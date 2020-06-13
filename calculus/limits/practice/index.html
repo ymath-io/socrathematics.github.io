@@ -28,17 +28,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="../../../header.css">
   <link rel="stylesheet" href="../../../style.css">
 
-    <!--mathjax-->
-  <script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\(', '\)']]
-  }
-};
-</script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head><body onload="keep()"><!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -53,7 +42,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a class="nav-link" href="../../">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="../">Limits</a>
+          <a class="nav-link " href="../">Limits</a>
             <nav class="nav nav-pills flex-column">
         <li class="nav-item">
           <a class="nav-link ml-3 my-1" href="../definition">Definition</a>
@@ -83,7 +72,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="col-sm-8">
-      <div class="container">
+      <div class="container content">
+            <!--mathjax-->
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  }
+};
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       <h2>Practice with Limits</h2><p style="white-space: pre-wrap;">Here are some problems to practice what you have learned! If you need a hint on any of them, there's a few for each problem. 
 1. $$\lim_{x\to 0} x+1$$</p>
 
@@ -112,7 +112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-        <input type="text"  id="txt_1" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm" ></input>
+        <input type="text"  id="txt_1" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm" >
 
         <pre></pre>
         <p><a class="btn btn-success text-light" id="button1" data-toggle="collapse" href="#sec1" aria-expanded="false" aria-controls="Collapse">Continue</a></p>
