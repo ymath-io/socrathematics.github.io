@@ -27,8 +27,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="../../../fonts.css">
   <link rel="stylesheet" href="../../../header.css">
   <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../mathquill-0.10.1/mathquill.css"/>
+<script src="../../../mathquill-0.10.1/mathquill.js"></script>
+<script>
+var MQ = MathQuill.getInterface(2);
+</script>
+<!--mathjax-->
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']]
+  }
+};
+</script>
 
-</head><body onload="keep()"><!-- Google Tag Manager (noscript) -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head><body onload=""><!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -39,10 +54,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="col-sm-3">
       <h3>Calculus</h3><p>Topics within Calculus</p><nav class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link" href="../../">Home</a>
+          <a class="nav-link my-1" href="../../">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="../">Limits</a>
+          <a class="nav-link my-1" href="../">Limits</a>
             <nav class="nav nav-pills flex-column">
         <li class="nav-item">
           <a class="nav-link ml-3 my-1" href="../definition">Definition</a>
@@ -59,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </nav>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../../derivatives">Derivatives</a>
+          <a class="nav-link my-1" href="../../derivatives">Derivatives</a>
         </li>
           <li class="nav-item">
           <a class="nav-link disabled" href="../../integrals">Integrals</a>
@@ -72,222 +87,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="col-sm-8">
-      <div class="container content">
-            <!--mathjax-->
-  <script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\(', '\)']]
-  }
-};
-</script>
+        Here are some problems to practice what you have learned! If you need a hint on any of them, there's a few for each problem.
+      <ol>
+        <li class="card-body card no-def my-3 pop">
+          <p>$\displaystyle{\lim_{x\to 0} x+1 = }$  <span id="answer1" class="form-control-sm answerb"></span><svg id="tu1" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+</svg></p>
+            <!--Hints--><details><summary class="btn btn-outline-success btn-sm mt-2">Hint 1</summary>  Remember that our ultimate goal is to substitute $x$ for $0$ when we can. Is there anything preventing us from computing $x+1$ when $x=0$?</details>
+            <!--Solution--><details><summary class="btn btn-sm btn-outline-success mt-2">Show/Hide Solution</summary>
+            We can plug in $x=0$ to the function, and see that $$\lim_{x\to 0} x+1=0+1=1$$.</p>
+            </details>
+        </li>
+        <!--Question Two-->
+        <li class="card card-body no-def my-3 pop">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      <h2>Practice with Limits</h2><p style="white-space: pre-wrap;">Here are some problems to practice what you have learned! If you need a hint on any of them, there's a few for each problem. 
-1. $$\lim_{x\to 0} x+1$$</p>
-
-        <div class="text-center">   <!-- Button trigger modal -->
-<button type="button" class="btn btn-success col-6 my-1 " data-toggle="modal" data-target="#exampleModal12">
-  Hint
-</button></div>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel12" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel12">Hint One</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Remember that our ultimate goal is to substitute $x$ for $0$ when we can. Is there anything preventing us from computing $x+1$ when $x=0$?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-        <input type="text"  id="txt_1" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm" >
-
-        <pre></pre>
-        <p><a class="btn btn-success text-light" id="button1" data-toggle="collapse" href="#sec1" aria-expanded="false" aria-controls="Collapse">Continue</a></p>
-<div class="collapse" id="sec1">
-            <!-- Button trigger modal -->
-<button type="button" class="btn btn-success center col-6" data-toggle="modal" data-target="#exampleModal13">Solution to #1</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel13" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel13">Solution</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-For this problem, we can plug in $x=0$ to the function, and see that $$\lim_{x\to 0} x+1=0+1=1$$.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div><pre>
-</pre>
-
-  <p style="white-space: pre-wrap;">
-2. $$\lim_{x \to 2} \frac{x^2 -4}{x-2}$$ </p>
-
- <div class="text-center">   <!-- Button trigger modal -->
-<button type="button" class="btn btn-success col-6 my-1 " data-toggle="modal" data-target="#exampleModal">
-  Hint 1
-</button></div>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Hint One</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Always, when computing a limit, ask yourself: "Is there anything preventing me from just plugging in the value to the function?"
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="text-center">
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-success col-6 my-1" data-toggle="modal" data-target="#exampleModal2">Hint 2</button>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel2">Hint Two</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        When you find what's preventing you from computing $\frac{x^2 -4}{x-2}$ when $x=2$, try to eliminate it.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<pre>
-</pre>
-  <input type="text" id="txt_2" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
-  <pre></pre>
-<p><a class="btn btn-success text-light" id="button2" data-toggle="collapse" href="#sec2" aria-expanded="false" aria-controls="Collapse">Continue</a></p>
-</div>
-<div class="collapse" id="sec2">
-          <!-- Button trigger modal -->
-<button type="button" class="btn btn-success col-6 center" data-toggle="modal" data-target="#exampleModal3">Solution to #2</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel3">Solution</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        We can't compute $\frac{x^2 -4}{x-2}$ when $x=2$ because then we would be dividing by $0$. However, remember that  $$f(x)=\frac{x^2 -4}{x-2}= \frac{(x -2)(x+2)}{x-2}.$$ Remember that we are not finding $f(2)$, we are finding the <i>limit</i> of $f(x)$ as $x$ <i>approaches</i> $2$. So, we can divide the top and bottom of the fraction by $(x-2)$ because we know $(x-2)$ is not equal to 0, but rather very, very, close.
+    <p>$\displaystyle{\lim_{x \to 2} \frac{x^2 -4}{x-2}}= $  <span id="answer2" class="form-control-sm answerb"></span><svg id="tu2" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+</svg></p>
+            <!--Hint1--><details><summary class="btn btn-outline-success btn-sm mt-2">Hint 1</summary>  Always, when computing a limit, ask yourself: "Is there anything preventing me from just plugging in the value to the function?"</details>
+            <!--Hint2--><details><summary class="btn btn-outline-success btn-sm mt-2">Hint 2</summary>  When you find what's preventing you from computing $\frac{x^2 -4}{x-2}$ when $x=2$, try to eliminate it.</details>
+            <!--Solution--><details><summary class="btn btn-sm btn-outline-success mt-2">Show/Hide Solution</summary>
+                We can't compute $\frac{x^2 -4}{x-2}$ when $x=2$ because then we would be dividing by $0$. However, remember that  $$f(x)=\frac{x^2 -4}{x-2}= \frac{(x -2)(x+2)}{x-2}.$$ Remember that we are not finding $f(2)$, we are finding the <i>limit</i> of $f(x)$ as $x$ <i>approaches</i> $2$. So, we can divide the top and bottom of the fraction by $(x-2)$ because we know $(x-2)$ is not equal to 0, but rather very, very, close.
 Hence, our answer is $x+2=2+2=4$.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div><pre>
-</pre>
-        3. $$\lim_{x\to 0} \frac{1}{x}$$
 
-  <div class="text-center">
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-success col-6 my-1" data-toggle="modal" data-target="#exampleModal31">Hint 1</button>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal31" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel31" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel31">Hint Two</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        A limit, as you might remember, is a value that a function approaches as it nears the specified destination.  Try graphing this function. What do you <i>think</i> the limit is?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+        </details>
+        </li>
+        <!--Question 3-->
+        <li class="card card-body no-def my-3 pop">
 
-  <div class="text-center">
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-success col-6 my-1" data-toggle="modal" data-target="#exampleModal32">Hint 2</button>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal32" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel32" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel32">Hint Two</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-Limits sometimes don't exist. For example, the limit of $g(x)=x$ as $x$ approaches $\infty$ doesn't exist, because there's really no way around <i>not</i> getting $\infty$ as your answer, which isn't an acceptable one. In this case, we say the limit doesn't exist. You may have heard the phrase in some video. Now you know what it means.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+    <p>$\displaystyle{\lim_{x\to 0} \frac{1}{x}}= $  <span id="answer3" class="form-control-sm answerb"></span><svg id="tu3" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd"
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+</svg></p>
+            <!--Hints--><details><summary class="btn btn-outline-success btn-sm mt-2">Hint 1</summary> A limit, as you might remember, is a value that a function approaches as it nears the specified destination.  Try graphing this function. What do you <i>think</i> the limit is?</details>
+            <!--Hints--><details><summary class="btn btn-outline-success btn-sm mt-2">Hint 2</summary>Limits sometimes don't exist. For example, the limit of $g(x)=x$ as $x$ approaches $\infty$ doesn't exist, because there's really no way around <i>not</i> getting $\infty$ as your answer, which isn't an acceptable one. In this case, we say the limit doesn't exist. You may have heard the phrase in some video. Now you know what it means.</details>
 
-  <input type="text" id="txt_3" onkeyup="saveValue(this);" placeholder="Type your answer here" class="form-control form-control-sm">
-  <pre></pre>
-<p><a class="btn btn-success text-light" id="button3" data-toggle="collapse" href="#sec3" aria-expanded="false" aria-controls="Collapse">Continue</a></p>
-</div>
-
-<div class="collapse" id="sec3">
-
-<p>
-Solution:
-</p><iframe src="https://www.desmos.com/calculator/mqxmgwj45f?embed" width="500px" height="500px" style="border: 1px solid #ccc" class="graph" frameborder="0"></iframe><p>
+            <!--Solution--><details><summary class="btn btn-sm btn-outline-success mt-2">Show/Hide Solution</summary>
+                <br><iframe src="https://www.desmos.com/calculator/mqxmgwj45f?embed" width="500px" height="500px" style="border: 1px solid #ccc" class="graph" frameborder="0"></iframe><p>
 In the graph above, you see that the function just goes on and on and on... it doesn't stop! Who knows where it lands up at $0$?? Is it positive or negative?
 We say that the limit doesn't exist because as $x$ approaches $0$ from one side, it goes down, quite in disagreement with the other side.
-Additionally, there's nothing smart we can think of to get around it - at least I can't! 
-Because the graph clearly tells us that the limit does not exist, this is what we live with ;). 
-Note that this is a quite common case. Are there any other limits you can think of that don't exist?</p> </div>
-      </div>
+Additionally, there's nothing smart we can think of to get around it - at least I can't!
+Because the graph clearly tells us that the limit does not exist, this is what we live with ;).
+Note that this is a quite common case. Are there any other limits you can think of that don't exist?</p>
+        </details>
+        </li>
+
+    </ol>
       <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <li class="page-item">
@@ -308,6 +155,6 @@ Note that this is a quite common case. Are there any other limits you can think 
     </div>
   </div>
 </div>
-<script src="keepScroll.js"></script>
 
+<script src="check.js"></script>
 </body></html>

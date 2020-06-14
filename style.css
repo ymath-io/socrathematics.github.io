@@ -172,19 +172,36 @@ box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
 }
 
 .answerb{
-border-color:var(--light);
-background-color:var(--light);
-border-radius:0.25rem;
-border: 1px solid rgba(0,0,0,.125);
-outline:none;
+border-color:var(--light) !important;
+background-color:var(--light) !important;
+border-radius:0.25rem !important;
+border: 1px solid rgba(0,0,0,.125) !important;
+outline:none !important;
 height:initial
 }
 
 .mq-editable-field.mq-focused,
 .mq-math-mode .mq-editable-field.mq-focused {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  border-color: rgba(0,0,0,.125);
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  border-color: rgba(0,0,0,.125) !important;
+  border-radius: 0.25rem !important;
+}
+
+.pop:has(> .mq-focused){
+box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
+
   border-radius: 0.25rem;
+}
+
+.nav-pills .nav-link:hover:not(.active){
+box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
+margin-bottom: .25rem!important;
+margin-top: .25rem!important;
+  border-radius: 0.25rem;}
+
+.nav-pills .nav-link:not(.active){
+margin-bottom: .25rem!important;
+margin-top: .25rem!important;
 }
