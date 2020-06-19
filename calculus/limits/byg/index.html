@@ -132,7 +132,7 @@ MathJax = {
           </ol>
           <p class="lead">Can you use <code>LI1</code> to prove <code>LI2</code>? How about <code>LI3</code> to prove <code>LI4</code>?</p>
           <p> (Hint: Yes you can, now do it!)</p>
-
+<p class="text-center"><button id="mcb" type="button" class="btn btn-dark auth">Mark as completed</button></p>
 </div>
         <pre>
 
@@ -177,4 +177,35 @@ $(window).scroll(function() {
    }
 });
 </script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA6bA3PlHiFGHB1CIWobuBUsEa9IQ7AL3I",
+    authDomain: "socrathematics.firebaseapp.com",
+    databaseURL: "https://socrathematics.firebaseio.com",
+    projectId: "socrathematics",
+    appId: "1:809638401187:web:9608adf73f25ced6d45b16",
+    measurementId: "G-2QEQZPCEZR"
+
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth=firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script type="text/javascript" src="../../../auth/auth.js"></script>
+<script src="/mcb.js"></script>
+<script defer>toggleComplete('calculus','limits.byg');</script>
 </html>

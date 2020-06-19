@@ -152,7 +152,8 @@ $$\lim_{x\to 0}\frac{\tan{x}}{x} =\lim_{x\to 0}\frac{\sin{x}}{x} \cdot \frac{1}{
 One times one is... one? Yep. 
 
 </p>
-  pre>
+  <p class="text-center"><button id="mcb" type="button" class="btn btn-dark auth">Mark as complete</button></p>
+  <pre>
 
 
 
@@ -163,7 +164,7 @@ One times one is... one? Yep.
 
 
   </pre>
-  Keep scrolling to continue!
+
 </div>
 
     </div>
@@ -172,7 +173,7 @@ One times one is... one? Yep.
 
 <script src="keepScroll.js"></script>
   <script>
-    function getDocHeight() {
+    /*function getDocHeight() {
     var D = document;
     return Math.max(
         D.body.scrollHeight, D.documentElement.scrollHeight,
@@ -191,7 +192,38 @@ $(window).scroll(function() {
    if($(window).scrollTop()  <= -15) {
        document.location="../practice";
    }
-});
+});*/
 </script>
 </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA6bA3PlHiFGHB1CIWobuBUsEa9IQ7AL3I",
+    authDomain: "socrathematics.firebaseapp.com",
+    databaseURL: "https://socrathematics.firebaseio.com",
+    projectId: "socrathematics",
+    appId: "1:809638401187:web:9608adf73f25ced6d45b16",
+    measurementId: "G-2QEQZPCEZR"
+
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth=firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script type="text/javascript" src="../../../auth/auth.js"></script>
+<script src="/mcb.js"></script>
+<script defer>toggleComplete('calculus','limits.applications');</script>
 </body></html>

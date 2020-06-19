@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-white" style="">
+<html lang="en"  style="">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
@@ -144,8 +144,8 @@ MathJax = {
   <p>As we said before, it is okay to divide by non-constants in limits. So, we can say</p>
   <p>$$\lim_{x\to 2} \frac{x^2-5x+6}{x-2} = \lim_{x\to 2} x-3.$$</p>
   <p>We can just plug in $x=2$ here to find </p>
-  <p>$$\lim_{x\to 2} \frac{x^2-5x+6}{x-2} = -1.$$</p>
-
+  <p>$$\lim_{x\to 2} \frac{x^2-5x+6}{x-2} = -1.$$</p><br><br><br>
+  <p class="text-center"><button id="mcb" type="button" class="btn btn-dark auth">Mark as completed</button></p>
 </div>
       </div>
 <nav aria-label="Page navigation example">
@@ -169,6 +169,36 @@ MathJax = {
   </div>
 </div>
 <script src="keepScroll.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA6bA3PlHiFGHB1CIWobuBUsEa9IQ7AL3I",
+    authDomain: "socrathematics.firebaseapp.com",
+    databaseURL: "https://socrathematics.firebaseio.com",
+    projectId: "socrathematics",
+    appId: "1:809638401187:web:9608adf73f25ced6d45b16",
+    measurementId: "G-2QEQZPCEZR"
+
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth=firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script type="text/javascript" src="../../auth/auth.js"></script>
+<script src="/mcb.js"></script>
+<script defer>toggleComplete('calculus','limits.index');</script>
 </body>
 </html>

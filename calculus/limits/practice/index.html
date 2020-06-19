@@ -135,6 +135,7 @@ Note that this is a quite common case. Are there any other limits you can think 
         </li>
 
     </ol>
+
       <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <li class="page-item">
@@ -156,5 +157,37 @@ Note that this is a quite common case. Are there any other limits you can think 
   </div>
 </div>
 
-<script src="check.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA6bA3PlHiFGHB1CIWobuBUsEa9IQ7AL3I",
+    authDomain: "socrathematics.firebaseapp.com",
+    databaseURL: "https://socrathematics.firebaseio.com",
+    projectId: "socrathematics",
+    appId: "1:809638401187:web:9608adf73f25ced6d45b16",
+    measurementId: "G-2QEQZPCEZR"
+
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth=firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script type="text/javascript" src="../../../auth/auth.js"></script>
+
+<script  src="check.js"></script>
+
 </body></html>

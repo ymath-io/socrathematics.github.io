@@ -29,20 +29,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
   <link rel="icon" href="../favicon.png">
-  <link rel="stylesheet" href="../fonts.css">
-  <link rel="stylesheet" href="../header.css">
-  <link rel="stylesheet" href="../style.css">
-<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.js"></script>
-    <!--mathjax-->
-  <script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']]
-  }
-};
-</script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
 </head>
 
 <body id="bod">
@@ -125,30 +114,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
   </div>
-  <div class="text-center"><button class="btn btn-info isb">Load next page</button>
-  <br><br><br></div>
 
 </div>
-<script>
-var nextPages = [
-  'limits/index',
-  'limits/definition/index',
-  'limits/practice/index',
-  'limits/applications/index',
-  'limits/byg/index',
-];
-  $('#bod2').infiniteScroll({
-  // options
-  path: function(){return nextPages[ this.loadCount ] + '.html';},
-  append: ".content",
-  history: false,
-  hideNav: ".pagination",
-  button: ".isb",
-  scrollThreshold: false,
-  status: '.page-load-status',
-  history: 'push'
-});
-</script>
+
 
 </body>
 

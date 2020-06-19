@@ -87,17 +87,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="col-sm-8">
-          <!--mathjax-->
-  <script>
-MathJax = {
-  tex: {
-    inlineMath: [['$', '$']]
-  }
-};
-</script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       <div class="container">
       <h2>Formal Definition</h2><p style="white-space: pre-wrap;">Aside from the intuitive definition we just saw, there is also a formal definition of a limit, known as the delta-epsilon definition. Try dragging the $\delta$ (delta) slider below, and notice what happens to the rest of the graph.
         <iframe src="https://www.desmos.com/calculator/zn8cexcigg?embed" width="500px" height="500px" style="border: 1px solid #ccc" id="graph1" frameborder=0></iframe>
@@ -139,7 +128,9 @@ Would our method of finding the limit work in every situation? Why or why not? C
 <div class="card container alert-info pt-3">
 <h5 class="card-title"> The Delta-Epsilon Definition</h5>
 <p class="card-body"> We say that $$\lim_{x\to c} f(x)=L$$ if, for every value $\epsilon&gt;0$ there is a  $\delta&gt;0$ such that $$0&lt;|x-c|&lt;\delta$$ and $$0&lt;|f(x)-L|&lt;\epsilon.$$
-</p></div><p> It will likely take a while to wrap your head around that, but try to play around with the definition and some of the problems on the next page, and you'll get the hang of it. See you there!</p> </div>
+</p></div><p> It will likely take a while to wrap your head around that, but try to play around with the definition and some of the problems on the next page, and you'll get the hang of it. See you there!</p>
+<p class="text-center"><button id="mcb" type="button" class="btn btn-dark auth">Mark as complete</button></p>
+</div>
       </div>
       <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
@@ -168,5 +159,35 @@ Would our method of finding the limit work in every situation? Why or why not? C
 
 
 </pre>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA6bA3PlHiFGHB1CIWobuBUsEa9IQ7AL3I",
+    authDomain: "socrathematics.firebaseapp.com",
+    databaseURL: "https://socrathematics.firebaseio.com",
+    projectId: "socrathematics",
+    appId: "1:809638401187:web:9608adf73f25ced6d45b16",
+    measurementId: "G-2QEQZPCEZR"
+
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth=firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script type="text/javascript" src="../../../auth/auth.js"></script>
+<script src="/mcb.js"></script>
+<script defer>toggleComplete('calculus','limits.definition');</script>
 </body></html>

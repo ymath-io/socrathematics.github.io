@@ -16,7 +16,7 @@ const config = {
 };
 
 //listing the courses
-var db = firebase.database();
+var fdb = firebase.database();
 var ref = firebase.database().ref();
 var data = "";
 ref.on("value", function(snapshot) {
@@ -94,7 +94,7 @@ ref.on("value", function(snapshot) {
 
 function rejC (id,isRej) {
         //update["/courseRequests/"+id+"/Rejected"] = true;
-        var dbloc = db.ref("courseRequests/"+id)
+        var dbloc = fdb.ref("courseRequests/"+id)
         dbloc.update({"Rejected":!isRej});
         if (!isRej){
         dbloc.update({"Done":false});
@@ -106,7 +106,7 @@ function rejC (id,isRej) {
 
 function donC (id,isDon) {
         //update["/courseRequests/"+id+"/Rejected"] = true;
-        var dbloc = db.ref("courseRequests/"+id)
+        var dbloc = fdb.ref("courseRequests/"+id)
         dbloc.update({"Done":!isDon});
         if (!isDon){
         dbloc.update({"Rejected":false});

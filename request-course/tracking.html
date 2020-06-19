@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="../fonts.css">
   <link rel="stylesheet" href="../header.css">
   <link rel="stylesheet" href="../style.css">
-<script type="text/javascript" src="dreamerslab-jquery.actual-d38580c/jquery.actual.js"></script>
+<script type="text/javascript" src="../dreamerslab-jquery.actual-d38580c/jquery.actual.js"></script>
 <script async="" defer="" src="https://survey.g.doubleclick.net/async_survey?site=to4ks7vefdptsz3qdjfqaqvx3m"></script>
 <style>
   #crCardsRej .red-btn:hover .red-icon{
@@ -118,13 +118,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </pre>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
 
+<script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -132,15 +134,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     authDomain: "socrathematics.firebaseapp.com",
     databaseURL: "https://socrathematics.firebaseio.com",
     projectId: "socrathematics",
-    storageBucket: "socrathematics.appspot.com",
-    messagingSenderId: "809638401187",
     appId: "1:809638401187:web:9608adf73f25ced6d45b16",
     measurementId: "G-2QEQZPCEZR"
+
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+
+  const auth=firebase.auth();
+  const db = firebase.firestore();
 </script>
+<script type="text/javascript" src="../auth/auth.js"></script>
 <script type="text/javascript" src="courseLister.js"></script>
 </body>
 </html>
