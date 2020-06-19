@@ -205,3 +205,22 @@ margin-top: .25rem!important;
 margin-bottom: .25rem!important;
 margin-top: .25rem!important;
 }
+
+.dropdown-item:hover{
+background:var(--success);
+color:var(--light) !important;}
+
+html {
+
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+  -ms-scroll-snap-points-y: repeat(100vh);
+      scroll-snap-points-y: repeat(100vh);
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+.section {
+  scroll-snap-align: start;
+
+}
+
