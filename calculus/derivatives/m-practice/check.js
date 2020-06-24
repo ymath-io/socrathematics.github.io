@@ -11,7 +11,7 @@ function initfield(num,numname,answers){
      if (user) {
        // User is signed in.
        dref = db.doc("users/"+user.uid+"/progress/calculus");
-       eval("dref.update({'derivatives.practice."+numname+"' : correct})")
+       eval("dref.update({'derivatives.mpractice."+numname+"' : correct})")
         .then(function() {
             //console.log("Document successfully updated!");
         })
@@ -37,7 +37,7 @@ function initfield(num,numname,answers){
        dref = db.doc("users/"+user.uid+"/progress/calculus");
        dref.get().then(function(doc) {
            if (doc.exists) {
-               d = doc.data().derivatives.practice;
+               d = doc.data().derivatives.mpractice;
                if (d[numname]){checka(answers[0],num,answers);
                //math jax type into box
                answerMathField.latex(answers[0]);
@@ -55,17 +55,17 @@ function initfield(num,numname,answers){
      }
 
 });
-
+return answerMathField;
 }
 
     //number one
-initfield("1","one",["\\cos x","\\cos\\ x"]);
+f1 = initfield("1","one",["\\sec^2x","\\left(\\sec x\\right)^2"]);
     //number two
-initfield("2","two",["-\\sin x","-\\sin\\ x"]);
+f2 = initfield("2","two",["f\\left(x\\right)+f'\\left(x\\right)","f'\\left(x\\right)+f\\left(x\\right)"]);
     //number three
-initfield("3","three",["e^x"]);
+f3 = initfield("3","three",["\\sec x\\tan x","\\tan x\\sec x","\\sec x\\cdot\\tan x","\\tan x\\cdot\\sec x"]);
     //number four
-initfield("4","four",["\\frac{1}{x}"]);
+f4 = initfield("4","four",["-\\csc x\\cot x","-\\cot x\\csc x","-\\csc x\\cdot\\cot x","-\\cot x\\cdot\\csc x"]);
 
 
 //to check the answers!
