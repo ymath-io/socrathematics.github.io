@@ -7,3 +7,4 @@ Currently the site has courses on trigonometry and calculus. Modular Arithmetic 
 | Date   |      Change    | 
 |---|:---|
 |June 17, 2020 | Added auth dropdown and scripting to every page. | 
+|June 24, 2020 | Added progress-saving functionality to accounts, and FAQ page. |
