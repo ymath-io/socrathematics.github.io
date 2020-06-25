@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163408633-2');
+</script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PF58PDC');</script>
+<!-- End Google Tag Manager -->
         <meta charset="UTF-8">
         <title>SOCRATHEMATICS</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,7 +32,11 @@
 
 
     <body class="bg-light pb-0 mb-0" >
-    <div class="">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="section">
     <div class="container-fluid text-center bg-transparent text-light masthead " style="min-height:93vh">
     <h1 class="mastTitle " ><a href="/" style="text-decoration:none;color:white;"><b>SOCRATHEMATICS</b></a></h1>
   <p class="mastTitle-2" ><b>Learn math. Effortlessly.</b></p>
@@ -158,9 +176,13 @@
         <div class="modal-body">
             <p>You are logged in as <a id="mam-email">(error fetching email)</a>.</p>
             <div class="form-group form-row">
-                <label for="mam-name" class="col-form-label col-sm-2">Name</label>
+                <label for="mam-name" class="col-form-label col-sm-2"><b>Name</b></label>
                 <input id="mam-name" class="form-control col-sm-10">
+
             </div>
+            <h6>Danger Zone</h6>
+            <hr>
+            <button class="btn btn-danger" id="madb">Delete my Account</button>
       </div>
       </div>
       <div class="modal-footer">
@@ -193,7 +215,7 @@
   </div>
 </div>
 
-    <div class="jumbotron bg-light" id="frame1" style="min-height:100vh;">
+    <div class="jumbotron bg-light section" id="frame1" style="min-height:100vh;">
     <br><h1>Learn what you want</h1><br>
         <div class="container bg-light" style="margin-top:30px; ">
   <div class="row">
@@ -243,7 +265,12 @@
     </div>
 
 </div>
-    
+    <!--<div id="frame2" class="jumbotron section d-block bg-light text-dark pt-3 pb-0 mb-0" style="min-height:100vh">
+                    <br><br><br><br><h1>At your own pace</h1>
+    </div>
+    <div class="jumbotron section d-block bg-light text-dark pt-3 pb-0 mt-0" style="min-height:100vh">
+                    <br><br><br><br><h1>Wherever you go</brh1>
+    </div>-->
     </body>
 <script>
   $("#navbarNavAltMarkup").on('show.bs.collapse', function () {
@@ -267,7 +294,7 @@ $(function() {
 <script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
 <script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
 <script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
-
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-storage.js"></script>
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -285,6 +312,9 @@ $(function() {
 
   const auth=firebase.auth();
   const db = firebase.firestore();
+  // Get a reference to the storage service, which is used to create references in your storage bucket
+  var storage = firebase.storage();
+
 </script>
 <script type="text/javascript" src="/auth/auth.js"></script>
 <script type="text/javascript">
