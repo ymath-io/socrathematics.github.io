@@ -93,6 +93,123 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <a>Quick algebra skills, such as common polynomial expansions and factorizations</a>
           </li>
         </ul>
+      Here's what we'll be covering:
+      <ul class="timeline">
+         <li class="long">Limits
+         </li>
+        <ul class="timeline sub">
+           <li>Definition</li>
+          <li>Practice</li>
+          <li>Applications</li>
+          <li>Sequences and Identities</li>
+         </ul>
+
+        <li class="long1">Derivatives</li>
+        <ul class="timeline sub">
+          <li>Practice</li>
+          <li>Methods</li>
+          <li>$x^n$ Derivative</li>
+          <li>Chain Rule</li>
+          <li>More Practice</li>
+          <li class="text-muted">Physics</li>
+          <li class="text-muted">Reference Table</li>
+        </ul>
+        <li class="text-muted">Integrals</li>
+      </ul>
+      <style>
+        ul.timeline {
+  list-style: none;
+}
+.timeline li {
+  position: relative;
+  padding: 10px;
+}
+
+.timeline.sub li:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border:2px;
+  background: var(--light);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  border-color:var(--green) !important;
+  border-style: solid;
+  transform: translateY(-40%);
+  z-index:5
+}
+
+.timeline li:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+
+  background: var(--green);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  border-color:var(--green) !important;
+
+  transform: translateY(-40%);
+  z-index:5
+}
+
+.timeline li.text-muted:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border:2px;
+  background: var(--light);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  border-color:var(--secondary) !important;
+  border-style:solid;
+  transform: translateY(-40%);
+  z-index:5
+}
+
+.timeline li:not(:last-child):after {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: #28a745;
+  position: absolute;
+  left: -8px;
+  top: 50%;
+}
+
+.timeline li.long:not(:last-child):after {
+  content: '';
+  width: 2px;
+  height: 500%;
+  background: #28a745;
+  position: absolute;
+  left: -8px;
+  top: 50%;
+}
+.timeline li.text-muted:not(:last-child):after {
+  background: var(--secondary);
+}
+
+
+
+.timeline li.long1:not(:last-child):after {
+  content: '';
+  width: 2px;
+  height: 800%;
+  background: #28a745;
+  position: absolute;
+  left: -8px;
+  top: 50%;
+}
+
+
+      </style>
 <pre>
 
 

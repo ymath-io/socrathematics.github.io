@@ -80,39 +80,3 @@ else{document.getElementById("answer"+n).style.color="var(--dark)";
     return false
     }
     }
-/*
-firebase.auth().onAuthStateChanged(function(user) {
-
-
-     if (user) {
-       // User is signed in.
-       dref = db.doc("users/"+user.uid+"/progress/calculus");
-       dref.get().then(function(doc) {
-           if (doc.exists) {
-               d = doc.data().derivatives.practice;
-               if (d.one){checka("\\cos x","1",["\\cos x","\\cos\\ x"]);
-               //math jax type into box
-               answerMathField.latex("\\cos x");
-               }
-               if(d.two){checka("-\\sin x","2",["-\\sin x","-\\sin\\ x"]);
-               answerMathField2.latex("-\\sin x");
-               }
-               if(d.three){checka("e^x","3",["e^x"]);
-               answerMathField3.latex("e^x");
-               }
-               if(d.four){checka("\\frac{1}{x}","4",["\\frac{1}{x}"]);
-               answerMathField4.latex("\\frac{1}{x}");
-               }
-           } else {
-               // doc.data() will be undefined in this case
-               console.log("No such document!");
-           }
-       }).catch(function(error) {
-           console.log("Error getting document:", error);
-       });
-     } else {
-       // No user is signed in.
-       console.log("no user");
-     }
-
-});*/

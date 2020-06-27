@@ -38,7 +38,7 @@ function initfield(num,numname,answers){
        dref.get().then(function(doc) {
            if (doc.exists) {
                d = doc.data().derivatives.practice;
-               if (d[numname]){checka(answers[0],num,answers);
+               if (d[numname]){//checka(answers[0],num,answers);
                //math jax type into box
                answerMathField.latex(answers[0]);
                }

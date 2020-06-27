@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-white" style="">
+<html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,7 +17,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PF58PDC');</script>
 <!-- End Google Tag Manager -->
-  <title>Methods - Derivatives</title>
+  <title>X^n rule - Derivatives</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
@@ -47,16 +47,9 @@ var MQ = MathQuill.getInterface(2);
 					  {left: "$", right: "$", display: false}
 ]});'></script>
 </head>
-
-<body data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
+<body>
 <script src="../../../menu.js"></script>
-<script>activate("calc");</script>
-
+<script>activate("calc")</script>
 <div class="container" style="margin-top:30px">
   <div class="row">
     <div class="col-sm-3" >
@@ -79,14 +72,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li class="nav-item">
           <a class="nav-link ml-3 my-1  " href="../methods">Methods</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link ml-3 my-1 " href="../xn-der">$x^n$ Derivative</a>
+          <li class="nav-item">
+          <a class="nav-link ml-3 my-1  active" href="">$x^n$ Derivative</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link ml-3 my-1 active " href="">Chain Rule</a>
+          <a class="nav-link ml-3 my-1  " href="../chain-rule">Chain Rule</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link ml-3 my-1  " href="../m-practice">More Practice</a>
+          <a class="nav-link ml-3 my-1 " href="../m-practice">More Practice</a>
         </li>
           <li class="nav-item">
           <a class="nav-link ml-3 my-1 disabled " href="../physics">Physics</a>
@@ -107,78 +100,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="col-sm-9">
-      <div class="container" >
+<h2>The $x^n$ Derivative</h2>
+        <p>Now that you've learned some methods of differentiating complex functions, let's take a look at the following function: $$f\left(x\right)=x^n.$$ How could we find&nbsp; $f'\left(x\right)$ ?</p>
+        <p>It turns out that there's two ways to do this. We could use either induction or the binomial theorem (or some third method that you can email me about :)). I'm going to go through the induction strategy first, because it's a bit simpler. If you don't like induction or haven't learned it yet (who is teaching you Precalculus?) you can skip ahead to the other method.&nbsp;Otherwise, let's go!</p>
+        <p>In order to use induction, we need an inductive hypothesis and a few base cases to support it. We can easily compute the following base cases by hand: $$\frac{dx}{dx}=1x^0,$$  $$\frac{dx^2}{dx}=2x^1,$$ $$\text{and}$$ $$\frac{dx^3}{dx}=3x^2.$$ And so, we can hypothesize that $$\frac{dx^n}{dx}=nx^{n-1}$$is true for all $n\lt k$ (This is something we do a lot in induction).Then, we can try to find the derivative of&nbsp; $x^k.$ (Remember that the inductive hypothesis does not apply here, because $k\nless k.$ To do this, we can use the product rule: $$x^k=x\cdot x^{k-1}$$  $$\frac{dx^k}{dx}=\left(1\right)\left(x^{k-1}\right)+\left(x\right)\left(k-1\right)\left(x^{k-2}\right)$$  $$=x^{k-1}+\left(k-1\right)\left(x^{k-1}\right)$$  $$=kx^{k-1}.$$ And we are done! Because we've proved that the pattern begins, and we've also proved that it's possible to get from a base case to a non base case while holding the pattern, we've proved that: $$\frac{dx^n}{dx}=nx^{n-1}.$$ </p>
+        <h4>Binomial Theorem</h4>
+        <p>The proof of this derivative is more commonly done using the Binomial theorem, which says that: $$\left(x+y\right)^n=\binom{n}{0}x^ny^0+\binom{n}{1}x^{n-1}y^1+\cdots+\binom{n}{n-1}x^1y^{n-1}+\binom{n}{n}x^0y^n.$$ This, as you will see soon, turns out to be quite a useful definition for us.To calculate the derivative this time, we'll be using a first principle limits approach. So, let's set up our limit: $$\frac{dx^n}{dx}=\lim_{h\to0}\frac{\left(x+h\right)^n-x^n}{h}$$ Notice that I'm using $h$ instead of&nbsp; $\delta x.$ It's just a different name I gave it, and you can call it whatever you want. I generally like calling it&nbsp; $h,$ just because it's simpler to write.</p>
+        <p>Let's (partially) expand our binomial, using the binomial theorem: $$\lim_{h\to0}\frac{\binom{n}{0}x^n+\binom{n}{1}hx^{n-1}+h^2\left(\cdots\right)-x^n}{h}$$  $$=\lim_{h\to0}\frac{\binom{n}{1}hx^{n-1}+h^2\left(\cdots\right)}{h}$$  $$=\lim_{h\to0}\binom{n}{1}x^{n-1}+h\left(\cdots\right)$$ </p>
+        <p>Substituting&nbsp; $h=0,$  $$\frac{dx^n}{dx}=nx^{n-1}.$$ And we are done!</p>
+        <pre>
 
-          <h2>Chain Rule</h2>
-        <p>The Chain Rule is technically a method, but it's so important that it deserves its own section.</p>
-        <h4>What is the Chain Rule?</h4>
-        <p>Suppose that we have a function $f(g(x))$, and we want to differentiate it. How would we do it?</p>
-        <p>Remember that differentiation is the slope, which is $$\frac{\text{Change in }f(g(x))}{\text{Change in } x}=\frac{d f(g(x))}{d x}.$$</p>
-          <p>This isn't something we immediately know how to solve. What we do know how to solve is $$\frac{d~ f(n)}{d n}$$</p>
-          <p>What if $n$ was $g(x)$? Then our numerator would be $f(g(x))$:</p>
-          <p>$$\frac{d~f(g(x))}{d~g(x)}.$$</p>
-          <p>But, this isn't quite what we wanted - now the denominator doesn't match. No problem - we can multiply by the differentiation of $g(x)$:</p>
-          <p>$$\frac{d~f(g(x))}{\cancel{d~g(x)}}\cdot \frac{\cancel{d~g(x)}}{d x} =\frac{d f(g(x))}{d x} .$$</p>
-          <p>That's it - that's the Chain Rule.</p>
-          <h4>How long can the chain go?</h4>
-          <p>Really, it's a chain - you choose the length. Rather, the problem chooses the length.</p>
-          <p>For example,</p>
-          <p>$$\frac{d~d(e(f(g(x))))}{d~e(f(g(x)))}\cdot\frac{d~e(f(g(x)))}{d~f(g(x))}\cdot\frac{d~f(g(x))}{d~g(x)}\cdot \frac{d~g(x)}{d x} =\frac{d~d(e(f(g(x))))}{d x}.$$</p>
-          <h3>Usefulness</h3>
-          <p>Remember during <a href="../practice" class="text-success">practice</a> when you had to differentiate $\ln x$? It was a pain for me to write the solution and for you to read it.</p>
-          <p>Now, we'll differentiate the same function in just a few easy steps! (No, that doesn't mean that the rest of the steps are hard).</p>
-          <p>$$y=\ln x$$ $$x = e^y$$ $$\frac{dx}{dx} = \frac{d e^y}{dx}$$ $$\frac{dx}{dx} = \frac{d e^y}{dy}\cdot \frac{dy}{dx}$$ $$1 = e^y \frac{dy}{dx}$$$$\frac{1}{e^y} = \frac{dy}{dx}$$ Substitute from second step: $$\boxed{\frac{1}{x} = \frac{dy}{dx}}$$</p>
+
+
+
+
+
+
+</pre>
 <nav aria-label="Page navigation example text-center">
     <h5 class="text-center text-success">Derivatives</h5>
   <ul class="pagination justify-content-center">
     <li class="page-item">
-      <a class="page-link " href="../" aria-label="Previous">
+      <a class="page-link " href="../methods" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
       </a>
     </li>
-    <li class="page-item"><a class="page-link" href="../">Derivatives</a></li>
+    <li class="page-item"><a class="page-link" href="../methods">Methods</a></li>
     <li class="page-item active"><a class="page-link" href="">•</a></li>
-    <li class="page-item disabled"><a class="page-link" href="../methods">Methods</a></li>
+    <li class="page-item disabled"><a class="page-link" href="../chain-rule">Chain Rule</a></li>
     <li class="page-item disabled">
-      <a class="page-link" href="definition" aria-label="Next">
+      <a class="page-link" href="../chain-rule" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
       </a>
     </li>
   </ul>
      </nav>
-      </div></div>
-  </div>
-</div>
-<script src="keepScroll.js"></script>
-    <script src="check.js"></script>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    </div></div>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
-<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
-<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyA6bA3PlHiFGHB1CIWobuBUsEa9IQ7AL3I",
-    authDomain: "socrathematics.firebaseapp.com",
-    databaseURL: "https://socrathematics.firebaseio.com",
-    projectId: "socrathematics",
-    appId: "1:809638401187:web:9608adf73f25ced6d45b16",
-    measurementId: "G-2QEQZPCEZR"
-
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-
-  const auth=firebase.auth();
-  const db = firebase.firestore();
-</script>
-<script type="text/javascript" src="../../../auth/auth.js"></script>
-</body>
+</div></body>
 </html>
