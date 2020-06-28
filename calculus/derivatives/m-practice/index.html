@@ -131,7 +131,7 @@ var MQ = MathQuill.getInterface(2);
         <!--Question Two-->
         <li class="card card-body no-def my-3 pop">
 
-    <p>$\displaystyle{\frac{d f(x)e^x}{dx}}= $  <span id="answer2" class="form-control-sm answerb"></span><svg id="tu2" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg">
+    <p>$\displaystyle{\frac{d f(x)e^x}{dx}}= e^x \cdot$  <span id="answer2" class="form-control-sm answerb"></span><svg id="tu2" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd"
         d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
 </svg></p>
@@ -185,7 +185,7 @@ var MQ = MathQuill.getInterface(2);
         </details>
         </li>
 
-              <span id="composer" class="form-control-sm answerb"></span>
+              <!--<span id="composer" class="form-control-sm answerb"></span>
               <p id="lhost"></p>
               <script>var answerSpan = document.getElementById("composer");
   var answerMathField = MQ.MathField(answerSpan, {
@@ -193,7 +193,7 @@ var MQ = MathQuill.getInterface(2);
       edit: function() {
         var enteredMath = answerMathField.latex(); // Get entered math in LaTeX format
         document.getElementById("lhost").innerHTML = enteredMath}}})
-        </script>
+        </script>-->
 
     </ol>
           <pre>
@@ -206,6 +206,24 @@ var MQ = MathQuill.getInterface(2);
 
 
           </pre>
+          <nav aria-label="Page navigation example text-center">
+    <h5 class="text-center text-success">Derivatives</h5>
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link " href="../chain-rule" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="../chain-rule">Chain Rule</a></li>
+    <li class="page-item active"><a class="page-link" href="">•</a></li>
+    <li class="page-item disabled"><a class="page-link" href="../physics">Physics</a></li>
+    <li class="page-item disabled">
+      <a class="page-link" href="../physics" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+     </nav>
       </div></div></div></div>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
