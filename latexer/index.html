@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    li {
+    float: left;
+    margin: 0 15px
+}</style>
+    <meta charset="UTF-8">
+    <title>LaTeXer!</title>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163408633-2');
+</script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PF58PDC');</script>
+<!-- End Google Tag Manager -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="icon" href="../favicon.png">
+  <link rel="stylesheet" href="../fonts.css">
+  <link rel="stylesheet" href="../header.css">
+  <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../mathquill-0.10.1/mathquill.css"/>
+<script src="../mathquill-0.10.1/mathquill.js"></script>
+<script>
+var MQ = MathQuill.getInterface(2);
+</script>
+    <!--mathjax-->
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="/mousetrap.min.js"></script>
+</head>
+<body>
+<style>
+    hr:not(.normal) {
+            position: relative;
+            border: none;
+            height: 3px;
+            background: var(--secondary);
+        }
+</style>
+<div class="container" id="" style="margin-top:30px">
+
+  <div class="row">
+      <div class="col-sm-12">
+          <div class="btn-group mb-5 sticky-top" role="group">
+  <button type="button" id="eq" class="btn btn-secondary" onclick="addEquation();">Math</button>
+              <button type="button" id="deq" class="btn btn-secondary" onclick="addDisplayEquation();">Display Math</button>
+  <button type="button" id="txt" class="btn btn-secondary" onclick="addText();">Text</button>
+              <button type="button" id="itm" class="btn btn-secondary" onclick="addItem();">Item</button>
+  <button type="button" id="lb" class="btn btn-secondary" onclick="addBreak();">Line break</button>
+</div>
+          <h1>$$\LaTeX \text{-er}$$</h1>
+
+        <div id="root" class="py-5">
+            <p id="e0"></p>
+      </div>
+
+          <hr class="normal"><button type="button" id="final" class="btn btn-lg btn-success" onclick="makeCourse(info);">$\LaTeX$ it!</button><hr class="normal">
+  </div>
+      <!--<div class="col-sm-4">
+          <h1>Delete</h1>
+          <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Index to delete" id="indexer">
+  <div class="input-group-append">
+    <button class="btn btn-outline-danger" type="button" onclick="deleteElement();">Delete it!</button>
+  </div>
+</div>
+      </div>-->
+
+</div>
+
+    <div class="row pt-5" >
+        <div class="col" id="out"></div>
+
+      </div>
+    <xmp class="row" id="out2"></xmp>
+</div>
+</body>
+<script src="make.js"></script>
+<script>
+    Mousetrap.bind('enter', function(){makeCourse(info)});
+    Mousetrap.bind('alt+t', function(){addText()});
+    Mousetrap.bind('alt+d', function(){addDisplayEquation()});
+    Mousetrap.bind(['alt+e','mod+e'], function(){addEquation()});
+    Mousetrap.bind('alt+l', function(){addBreak()});
+    Mousetrap.bind('alt+i', function(){addItem()});
+</script>
+</html>
