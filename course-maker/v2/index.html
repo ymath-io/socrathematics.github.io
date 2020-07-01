@@ -28,12 +28,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="/Stuk-jszip-bead269/dist/jszip.js"></script>
-  <link rel="icon" href="../favicon.png">
+  <link rel="icon" href="../../favicon.png">
   <link rel="stylesheet" href="../../fonts.css">
   <link rel="stylesheet" href="../../header.css">
   <link rel="stylesheet" href="../../style.css">
 <link rel="stylesheet" href="../../mathquill-0.10.1/mathquill.css"/>
 <script src="../../mathquill-0.10.1/mathquill.js"></script>
+    <script src="/mousetrap.min.js"></script>
 <script>
 var MQ = MathQuill.getInterface(2);
 </script>
@@ -59,17 +60,21 @@ MathJax = {
             background: var(--secondary);
         }
 </style>
-<div class="container" id="" style="margin-top:30px">
-
-  <div class="row">
-      <div class="col-sm-12">
-          <div class="btn-group mb-5" role="group">
+    <div class="sticky-top px-5 py-2 bg-white">
+    <h1>Course Maker</h1>
+<div class="btn-group" role="group">
   <button type="button" id="eq" class="btn btn-secondary" onclick="addEquation();">Math</button>
               <button type="button" id="deq" class="btn btn-secondary" onclick="addDisplayEquation();">Display Math</button>
   <button type="button" id="pp" class="btn btn-secondary" onclick="addProblem();" >Practice Problem</button>
   <button type="button" id="txt" class="btn btn-secondary" onclick="addText();">Text</button>
   <button type="button" id="lb" class="btn btn-secondary" onclick="addBreak();">Line break</button>
-</div>
+    </div></div>
+<div class="container" id="" style="margin-top:30px">
+    
+  <div class="row">
+      
+      <div class="col-sm-12">
+          
           <input type="text" class="form-control form-control-lg" id="ctitle" style="font-size:30px" placeholder="Title">
 
         <div id="root" class="py-5">
@@ -97,4 +102,12 @@ MathJax = {
 </div>
 </body>
 <script src="make.js"></script>
+    <script>
+    Mousetrap.bind('enter', function(){makeCourse(info)});
+    Mousetrap.bind('alt+t', function(){addText()});
+    Mousetrap.bind('alt+d', function(){addDisplayEquation()});
+    Mousetrap.bind(['alt+e','mod+e'], function(){addEquation()});
+    Mousetrap.bind('alt+l', function(){addBreak()});
+    Mousetrap.bind('alt+i', function(){addItem()});
+</script>
 </html>
