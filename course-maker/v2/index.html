@@ -101,4 +101,12 @@ MathJax = {
 </div>
 </body>
 <script src="make.js"></script>
+    <script>
+    Mousetrap.bind('enter', function(){makeCourse(info)});
+    Mousetrap.bind('alt+t', function(){addText()});
+    Mousetrap.bind('alt+d', function(){addDisplayEquation()});
+    Mousetrap.bind(['alt+e','mod+e'], function(){addEquation()});
+    Mousetrap.bind('alt+l', function(){addBreak()});
+    Mousetrap.bind('alt+i', function(){addItem()});
+</script>
 </html>
