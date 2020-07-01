@@ -20,6 +20,9 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
       <li class="nav-item">
         <a class="nav-link pop" href="/calculus" id="calc">Calculus</a>
       </li>
+<li class="nav-item">
+        <a class="nav-link pop" href="/exponents" id="exp">Exponents</a>
+      </li>
       <li class="nav-item" >
         <a class="nav-link pop" href="/request-course" id="rc">Request a Course</a>
       </li>
