@@ -114,14 +114,14 @@ filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(308deg) brightness(103%) 
 .red-btn:hover{
 background: var(--red);}
 
-:not(.text-muted) .pop:hover:not(.text-muted){
+:not(.text-muted) > .pop:hover:not(.text-muted){
 box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
 
   border-radius: 0.25rem;
 
 }
 
-
+.text-muted > *{cursor:default}
 
 .pop{box-shadow:none;border-radius: 0.25rem;}
 
