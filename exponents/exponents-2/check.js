@@ -59,7 +59,7 @@ return answerMathField;
 }
 
     //number one
-f1 = initfield("1","one",["2^4","16"]); // idk which ones you want to include
+f1 = initfield("1","one",["2^4"]); // idk which ones you want to include
     //number two
 //f2 = initfield("2","two",["f\\left(x\\right)+f'\\left(x\\right)","f'\\left(x\\right)+f\\left(x\\right)"]);
     //number three
