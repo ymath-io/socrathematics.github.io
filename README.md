@@ -12,3 +12,4 @@ Currently the site has courses on trigonometry and calculus. Modular Arithmetic 
 |June 27, 2020 | Handwrote backsplash image. |
 |June 28, 2020 | Debugged entire site. |
 |July 01, 2020 | Added FAQ tab to homepage. Changed trigonometry thumbnail. |
+|July 02, 2020 | Fixed misleading 404 page. |
