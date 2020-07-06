@@ -1,15 +1,15 @@
 function initfield(num,numname,answers){
-    //number num
-  var answerSpan = document.getElementById('answer'+num);// get the box
+  //number num
+var answerSpan = document.getElementById('answer'+num);// get the box
 
-  var answerMathField = MQ.MathField(answerSpan, {
-    handlers: {
-      edit: function() {
-        var enteredMath = answerMathField.latex(); // Get entered math in LaTeX format
-        correct = checka(enteredMath,num,answers); //display green check if correct
-      }
+var answerMathField = MQ.MathField(answerSpan, {
+  handlers: {
+    edit: function() {
+      var enteredMath = answerMathField.latex(); // Get entered math in LaTeX format
+      correct = checka(enteredMath,num,answers); //display green check if correct
     }
-  });
+  }
+});
 return answerMathField;
 }
 
@@ -28,14 +28,14 @@ initfield(10,"",["1"]);
 
 
 //to check the answers!
-    function checka(l,n, answers){
-    if (answers.includes(l)){
-    document.getElementById("answer"+n).style.color="var(--success)";
-    document.getElementById("tu"+n).style.display="inline";
-    return true
-    }
+  function checka(l,n, answers){
+  if (answers.includes(l)){
+  document.getElementById("answer"+n).style.color="var(--success)";
+  document.getElementById("tu"+n).style.display="inline";
+  return true
+  }
 else{document.getElementById("answer"+n).style.color="var(--dark)";
-    document.getElementById("tu"+n).style.display="none";
-    return false
-    }
-    }
+  document.getElementById("tu"+n).style.display="none";
+  return false
+  }
+  }
