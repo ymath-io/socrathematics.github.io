@@ -16,9 +16,9 @@ return answerMathField;
 
 initfield(1,"",["2^{3+4}", "2^7"]);
 initfield(2,"",["2^{7-3}", "2^4"]);
-initfield(3,"",["\left(2\cdot3\right)^4", "6^4"]);
-initfield(4,"",["\left(\frac{6}{3}\right)^4", "2^4"]);
-initfield(5,"",["5^{2\cdot4}", "5^8"]);
+initfield(3,"",["\\left(2\\cdot3\\right)^4", "6^4"]);
+initfield(4,"",["\\left(\\frac{6}{3}\\right)^4", "2^4"]);
+initfield(5,"",["5^{2\\cdot4}", "5^8"]);
 initfield(6,"",["100"]);
 initfield(7,"",["1000"]);
 initfield(8,"",["10000"]);
