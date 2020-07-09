@@ -100,7 +100,7 @@ width:80vw;
 }
 }
 
-p {white-space: pre-wrap;}
+/*p {white-space: pre-wrap;}*/
 .green-icon{
 filter: invert(44%) sepia(87%) saturate(442%) hue-rotate(81deg) brightness(100%) contrast(85%);}
 .green-btn:hover .green-icon{
