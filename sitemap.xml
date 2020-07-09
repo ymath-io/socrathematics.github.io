@@ -9,112 +9,152 @@
 
 <url>
   <loc>https://socrathematics.github.io/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/modular-arithmetic/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/trigonometry/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/calculus/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/exponents/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/request-course/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/faq/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/u/dashboard/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/modular-arithmetic/introduction</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/trigonometry/functions/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/trigonometry/identities/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/trigonometry/law-of-sines/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/trigonometry/law-of-cosines/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/calculus/limits/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/calculus/derivatives/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/calculus/integrals/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/calculus/limits/definition/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/calculus/limits/practice/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/calculus/limits/applications/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/calculus/limits/byg/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/calculus/derivatives/practice/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/calculus/derivatives/methods/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/calculus/derivatives/xn-der/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/calculus/derivatives/chain-rule/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/calculus/derivatives/m-practice/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/calculus/derivatives/physics/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/exponents/exponents-2/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://socrathematics.github.io/exponents/exponents-2/practice/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://socrathematics.github.io/trigonometry/Tilting-A-Parabola.pdf</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://socrathematics.github.io/calculus/limits/practice/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://socrathematics.github.io/calculus/limits/applications/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://socrathematics.github.io/calculus/limits/byg/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://socrathematics.github.io/calculus/derivatives/practice/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://socrathematics.github.io/calculus/derivatives/methods/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://socrathematics.github.io/calculus/derivatives/chain-rule/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://socrathematics.github.io/calculus/derivatives/m-practice/</loc>
-  <lastmod>2020-06-24T22:44:26+00:00</lastmod>
+  <loc>https://socrathematics.github.io/exponents/exponents-2/properties/</loc>
+  <lastmod>2020-07-09T23:22:19+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
