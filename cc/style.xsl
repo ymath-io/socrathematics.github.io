@@ -11,7 +11,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <link rel="stylesheet" href="/style.css"/>
         <link rel="stylesheet" href="/fonts.css"/>
         <link rel="icon" href="/favicon.png"/>
-        
+        <title>Course Catalog</title>
                 <!--mathjax-->
                 <xsl:element name="script">
                     MathJax = {
