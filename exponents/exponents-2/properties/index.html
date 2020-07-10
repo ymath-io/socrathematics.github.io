@@ -1,67 +1,80 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-white" style="">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-163408633-2');
-</script>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PF58PDC');</script>
-<!-- End Google Tag Manager -->
-    <title>Properties - Exponents</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <html lang="en" class="bg-white" style="">
+    <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-163408633-2');
+    </script>
+      <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PF58PDC');</script>
+    <!-- End Google Tag Manager -->
+      <title>Properties - Exponents</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="/mathquill-0.10.1/mathquill.css"/>
 <script src="/mathquill-0.10.1/mathquill.js"></script>
 <script>
 var MQ = MathQuill.getInterface(2);
+MQ.config({spaceBehavesLikeTab: true,
+  leftRightIntoCmdGoes: 'up',
+  restrictMismatchedBrackets: true,
+  sumStartsWithNEquals: true,
+  supSubsRequireOperand: true,
+  charsThatBreakOutOfSupSub: '+-=<>',
+  autoSubscriptNumerals: true,
+  autoCommands: 'pi theta sqrt sum delta',
+  autoOperatorNames: 'sin cos',
+  maxDepth: 10,
+  substituteTextarea: function() {
+    return document.createElement('textarea');
+  }});
 </script>
+      <link rel="icon" href="https://socrathematics.github.io/favicon.png">
+      <link rel="stylesheet" href="https://socrathematics.github.io/fonts.css">
+      <link rel="stylesheet" href="https://socrathematics.github.io/header.css">
+      <link rel="stylesheet" href="https://socrathematics.github.io/style.css">
+        <!--mathjax-->
+      <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']]
+      }
+    };
+    </script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    
+    <body data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-    <link rel="icon" href="/favicon.png">
-    <link rel="stylesheet" href="/fonts.css">
-    <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/style.css">
-
-    <!--katex-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
-    onload='renderMathInElement(document.body,{delimiters: [
-                        {left: "$$", right: "$$", display: true},
-                        {left: "$", right: "$", display: false}
-]});'></script>
-</head>
-
-<body data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<script src="/menu.js"></script>
-<script>activate("exp");</script>
-
+    <script src="/menu.js"></script>
+    <script>activate("exp");</script>
+    
 <div class="container" style="margin-top:30px">
     <div class="row">
     <div class="col-sm-3" >
         <h3>Exponents</h3>
-        <p >Topics within Exponents</p>
+        <p>Topics within Exponents</p>
         <nav class="nav nav-pills flex-column" >
         <li class="nav-item">
             <a class="nav-link" href="../../">Home</a>
@@ -103,7 +116,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="col-sm-9">
         <div class="container" >
 
-<!--Insert lesson here-->
+<h2>Properties</h2>
+  <p>Hopefully, those practice problems gave you some intuition for how exponents work. 
+    Exponents have several laws, or properties. 
+    I've listed them below. 
+    If you've done the practice problems, you are already familiar with most of these laws because many of the practice problems are just examples of these laws in disguise.
+  </p>
+  <p>Product of Powers: 
+    $$x^a\cdot x^b=x^{a+b}$$</p>
+  <p>Quotient of Powers: 
+    $$\frac{x^a}{x^b}=x^{a-b}$$</p>
+  <p>Power of a Product: 
+    $$x^a+y^a=\left(xy\right)^a$$</p>
+  <p>Power of a Quotient: 
+    $$\frac{x^a}{x^b}=x^{a-b}$$</p>
+  <p>Power of a Power: 
+    $$\left(x^a\right)^b=x^{ab}$$</p>
+  <p>Identity Exponent: 
+    $$x^1=x$$</p>
+  <p>Zero Exponent: 
+    $$x^0=1$$</p>
+  <p>Negative Exponent: 
+    $$x^{-a}=\frac{1}{x^a}$$</p>
+  <p>Fractional Exponent: 
+    $$x^{\frac{a}{b}}=\sqrt[b]{x^a}=\left(\sqrt[b]{x}\right)^a$$</p>
+  <p>Your homework is to prove these laws to yourself. 
+    In other words, I want you to understand why these laws are true.
+    I encourage you to try out examples and to use the first few laws to prove the other laws. 
+    If you've done the practice problems, you only have the last two laws left. 
+    Good luck! </p>
         
 <nav aria-label="Page navigation example text-center">
     <ul class="pagination justify-content-center">
@@ -126,36 +167,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 </div>
 <script src="keepScroll.js"></script>
-    <script src="check.js"></script>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
-<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
-<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
-
-<script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-    apiKey: "AIzaSyA6bA3PlHiFGHB1CIWobuBUsEa9IQ7AL3I",
-    authDomain: "socrathematics.firebaseapp.com",
-    databaseURL: "https://socrathematics.firebaseio.com",
-    projectId: "socrathematics",
-    appId: "1:809638401187:web:9608adf73f25ced6d45b16",
-    measurementId: "G-2QEQZPCEZR"
-
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-
-    const auth=firebase.auth();
-    const db = firebase.firestore();
-</script>
-<script type="text/javascript" src="/auth/auth.js"></script>
-    <script src="check.js"></script> <!-- DO NOT REMOVE. I know abt the 404. -->
-</body>
-</html>
+<script src="check.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+    <script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyA6bA3PlHiFGHB1CIWobuBUsEa9IQ7AL3I",
+        authDomain: "socrathematics.firebaseapp.com",
+        databaseURL: "https://socrathematics.firebaseio.com",
+        projectId: "socrathematics",
+        appId: "1:809638401187:web:9608adf73f25ced6d45b16",
+        measurementId: "G-2QEQZPCEZR"
+    
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    
+      const auth=firebase.auth();
+      const db = firebase.firestore();
+    </script>
+    <script src="/auth/auth.js"></script>
+    
+    </body>
+    </html>
