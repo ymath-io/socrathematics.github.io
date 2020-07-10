@@ -11,6 +11,10 @@
                 <link>https://socrathematics.github.io/exponents/exponents-2/</link>
                 <subtopics>
                     <subtopic>
+                        <title>Introduction</title>
+                        <link>https://socrathematics.github.io/exponents/exponents-2/</link>
+                    </subtopic>
+                    <subtopic>
                         <title>Practice</title>
                         <link>https://socrathematics.github.io/exponents/exponents-2/practice/</link>
                     </subtopic>
@@ -107,6 +111,10 @@
                 <link>https://socrathematics.github.io/calculus/limits/</link>
                 <subtopics>
                     <subtopic>
+                        <title>Introduction</title>
+                        <link>https://socrathematics.github.io/calculus/limits/</link>
+                    </subtopic>
+                    <subtopic>
                         <title>Definition</title>
                         <link>https://socrathematics.github.io/calculus/limits/definition/</link>
                     </subtopic>
@@ -128,6 +136,10 @@
                 <title>Derivatives</title>
                 <link>https://socrathematics.github.io/calculus/derivatives/</link>
                 <subtopics>
+                    <subtopic>
+                        <title>Introduction</title>
+                        <link>https://socrathematics.github.io/calculus/derivatives/</link>
+                    </subtopic>
                     <subtopic>
                         <title>Practice</title>
                         <link>https://socrathematics.github.io/calculus/derivatives/practice/</link>
@@ -161,6 +173,9 @@
             <topic>
                 <title>Integrals</title>
                 <link>https://socrathematics.github.io/calculus/integrals/</link>
+                <subtopics>
+                    <subtopic>Introduction</subtopic>
+                </subtopics>
             </topic>
         </topics>
     </course>
