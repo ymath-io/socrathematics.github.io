@@ -17,7 +17,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PF58PDC');</script>
 <!-- End Google Tag Manager -->
-  <title>X^n rule - Derivatives</title>
+  <title>Practice - Derivatives</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
@@ -57,7 +57,7 @@ var MQ = MathQuill.getInterface(2);
       <p >Topics within Calculus</p>
       <nav class="nav nav-pills flex-column" >
         <li class="nav-item">
-          <a class="nav-link" href="../">Home</a>
+          <a class="nav-link" href="../../">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../../limits">Limits</a>
@@ -73,7 +73,7 @@ var MQ = MathQuill.getInterface(2);
           <a class="nav-link ml-3 my-1  " href="../methods">Methods</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link ml-3 my-1  active" href="">$x^n$ Derivative</a>
+          <a class="nav-link ml-3 my-1 " href="../xn-der">$x^n$ Derivative</a>
         </li>
           <li class="nav-item">
           <a class="nav-link ml-3 my-1  " href="../chain-rule">Chain Rule</a>
@@ -82,7 +82,7 @@ var MQ = MathQuill.getInterface(2);
           <a class="nav-link ml-3 my-1 " href="../m-practice">More Practice</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link ml-3 my-1 " href="../physics">Physics</a>
+          <a class="nav-link ml-3 my-1 active " href="../physics">Physics</a>
         </li>
           <li class="nav-item">
           <a class="nav-link ml-3 my-1 disabled " href="../rt">Reference Table</a>
@@ -90,7 +90,7 @@ var MQ = MathQuill.getInterface(2);
       </nav>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="../integrals">Integrals</a>
+          <a class="nav-link " href="../../integrals">Integrals</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#">Chapter 4 - Coming Soon</a>
@@ -100,15 +100,9 @@ var MQ = MathQuill.getInterface(2);
     </div>
 
     <div class="col-sm-9">
-<h2>The $x^n$ Derivative</h2>
-        <p>Now that you've learned some methods of differentiating complex functions, let's take a look at the following function: $$f\left(x\right)=x^n.$$ How could we find&nbsp; $f'\left(x\right)$ ?</p>
-        <p>It turns out that there's two ways to do this. We could use either induction or the binomial theorem (or some third method that you can email me about :)). I'm going to go through the induction strategy first, because it's a bit simpler. If you don't like induction or haven't learned it yet (who is teaching you Precalculus?) you can skip ahead to the other method.&nbsp;Otherwise, let's go!</p>
-        <p>In order to use induction, we need an inductive hypothesis and a few base cases to support it. We can easily compute the following base cases by hand: $$\frac{dx}{dx}=1x^0,$$  $$\frac{dx^2}{dx}=2x^1,$$ $$\text{and}$$ $$\frac{dx^3}{dx}=3x^2.$$ And so, we can hypothesize that $$\frac{dx^n}{dx}=nx^{n-1}$$is true for all $n\lt k$ (This is something we do a lot in induction).Then, we can try to find the derivative of&nbsp; $x^k.$ (Remember that the inductive hypothesis does not apply here, because $k\nless k.$ To do this, we can use the product rule: $$x^k=x\cdot x^{k-1}$$  $$\frac{dx^k}{dx}=\left(1\right)\left(x^{k-1}\right)+\left(x\right)\left(k-1\right)\left(x^{k-2}\right)$$  $$=x^{k-1}+\left(k-1\right)\left(x^{k-1}\right)$$  $$=kx^{k-1}.$$ And we are done! Because we've proved that the pattern begins, and we've also proved that it's possible to get from a base case to a non base case while holding the pattern, we've proved that: $$\frac{dx^n}{dx}=nx^{n-1}.$$ </p>
-        <h4>Binomial Theorem</h4>
-        <p>The proof of this derivative is more commonly done using the Binomial theorem, which says that: $$\left(x+y\right)^n=\binom{n}{0}x^ny^0+\binom{n}{1}x^{n-1}y^1+\cdots+\binom{n}{n-1}x^1y^{n-1}+\binom{n}{n}x^0y^n.$$ This, as you will see soon, turns out to be quite a useful definition for us.To calculate the derivative this time, we'll be using a first principle limits approach. So, let's set up our limit: $$\frac{dx^n}{dx}=\lim_{h\to0}\frac{\left(x+h\right)^n-x^n}{h}$$ Notice that I'm using $h$ instead of&nbsp; $\delta x.$ It's just a different name I gave it, and you can call it whatever you want. I generally like calling it&nbsp; $h,$ just because it's simpler to write.</p>
-        <p>Let's (partially) expand our binomial, using the binomial theorem: $$\lim_{h\to0}\frac{\binom{n}{0}x^n+\binom{n}{1}hx^{n-1}+h^2\left(\cdots\right)-x^n}{h}$$  $$=\lim_{h\to0}\frac{\binom{n}{1}hx^{n-1}+h^2\left(\cdots\right)}{h}$$  $$=\lim_{h\to0}\binom{n}{1}x^{n-1}+h\left(\cdots\right)$$ </p>
-        <p>Substituting&nbsp; $h=0,$  $$\frac{dx^n}{dx}=nx^{n-1}.$$ And we are done!</p>
-        <pre>
+      <div class="container" >
+        <h2>Physics</h2><p>Now that you've learned how to find the derivatives of basic (and not-so-basic) functions, let's try putting this knowledge to use in the real world.</p><p>In the problems below, you'll be asked to compare the rate of change in two related values. For example, if your mom buys three candies everyday and gives two to you and one to your sister, what would the change in your candies be relative to the change in your sister's candies?</p><p>We can set up a derivative for that! $$\text{Let }y=\text{your candies}$$  $$\text{Let}\ x=\text{your sister's candies}$$ And now, we can set up an equation to represent $y$ in terms of $x:$  $$y=2x.$$ Since everytime your sister gets a candy, you get two, you get twice the candies. Great! Let's find the derivative. $$\frac{d\ 2x}{dx}=2\cdot1x^0=2.$$ That was so simple- it's just two!Let's try another example.</p><p>Suppose we have a bubble into which air constantly flows in at a rate of $12\pi\ \mu L$ per second $\left(s\right).$ Let's try to find the rate of change in the radius of the bubble (which we know will always be spherical.) A sphere has a few properties, including volume, surface area, and radius. Which of them is being <i>directly</i> manipulated when air flows into the bubble?</p><p>That would be volume, because microliters $\left(\mu L\right)$ is a unit of volume. Now that we know what properties we are watching, let's write some equations. $$v=\frac{4}{3}\pi r^3$$  $$\frac{dv}{ds}=12\pi$$ Notice that we went straight to the derivative for the second equation. This is because we haven't been given enough information to write an equation - we don't know how many microliters the bubble started with before air began flowing in. However, we <i>do</i> know the slope of the equation, and derivative is just another word for slope.</p><p>Now, let's find the derivative of the other function: $$\frac{d\frac{4}{3}\pi r^3}{dr}=\frac{4}{3}\pi\ \cdot\ \frac{dr^3}{dr}=\frac{4}{3}\pi\cdot3r^2=4\pi r^2.$$ Food for thought: isn't that the surface area formula? Make a theory. Maybe prove it.&nbsp;</p><p>Okay, so now we know the following values: $$\frac{dv}{dr},\frac{dv}{ds}$$ And we want to know what is $$\frac{dr}{ds}.$$ Hmm... I'm getting the chain rule vibe. Are you?</p><p>We can setup an equation with all three of these values, thanks to the chain rule! $$\frac{dv}{ds}=\frac{dv}{dr}\cdot\frac{dr}{ds}$$ Substitute what we already know: $$12\pi=4\pi r^2\cdot\frac{dr}{ds}$$  $$\frac{3}{r^2}=\frac{dr}{ds}.$$ And we are done! Now, try the following problem on your own.</p><li class="card card-body no-def my-3 pop">    <p>The width of a rectangle increases at $4 \frac{cm}{s}$ and the height at $3\ \frac{cm}{s}.$ The rate of change on the area with respect to $s$ when $h=5$  and $w=6$ is <span id="answer1" class="form-control-sm answerb"></span><svg id="tu1" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg">  <path fill-rule="evenodd"        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg></p>            <!--Hints--><details><summary class="btn btn-outline-success btn-sm mt-2">Hint</summary> The information we have is:$$\frac{dh}{ds} = 3$$$$\frac{dw}{ds} = 4$$We must find$$\frac{dwh}{ds} = ?$$</details>            <details><summary class="btn btn-outline-success btn-sm mt-2">Hint</summary> What are some of the methods of solving a derivative?</details>            <!--Solution--><details><summary class="btn btn-sm btn-outline-success mt-2">Show/Hide Solution</summary>                We can use the product rule to evaluate this derivative:$$\frac{d wh}{ds} = h(\frac{dw}{ds})+ w(\frac{dh}{ds}).$$Substitute:$$\frac{d wh}{ds} = h(4)+ w(3).$$And, when we plug in the given values:$$5\cdot  4 + 6\cdot 3 = \boxed{38}.$$        </details>        </li><p></p>
+          <pre>
 
 
 
@@ -116,28 +110,27 @@ var MQ = MathQuill.getInterface(2);
 
 
 
-</pre>
-<nav aria-label="Page navigation example text-center">
+
+          </pre>
+          <nav aria-label="Page navigation example text-center">
     <h5 class="text-center text-success">Derivatives</h5>
   <ul class="pagination justify-content-center">
     <li class="page-item">
-      <a class="page-link " href="../methods" aria-label="Previous">
+      <a class="page-link " href="../m-practice" aria-label="Previous">
         <span aria-hidden="true">&laquo;</span>
       </a>
     </li>
-    <li class="page-item"><a class="page-link" href="../methods">Methods</a></li>
+    <li class="page-item"><a class="page-link" href="../m-practice">More Practice</a></li>
     <li class="page-item active"><a class="page-link" href="">•</a></li>
-    <li class="page-item "><a class="page-link" href="../chain-rule">Chain Rule</a></li>
-    <li class="page-item ">
-      <a class="page-link" href="../chain-rule" aria-label="Next">
+    <li class="page-item disabled"><a class="page-link" href="../rt">Reference Table</a></li>
+    <li class="page-item disabled">
+      <a class="page-link" href="../rt" aria-label="Next">
         <span aria-hidden="true">&raquo;</span>
       </a>
     </li>
   </ul>
      </nav>
-    </div></div>
-
-</div>
+      </div></div></div></div>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
 
@@ -168,4 +161,5 @@ var MQ = MathQuill.getInterface(2);
 </script>
 </body>
 <script src="/auth/auth.js"></script>
+<script src="check.js"></script>
 </html>

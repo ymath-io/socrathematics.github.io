@@ -8,3 +8,8 @@
   src: url(Lato/Lato-Regular.ttf);
   font-weight: 100;
 }
+@font-face {
+  font-family: dancing;
+  src: url(Dancing_Script/static/DancingScript-Regular.ttf);
+  font-weight: 100;
+}
