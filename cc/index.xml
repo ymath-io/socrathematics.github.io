@@ -178,7 +178,10 @@
                 <title>Integrals</title>
                 <link>https://socrathematics.github.io/calculus/integrals/</link>
                 <subtopics>
-                    <subtopic>Introduction</subtopic>
+                    <subtopic>
+                        <title>Introduction</title>
+                        <link>https://socrathematics.github.io/calculus/integrals/</link>
+                    </subtopic>
                 </subtopics>
             </topic>
         </topics>
