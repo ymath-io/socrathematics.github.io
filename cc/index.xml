@@ -2,74 +2,179 @@
 <?xml-stylesheet type="text/xsl" href="style.xsl"?>
 <courses>
     <course>
-        <title>Trigonometry</title>
+        <title>Exponents</title>
+        <link>https://socrathematics.github.io/exponents/</link>
+        <description>Master the most efficient computation since multiplication!</description>
         <topics>
             <topic>
-                <title>Law of Sines</title>
-                <link>https://socrathematics.github.io/trigonometry/law-of-sines</link>
-                
+                <title>Exponents</title>
+                <link>https://socrathematics.github.io/exponents/exponents-2/</link>
+                <subtopics>
+                    <subtopic>
+                        <title>Practice</title>
+                        <link>https://socrathematics.github.io/exponents/exponents-2/practice/</link>
+                    </subtopic>
+                    <subtopic>
+                        <title>Properties</title>
+                        <link>https://socrathematics.github.io/exponents/exponents-2/properties/</link>
+                    </subtopic>
+                    <subtopic>
+                        <title>Graphs</title>
+                        <link></link>
+                    </subtopic>
+                    <subtopic>
+                        <title>Applications</title>
+                        <link></link>
+                    </subtopic>
+                    <subtopic>
+                        <title>More Practice</title>
+                        <link></link>
+                    </subtopic>
+                </subtopics>
+            </topic>
+            <topic>
+                <title>Logarithms</title>
+                <link></link>
+                <subtopics>
+                    <subtopic>
+                        <title>Practice</title>
+                        <link></link>
+                    </subtopic>
+                    <subtopic>
+                        <title>Properties</title>
+                        <link></link>
+                    </subtopic>
+                    <subtopic>
+                        <title>Graphs</title>
+                        <link></link>
+                    </subtopic>
+                    <subtopic>
+                        <title>Natural Logarithm</title>
+                        <link></link>
+                    </subtopic>
+                    <subtopic>
+                        <title>Applications</title>
+                        <link></link>
+                    </subtopic>
+                    <subtopic>
+                        <title>More Practice</title>
+                        <link></link>
+                    </subtopic>
+                </subtopics>
             </topic>
         </topics>
-        
     </course>
+
+    <course>
+        <title>Trigonometry</title>
+        <link>https://socrathematics.github.io/trigonometry/</link>
+        <description>Learn one of the most powerful tools in geometry.</description>
+        <topics>
+            <topic>
+                <title>Functions</title>
+                <link>https://socrathematics.github.io/trigonometry/functions/</link>
+            </topic>
+            <topic>
+                <title>Identities</title>
+                <link>https://socrathematics.github.io/trigonometry/identities/</link>
+            </topic>
+            <topic>
+                <title>Law of Sines</title>
+                <link>https://socrathematics.github.io/trigonometry/law-of-sines/</link>
+            </topic>
+            <topic>
+                <title>Extended Law of Sines</title>
+                <link></link>
+            </topic>
+            <topic>
+                <title>Law of Cosines</title>
+                <link>https://socrathematics.github.io/trigonometry/law-of-cosines/</link>
+            </topic>
+            <topic>
+                <title>Rotating a Parabola</title>
+                <link>https://socrathematics.github.io/trigonometry/Tilting-A-Parabola.pdf</link>
+            </topic>
+        </topics>
+    </course>
+
     <course>
         <title>Calculus</title>
+        <link>https://socrathematics.github.io/calculus/</link>
         <description>Equip yourself with Calculus - it's not scary.</description>
         <topics>
             <topic>
                 <title>Limits</title>
-                <link>https://socrathematics.github.io/calculus/limits</link>
+                <link>https://socrathematics.github.io/calculus/limits/</link>
                 <subtopics>
                     <subtopic>
-                        <title>Introduction</title>
-                    </subtopic>
-                    <subtopic>
                         <title>Definition</title>
+                        <link>https://socrathematics.github.io/calculus/limits/definition/</link>
                     </subtopic>
                     <subtopic>
                         <title>Practice</title>
+                        <link>https://socrathematics.github.io/calculus/limits/practice/</link>
                     </subtopic>
                     <subtopic>
                         <title>Applications</title>
+                        <link>https://socrathematics.github.io/calculus/limits/applications/</link>
                     </subtopic>
                     <subtopic>
-                        <title>Reference Table</title>
+                        <title>Before you go</title>
+                        <link>https://socrathematics.github.io/calculus/limits/byg/</link>
                     </subtopic>
                 </subtopics>
             </topic>
             <topic>
                 <title>Derivatives</title>
-                <link>https://socrathematics.github.io/calculus/derivatives</link>
+                <link>https://socrathematics.github.io/calculus/derivatives/</link>
                 <subtopics>
                     <subtopic>
-                        <title>Introduction</title>
-                        <link>https://socrathematics.github.io/calculus/derivatives</link>
+                        <title>Practice</title>
+                        <link>https://socrathematics.github.io/calculus/derivatives/practice/</link>
                     </subtopic>
                     <subtopic>
-                        <title>Practice</title>
+                        <title>Methods</title>
+                        <link>https://socrathematics.github.io/calculus/derivatives/methods/</link>
                     </subtopic>
                     <subtopic>
                         <title>$x^n$ Derivative</title>
+                        <link>https://socrathematics.github.io/calculus/derivatives/xn-der/</link>
                     </subtopic>
                     <subtopic>
                         <title>Chain Rule</title>
+                        <link>https://socrathematics.github.io/calculus/derivatives/chain-rule/</link>
                     </subtopic>
                     <subtopic>
                         <title>More Practice</title>
+                        <link>https://socrathematics.github.io/calculus/derivatives/m-practice/</link>
                     </subtopic>
                     <subtopic>
                         <title>Physics</title>
+                        <link>https://socrathematics.github.io/calculus/derivatives/physics/</link>
                     </subtopic>
                     <subtopic>
                         <title>Reference Table</title>
+                        <link></link>
                     </subtopic>
                 </subtopics>
             </topic>
             <topic>
                 <title>Integrals</title>
-                <link>https://socrathematics.github.io/calculus/integrals</link>
+                <link>https://socrathematics.github.io/calculus/integrals/</link>
             </topic>
         </topics>
     </course>
-    
+
+    <course>
+        <title>Modular Arithmetic</title>
+        <link>https://socrathematics.github.io/modular-arithmetic/</link>
+        <description>Discover the math behind the internet (and baking)</description>
+        <topics>
+            <topic>
+                <title>Introduction</title>
+                <link>https://socrathematics.github.io/modular-arithmetic/introduction</link>
+            </topic>
+        </topics>
+    </course>
+
 </courses> 
