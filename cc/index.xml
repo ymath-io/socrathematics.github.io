@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<courses>
+    <course>
+        <title>Trigonometry</title>
+        <topics>
+            <topic>
+                <title>Law of Sines</title>
+                <link>https://socrathematics.github.io/trigonometry/law-of-sines</link>
+                
+            </topic>
+        </topics>
+        
+    </course>
+    <course>
+        <title>Calculus</title>
+        <description>Equip yourself with Calculus - it's not scary.</description>
+        <topics>
+            <topic>
+                <title>Limits</title>
+                <link>https://socrathematics.github.io/calculus/limits</link>
+                <subtopics>
+                    <subtopic>
+                        <title>Introduction</title>
+                    </subtopic>
+                    <subtopic>
+                        <title>Definition</title>
+                    </subtopic>
+                    <subtopic>
+                        <title>Practice</title>
+                    </subtopic>
+                    <subtopic>
+                        <title>Applications</title>
+                    </subtopic>
+                    <subtopic>
+                        <title>Reference Table</title>
+                    </subtopic>
+                </subtopics>
+            </topic>
+            <topic>
+                <title>Derivatives</title>
+                <link>https://socrathematics.github.io/calculus/derivatives</link>
+                <subtopics>
+                    <subtopic>
+                        <title>Introduction</title>
+                        <link>https://socrathematics.github.io/calculus/derivatives</link>
+                    </subtopic>
+                    <subtopic>
+                        <title>Practice</title>
+                    </subtopic>
+                    <subtopic>
+                        <title>$x^n$ Derivative</title>
+                    </subtopic>
+                    <subtopic>
+                        <title>Chain Rule</title>
+                    </subtopic>
+                    <subtopic>
+                        <title>More Practice</title>
+                    </subtopic>
+                    <subtopic>
+                        <title>Physics</title>
+                    </subtopic>
+                    <subtopic>
+                        <title>Reference Table</title>
+                    </subtopic>
+                </subtopics>
+            </topic>
+            <topic>
+                <title>Integrals</title>
+                <link>https://socrathematics.github.io/calculus/integrals</link>
+            </topic>
+        </topics>
+    </course>
+    
+</courses> 
