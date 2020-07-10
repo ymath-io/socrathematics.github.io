@@ -75,10 +75,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="col-sm-8" id="bod2">
-      <div>
-      <h2 class="">EXPONENTS</h2>
-      </div>
-      <p>Course by Sophia Zhu</p>
+      <h2 >EXPONENTS</h2>
+      <p class="attr">By Sophia Zhu</p>
       <p>Exponents (and logarithms) are a <em>power</em>-ful tool in mathematics. You should have a <em>base</em>-ic understanding of exponents if you want to learn topics like calculus.</p>
       <p>Alright, enough puns. On with the course!</p>
 
@@ -178,7 +176,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .timeline li.long:not(:last-child):after {
   content: '';
   width: 2px;
-  height: 700%;
+  height: 700%; /* this number should be 100 times one more than the number of bullets --> 6 bullets */
   background: #28a745;
   position: absolute;
   left: -8px;
@@ -193,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .timeline li.long1:not(:last-child):after {
   content: '';
   width: 2px;
-  height: 800%;
+  height: 700%; /* this number should be 100 times one more than the number of bullets */
   background: var(--secondary);
   position: absolute;
   left: -8px;
