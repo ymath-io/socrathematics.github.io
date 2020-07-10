@@ -27,8 +27,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       </head>
   <body class="">
     <div class="container-fluid text-center bg-transparent text-light masthead " style="min-height:93vh">
-        <h1 class="mastTitle " ><a href="/" style="text-decoration:none;color:white;"><b>SOCRATHEMATICS</b></a></h1>
-      <p class="mastTitle-2" ><b>Math, right at your fingertips.</b></p>
+        <h1 class="mastTitle-sub " ><a href="/" style="text-decoration:none;color:white;"><b>SOCRATHEMATICS</b></a></h1>
+      <p class="mastTitle-sub-2" ><b>Math, right at your fingertips.</b></p>
     
     </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
