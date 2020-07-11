@@ -32,18 +32,23 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
     </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
+
                 <a class="navbar-brand" href=""><img class="rounded" width="50" src="/favicon.png"></img></a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                     <div class="navbar-nav">
+
                         <a class="nav-item nav-link text-dark" href="/modular-arithmetic">Modular Arithmetic <span class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link text-dark" href="/trigonometry">Trigonometry</a>
                         <a class="nav-item nav-link text-dark" href="/calculus">Calculus</a>
                         <a class="nav-item nav-link text-dark" href="/exponents">Exponents</a>
                         <a class="nav-item nav-link text-dark" href="/request-course" >Request a Course</a>
                         <a class="nav-item nav-link text-dark" href="/faq" >FAQ</a>
+
+
                     </div>
                     <ul class="navbar-nav ml-md-auto">
                         <form class="form-inline my-2 my-lg-0">
@@ -357,4 +362,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   </html>
 </xsl:template>
 
+
 </xsl:stylesheet> 
+
+
+

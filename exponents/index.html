@@ -60,11 +60,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p >Topics within Exponents</p>
 
       <nav class="nav nav-pills flex-column" >
-        <li class="nav-item active">
-          <a class="nav-link" href="">Home</a>
+        <li class="nav-item">
+          <a class="nav-link active" href="">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled"  href="exponents" >Exponents</a>
+          <a class="nav-link"  href="exponents-2" style="text-decoration:none;" >Exponents</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="logarithms">Logarithms</a>
@@ -75,36 +75,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="col-sm-8" id="bod2">
-      <div>
-      <h2 class="">EXPONENTS</h2>
-      </div>
+      <h2 >EXPONENTS</h2>
+      <p class="attr">By Sophia Zhu</p>
       <p>Exponents (and logarithms) are a <em>power</em>-ful tool in mathematics. You should have a <em>base</em>-ic understanding of exponents if you want to learn topics like calculus.</p>
       <p>Alright, enough puns. On with the course!</p>
 
       Here's what we'll be covering:
         <ul class="timeline">
-            <li class="long">Exponents</li>
+          <li class="long"><a href="exponents-2" class="text-dark pop py-2 px-2">Exponents</a>
+            </li>
       <ul class="timeline sub">
-          <li class="text-muted"><a href="exponents/introduction" class="text-dark pop py-2 px-2" style="color:var(--dark)">Introduction</a></li>
-          <li class="text-muted"><a href="exponents/properties" class="text-dark pop py-2 px-2">Properties</a></li>
-          <li class="text-muted"><a href="exponents/practice" class="text-dark pop py-2 px-2">Practice</a></li>
-          <li class="text-muted"><a href="exponents/graphs" class="text-dark pop py-2 px-2">Graphs</a></li>
-          <li class="text-muted"><a href="exponents/applications" class="text-dark pop py-2 px-2">Applications</a></li>
-          <li class="text-muted"><a href="exponents/m-practice" class="text-dark pop py-2 px-2">More Practice</a></li>
+          <li><a href="exponents-2/practice" class="text-dark pop py-2 px-2" style="color:var(--dark)">Practice</a></li>
+          <li><a href="exponents-2/properties" class="text-dark pop py-2 px-2" style="color:var(--dark)">Properties</a></li>
+          <li class="text-muted">Graphs</a></li>
+          <li class="text-muted">Applications</a></li>
+          <li class="text-muted">More Practice</a></li>
          </ul>
 
-        <li class="long1 text-muted"><a href="logarithms" class="text-dark pop py-2 px-2">Logarithms</a></li>
-        <ul class="timeline sub">
-          <li class="text-muted"><a href="logarithms/introduction" class="text-dark pop py-2 px-2">Introduction</a></li>
-          <li class="text-muted"><a href="logarithms/properties" class="text-dark pop py-2 px-2">Properties</a></li>
-          <li class="text-muted"><a href="logarithms/practice" class="text-dark pop py-2 px-2">Practice</a></li>
-          <li class="text-muted"><a href="logarithms/graphs" class="text-dark pop py-2 px-2">Graphs</a></li>
-          <li class="text-muted"><a href="logarithms/natural-log" class="text-dark pop py-2 px-2">Natural Logarithm</a></li>
-          <li class="text-muted"><a href="logarithms/applications" class="text-dark pop py-2 px-2">Applications</a></li>
-          <li class="text-muted"><a href="logarithms/m-practice" class="text-dark pop py-2 px-2">More Practice</a></li>
+        <li class="long1 text-muted">Logarithms</a>
+        </li>
+      <ul class="timeline sub">
+          <li class="text-muted">Practice</a></li>
+          <li class="text-muted">Properties</a></li>
+          <li class="text-muted">Graphs</a></li>
+          <li class="text-muted">Natural Logarithm</a></li>
+          <li class="text-muted">Applications</a></li>
+          <li class="text-muted">More Practice</a></li>
 
         </ul>
-            <li class="text-muted"><a href="logarithms/m-practice" class="text-dark pop py-2 px-2 text-muted">Chapter 3- Coming soon!</a></li><!-- always make use think there is more-->
+            <li class="text-muted">Chapter 3- Coming soon!</a></li><!-- always make user think there is more-->
         </ul>
 
       <style>
@@ -177,7 +176,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .timeline li.long:not(:last-child):after {
   content: '';
   width: 2px;
-  height: 700%;
+  height: 700%; /* this number should be 100 times one more than the number of bullets --> 6 bullets */
   background: #28a745;
   position: absolute;
   left: -8px;
@@ -192,7 +191,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 .timeline li.long1:not(:last-child):after {
   content: '';
   width: 2px;
-  height: 800%;
+  height: 700%; /* this number should be 100 times one more than the number of bullets */
   background: var(--secondary);
   position: absolute;
   left: -8px;
@@ -225,10 +224,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </a>
     </li>
     <li class="page-item active"><a class="page-link" href="">•</a></li>
-    <li class="page-item"><a class="page-link" href="limits">Limits</a></li>
-    <li class="page-item"><a class="page-link" href="limits/definition">Definition</a></li>
+    <li class="page-item"><a class="page-link" href="exponents-2">Exponents</a></li>
     <li class="page-item">
-      <a class="page-link" href="limits" aria-label="Next" id="next">
+      <a class="page-link" href="exponents-2" aria-label="Next" id="next">
         <span aria-hidden="true">&raquo;</span>
       </a>
     </li>
