@@ -206,19 +206,22 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       </div>
     </div>
     <div class="container py-5">
-  <h1>Course Catalog</h1><hr/>
+  <h1 class="display-4">Course Catalog</h1><hr/>
     <xsl:for-each select="courses/course">
     <div>
       <h2><xsl:value-of select="title"/></h2>
       <p><xsl:value-of select="description"/></p>
+      <div class="container row">
+        
+            <div class="col-9">
       <xsl:for-each select="topics/topic">
     <div class="card pop my-3 no-def ml-5">
         <div class="card-body">
-            <h3 class="card-title"><xsl:value-of select="title"/></h3>
+            <h3 class="card-title"><xsl:value-of select="title"/><p class="float-right card-title"><xsl:value-of select="difficulty"></xsl:value-of></p></h3>
             <p class="card-text"><xsl:value-of select="description"/></p>
             <ul class="list-group list-group-flush">
                 <xsl:for-each select="subtopics/subtopic">
-                <li class="list-group-item">
+                <li class="list-group-item pop">
                     <xsl:element name="a" >
                 <xsl:attribute name="href">
                     <xsl:value-of select="link"/>
@@ -229,7 +232,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     
                 </xsl:attribute>
                 <xsl:value-of select="title"/>
-            </xsl:element></li>
+            </xsl:element>
+            </li>
             </xsl:for-each>
               </ul>
             <xsl:element name="a" >
@@ -247,6 +251,26 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         </div>
     </xsl:for-each>
     </div>
+    <div class="col-3">
+      <h4>Prerequisites</h4>
+            <ul class="">
+              <xsl:for-each select="prerequisites/prerequisite">
+                <li class="py-3">
+                  <xsl:element name="a" >
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="link"/>
+                        
+                    </xsl:attribute>
+                    <xsl:attribute name="class">
+                        link
+                        
+                    </xsl:attribute>
+                    <xsl:value-of select="name"/>
+                </xsl:element></li>
+              </xsl:for-each>
+            </ul>
+            </div>
+    </div></div>
     </xsl:for-each>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
