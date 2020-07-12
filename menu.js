@@ -59,7 +59,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                 
                 <ul class="navbar-nav ml-md-auto">
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" id="sque" aria-label="Search">
+                        <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" onsearch="document.getElementById('sbut').click()" id="sque" aria-label="Search">
                         <button class="btn btn-outline-success my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
                     </form>
                     <li class="nav-item nav-link text-dark cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
