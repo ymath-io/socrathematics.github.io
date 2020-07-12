@@ -105,8 +105,8 @@
             </topic>
         </topics>
         <prerequisites>
-            <prerequisite>Algebra 8</prerequisite>
-            <prerequisite>Geometry 7</prerequisite>
+            <prerequisite><name>Algebra 8</name></prerequisite>
+            <prerequisite><name>Geometry 7</name></prerequisite>
         </prerequisites>
     </course>
 
@@ -191,22 +191,15 @@
             </topic>
         </topics>
         <prerequisites>
-            <prerequisite>Algebra 8</prerequisite>
-            <prerequisite>Trigonometry</prerequisite>
-            <prerequisite>Exponents</prerequisite>
+            <prerequisite><name>Algebra 8</name></prerequisite>
+            <prerequisite>
+                <name>Trigonometry</name>
+                <link>/trigonometry</link>
+            </prerequisite>
+            <prerequisite>
+                <name>Exponents</name>
+                <link>/exponents</link>
+            </prerequisite>
         </prerequisites>
     </course>
-
-    <course>
-        <title>Modular Arithmetic</title>
-        <link>https://socrathematics.github.io/modular-arithmetic/</link>
-        <description>Discover the math behind the internet (and baking)</description>
-        <topics>
-            <topic>
-                <title>Introduction</title>
-                <link>https://socrathematics.github.io/modular-arithmetic/introduction</link>
-            </topic>
-        </topics>
-    </course>
-
-</courses> 
+    </courses>
