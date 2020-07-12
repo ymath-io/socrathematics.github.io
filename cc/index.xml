@@ -202,4 +202,15 @@
             </prerequisite>
         </prerequisites>
     </course>
+    <course>
+        <title>Modular Arithmetic</title>
+        <link>https://socrathematics.github.io/modular-arithmetic/</link>
+        <description>Discover the math behind the internet (and baking)</description>
+        <topics>
+            <topic>
+                <title>Introduction</title>
+                <link>https://socrathematics.github.io/modular-arithmetic/introduction</link>
+            </topic>
+        </topics>
+    </course>
     </courses>
