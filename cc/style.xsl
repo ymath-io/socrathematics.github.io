@@ -32,46 +32,77 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
     </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
-
-                <a class="navbar-brand" href=""><img class="rounded" width="50" src="/favicon.png"></img></a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-
-                        <a class="nav-item nav-link text-dark" href="/modular-arithmetic">Modular Arithmetic <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link text-dark" href="/trigonometry">Trigonometry</a>
-                        <a class="nav-item nav-link text-dark" href="/calculus">Calculus</a>
-                        <a class="nav-item nav-link text-dark" href="/exponents">Exponents</a>
-                        <a class="nav-item nav-link text-dark" href="/request-course" >Request a Course</a>
-                        <a class="nav-item nav-link text-dark" href="/faq" >FAQ</a>
-
-
+            <a class="navbar-brand pop" href="/"><img class="rounded" width="50" src="/favicon.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <ul class="navbar-nav nav nav-fill">
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle pop text-dark cursor-pointer" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Courses
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="d-md-flex align-items-start justify-content-start">
+                        <div>   
+                          <div class="dropdown-header"><a class=" text-dark" href="/modular-arithmetic">Modular Arithmetic</a></div>
+                          <a class="dropdown-item" href="/modular-arithmetic/">About</a>
+                          <a class="dropdown-item" href="/modular-arithmetic/introduction">Introduction</a>
+                         </div>
+                         <div>   
+                          <div class="dropdown-header"><a class=" text-dark" href="/trigonometry">Trigonometry</a></div>
+                          <a class="dropdown-item" href="/trigonometry/">About</a>
+                          <a class="dropdown-item" href="/trigonometry/functions/">Functions</a>
+                          <a class="dropdown-item" href="/trigonometry/identities/">Identities</a>
+                          <a class="dropdown-item" href="/trigonometry/law-of-sines/">Law of Sines</a>
+                          <a class="dropdown-item" href="/trigonometry/law-of-cosines/">Law of Cosines</a>
+                          <a class="dropdown-item" href="/trigonometry/Tilting-A-Parabola.pdf">Rotating a Parabola</a>
+                         </div>
+                         <div>   
+                          <div class="dropdown-header"><a class=" text-dark" href="/calculus">Calculus</a></div>
+                          <a class="dropdown-item" href="/calculus/">About</a>
+                          <a class="dropdown-item" href="/calculus/limits/">Limits</a>
+                          <a class="dropdown-item" href="/calculus/derivatives/">Derivatives</a>
+                          <a class="dropdown-item" href="/calculus/integrals/">Integrals</a>
+                          
+                         </div>
+                         <div>   
+                          <div class="dropdown-header"><a class=" text-dark" href="/exponents">Exponents &amp; Logarithms</a></div>
+                          <a class="dropdown-item" href="/exponents/">About</a>
+                          <a class="dropdown-item" href="/exponents/exponents-2/">Exponents</a>
+                         
+                          
+                         </div>
+                    
                     </div>
-                    <ul class="navbar-nav ml-md-auto">
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" id="sque" aria-label="Search"></input>
-                            <button class="btn btn-outline-success my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
-                        </form>
-                        <li class="nav-item nav-link text-dark cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
-                        <li class="nav-item nav-link text-dark cursor-pointer" id="si" data-toggle="modal" data-target="#sim" style="display:none">Sign In</li>
-    
-                        <li class="nav-item dropdown" id="ma"  style="display:none">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item cursor-pointer"  data-toggle="modal" data-target="#mam" >Account Info</a>
-                                <a class="dropdown-item cursor-pointer" href="/u/dashboard">Dashboard</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item cursor-pointer"  data-toggle="modal" data-target="#som">Sign out</a>
-    
-                            </div>
-                        </li>
-    
-                    </ul>
-                </div>
-            </nav>
+                      </div>
+                    </li>
+                    <li><a class="nav-item nav-link text-dark pop" href="/request-course" >Request a Course</a>
+                      </li>
+                      <li><a class="nav-item nav-link text-dark pop" href="/cc" >Course Catalog</a></li>
+                      <li><a class="nav-item nav-link text-dark pop" href="/faq" >FAQ</a></li>
+                </ul>
+                
+                <ul class="navbar-nav ml-md-auto">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" id="sque" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
+                    </form>
+                    <li class="nav-item nav-link text-dark cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
+                    <li class="nav-item nav-link text-dark cursor-pointer" id="si" data-toggle="modal" data-target="#sim" style="display:none">Sign In</li>
+                    <li class="nav-item dropdown" id="ma"  style="display:none">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item cursor-pointer"  data-toggle="modal" data-target="#mam" >Account Info</a>
+                            <a class="dropdown-item cursor-pointer" href="/u/dashboard">Dashboard</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item cursor-pointer"  data-toggle="modal" data-target="#som">Sign out</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     
         <div class="modal fade" id="sum" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="suml" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
