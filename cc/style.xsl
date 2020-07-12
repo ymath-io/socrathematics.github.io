@@ -220,47 +220,51 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         
             <div class="col-9">
       <xsl:for-each select="topics/topic"><!-- for every topic -->
-    <div class="card pop my-3 no-def ml-5">
-        <div class="card-body">
-            <h3 class="card-title"><xsl:value-of select="title"/><p class="float-right card-title"><xsl:value-of select="difficulty"></xsl:value-of></p></h3>
-            <p class="card-text"><xsl:value-of select="description"/></p>
-            <ul class="list-group list-group-flush">
-                <xsl:for-each select="subtopics/subtopic"><!-- for every subtopic within that topic-->
-                <li class="list-group-item pop">
-                    <xsl:element name="a" >
-                <xsl:attribute name="href">
-                    <xsl:value-of select="link"/>
-                    
-                </xsl:attribute>
-                <xsl:attribute name="class"> <!-- we need to decide if the link even exists -->
-                  <xsl:choose>
-                    <xsl:when test="link = ''">
-                      btn disabled py-0 px-0 mx-0 my-0 <!-- apparently, you cannot disable a link. Made a button and removed button-like style.-->
-                    </xsl:when>
-                    <xsl:otherwise>
-                      link
-                    </xsl:otherwise>
-                  </xsl:choose><!-- stop the choosing -->
-                    
-                </xsl:attribute><!-- close the class attribute -->
-                <xsl:value-of select="title"/><!-- the link should be written as the course name -->
-            </xsl:element>
-            </li>
-            </xsl:for-each><!-- stop looping through subtopics -->
-              </ul>
-            <xsl:element name="a" >
-                <xsl:attribute name="href">
-                    <xsl:value-of select="link"/>
-                    
-                </xsl:attribute>
-                <xsl:attribute name="class">
-                    float-right btn btn-lg btn-success text-white
-                    
-                </xsl:attribute>
-                Begin
-            </xsl:element>
-          </div>
-        </div>
+        
+          <xsl:if test="link != ''">
+            <div class="card pop my-3 no-def ml-5">
+              <div class="card-body">
+                  <h3 class="card-title"><xsl:value-of select="title"/><p class="float-right card-title"><xsl:value-of select="difficulty"></xsl:value-of></p></h3>
+                  <p class="card-text"><xsl:value-of select="description"/></p>
+                  <ul class="list-group list-group-flush">
+                      <xsl:for-each select="subtopics/subtopic"><!-- for every subtopic within that topic-->
+                      <li class="list-group-item pop">
+                          <xsl:element name="a" >
+                      <xsl:attribute name="href">
+                          <xsl:value-of select="link"/>
+                          
+                      </xsl:attribute>
+                      <xsl:attribute name="class"> <!-- we need to decide if the link even exists -->
+                        <xsl:choose>
+                          <xsl:when test="link = ''">
+                            btn disabled py-0 px-0 mx-0 my-0 <!-- apparently, you cannot disable a link. Made a button and removed button-like style.-->
+                          </xsl:when>
+                          <xsl:otherwise>
+                            link
+                          </xsl:otherwise>
+                        </xsl:choose><!-- stop the choosing -->
+                          
+                      </xsl:attribute><!-- close the class attribute -->
+                      <xsl:value-of select="title"/><!-- the link should be written as the course name -->
+                  </xsl:element>
+                  </li>
+                  </xsl:for-each><!-- stop looping through subtopics -->
+                    </ul>
+                  <xsl:element name="a" >
+                      <xsl:attribute name="href">
+                          <xsl:value-of select="link"/>
+                          
+                      </xsl:attribute>
+                      <xsl:attribute name="class">
+                          float-right btn btn-lg btn-success text-white
+                          
+                      </xsl:attribute>
+                      Begin
+                  </xsl:element>
+                </div>
+              </div>
+            </xsl:if>
+    
     </xsl:for-each><!-- stop looping through topics -->
     </div>
     <div class="col-3">
