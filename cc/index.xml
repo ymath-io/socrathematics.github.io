@@ -104,6 +104,10 @@
                 <link>https://socrathematics.github.io/trigonometry/Tilting-A-Parabola.pdf</link>
             </topic>
         </topics>
+        <prerequisites>
+            <prerequisite>Algebra 8</prerequisite>
+            <prerequisite>Geometry 7</prerequisite>
+        </prerequisites>
     </course>
 
     <course>
@@ -186,6 +190,11 @@
                 </subtopics>
             </topic>
         </topics>
+        <prerequisites>
+            <prerequisite>Algebra 8</prerequisite>
+            <prerequisite>Trigonometry</prerequisite>
+            <prerequisite>Exponents</prerequisite>
+        </prerequisites>
     </course>
 
     <course>
