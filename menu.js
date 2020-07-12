@@ -51,10 +51,10 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                     </div>
                       </div>
                     </li>
-                    <li><a class="nav-item nav-link text-dark" href="request-course" >Request a Course</a>
+                    <li><a class="nav-item nav-link text-dark" href="/request-course" >Request a Course</a>
                       </li>
-                      <li><a class="nav-item nav-link text-dark" href="cc" >Course Catalog</a></li>
-                      <li><a class="nav-item nav-link text-dark" href="faq" >FAQ</a></li>
+                      <li><a class="nav-item nav-link text-dark" href="/cc" >Course Catalog</a></li>
+                      <li><a class="nav-item nav-link text-dark" href="/faq" >FAQ</a></li>
                 </ul>
                 
                 <ul class="navbar-nav ml-md-auto">
