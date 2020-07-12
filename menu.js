@@ -5,7 +5,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
 
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
-            <a class="navbar-brand" href="/"><img class="rounded" width="50" src="/favicon.png"></a>
+            <a class="navbar-brand pop" href="/"><img class="rounded" width="50" src="/favicon.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -13,7 +13,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                 <ul class="navbar-nav nav nav-fill">
                     
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle text-dark cursor-pointer" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle pop text-dark cursor-pointer" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        Courses
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -51,10 +51,10 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                     </div>
                       </div>
                     </li>
-                    <li><a class="nav-item nav-link text-dark" href="/request-course" >Request a Course</a>
+                    <li><a class="nav-item nav-link text-dark pop" href="/request-course" >Request a Course</a>
                       </li>
-                      <li><a class="nav-item nav-link text-dark" href="/cc" >Course Catalog</a></li>
-                      <li><a class="nav-item nav-link text-dark" href="/faq" >FAQ</a></li>
+                      <li><a class="nav-item nav-link text-dark pop" href="/cc" >Course Catalog</a></li>
+                      <li><a class="nav-item nav-link text-dark pop" href="/faq" >FAQ</a></li>
                 </ul>
                 
                 <ul class="navbar-nav ml-md-auto">
