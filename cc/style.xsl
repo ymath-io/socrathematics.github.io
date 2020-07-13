@@ -68,9 +68,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                           
                          </div>
                          <div>   
-                          <div class="dropdown-header"><a class=" text-dark" href="/exponents">Exponents &amp; Logarithms</a></div>
-                          <a class="dropdown-item" href="/exponents/">About</a>
-                          <a class="dropdown-item" href="/exponents/exponents-2/">Exponents</a>
+                          <div class="dropdown-header"><a class=" text-dark" href="/exponents-and-more">Exponents &amp; More</a></div>
+                          <a class="dropdown-item" href="/exponents-and-more">About</a>
+                          <a class="dropdown-item" href="/exponents-and-more/exponents">Exponents</a>
                          
                           
                          </div>
