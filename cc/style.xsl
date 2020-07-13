@@ -11,7 +11,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <link rel="stylesheet" href="/style.css"/>
         <link rel="stylesheet" href="/fonts.css"/>
         <link rel="icon" href="/favicon.png"/>
-        
+
                 <!--mathjax-->
                 <xsl:element name="script">
                     MathJax = {
@@ -20,16 +20,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         }
                       };
                 </xsl:element>
-            
+
               <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
             <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
+
       </head>
   <body class="">
     <div class="container-fluid text-center bg-transparent text-light masthead-sub">
       <h1 class="mastTitle-sub " ><a href="/" style="text-decoration:none;color:white;"><b>SOCRATHEMATICS</b></a></h1>
     <p class="mastTitle-sub-2" ><b>Math, right at your fingertips</b></p>
-    
+
     </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
             <a class="navbar-brand pop" href="/"><img class="rounded" width="50" src="/favicon.png"/></a>
@@ -38,19 +38,19 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             </button>
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <ul class="navbar-nav nav nav-fill">
-                    
+
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle pop text-dark cursor-pointer" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        Courses
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <div class="d-md-flex align-items-start justify-content-start">
-                        <div>   
+                        <div>
                           <div class="dropdown-header"><a class=" text-dark" href="/modular-arithmetic">Modular Arithmetic</a></div>
                           <a class="dropdown-item" href="/modular-arithmetic/">About</a>
                           <a class="dropdown-item" href="/modular-arithmetic/introduction">Introduction</a>
                          </div>
-                         <div>   
+                         <div>
                           <div class="dropdown-header"><a class=" text-dark" href="/trigonometry">Trigonometry</a></div>
                           <a class="dropdown-item" href="/trigonometry/">About</a>
                           <a class="dropdown-item" href="/trigonometry/functions/">Functions</a>
@@ -59,22 +59,22 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                           <a class="dropdown-item" href="/trigonometry/law-of-cosines/">Law of Cosines</a>
                           <a class="dropdown-item" href="/trigonometry/Tilting-A-Parabola.pdf">Rotating a Parabola</a>
                          </div>
-                         <div>   
+                         <div>
                           <div class="dropdown-header"><a class=" text-dark" href="/calculus">Calculus</a></div>
                           <a class="dropdown-item" href="/calculus/">About</a>
                           <a class="dropdown-item" href="/calculus/limits/">Limits</a>
                           <a class="dropdown-item" href="/calculus/derivatives/">Derivatives</a>
                           <a class="dropdown-item" href="/calculus/integrals/">Integrals</a>
-                          
+
                          </div>
-                         <div>   
+                         <div>
                           <div class="dropdown-header"><a class=" text-dark" href="/exponents-and-more">Exponents &amp; More</a></div>
                           <a class="dropdown-item" href="/exponents-and-more">About</a>
                           <a class="dropdown-item" href="/exponents-and-more/exponents">Exponents</a>
-                         
-                          
+
+
                          </div>
-                    
+
                     </div>
                       </div>
                     </li>
@@ -83,7 +83,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                       <li><a class="nav-item nav-link text-dark pop" href="/cc" >Course Catalog</a></li>
                       <li><a class="nav-item nav-link text-dark pop" href="/faq" >FAQ</a></li>
                 </ul>
-                
+
                 <ul class="navbar-nav ml-md-auto">
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" id="sque" aria-label="Search"/>
@@ -103,7 +103,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 </ul>
             </div>
         </nav>
-    
+
         <div class="modal fade" id="sum" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="suml" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -118,7 +118,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <div class="form-group">
                     <label class="" for="signup-email">Email Address</label>
                     <input class="form-control" type="email" id="signup-email" required="" />
-    
+
                 </div>
                 <div class="form-group">
                     <label class="" for="signup-password">Password</label>
@@ -134,7 +134,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         </div>
       </div>
     </div>
-    
+
         <div class="modal fade" id="sim" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="siml" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -150,7 +150,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <div class="form-group">
                     <label class="" for="signin-email">Email Address</label>
                     <input class="form-control" type="email" id="signin-email" required="" />
-    
+
                 </div>
                 <div class="form-group">
                     <label class="" for="signin-password">Password </label><a class="text-success cursor-pointer float-right">Forgot password?</a>
@@ -167,7 +167,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         </div>
       </div>
     </div>
-    
+
         <div class="modal fade" id="som" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="soml" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -189,7 +189,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         </div>
       </div>
     </div>
-    
+
         <div class="modal fade" id="mam" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="maml" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -205,7 +205,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <div class="form-group form-row">
                     <label for="mam-name" class="col-form-label col-sm-2"><b>Name</b></label>
                     <input id="mam-name" class="form-control col-sm-10"/>
-    
+
                 </div>
                 <h6>Danger Zone</h6>
                 <hr/>
@@ -219,7 +219,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         </div>
       </div>
     </div>
-    
+
          <div class="modal fade" id="vm" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="vml" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -242,16 +242,31 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       </div>
     </div>
     <div class="container py-5">
+  <h4>Jump to: </h4>
+    <xsl:for-each select="courses/course"> <!--For each course-->
+      <a>
+        <xsl:attribute name="href"> <!--set the href-->
+          #<xsl:value-of select="id"/>
+        </xsl:attribute>
+        <xsl:value-of select="title"/> <!--write the title-->
+      </a><br/>
+    </xsl:for-each>
+    <br/>
   <h1 class="display-4">Course Catalog</h1><hr/><!-- This is the title printed to the page-->
     <xsl:for-each select="courses/course"> <!-- within the courses tag, for each course-->
     <div>
-      <h2><xsl:value-of select="title"/></h2><!-- write the title and description-->
-      <p><xsl:value-of select="description"/></p>
+      <h2> 
+        <xsl:attribute name="id">
+          <xsl:value-of select="id"/> <!--set the id of the heading-->
+        </xsl:attribute>
+        <xsl:value-of select="title"/> <!-- write the title-->
+      </h2>
+      <p><xsl:value-of select="description"/></p> <!--write the description-->
       <div class="container row">
-        
+
             <div class="col-9">
       <xsl:for-each select="topics/topic"><!-- for every topic -->
-        
+
           <xsl:if test="link != ''">
             <div class="card pop my-3 no-def ml-5">
               <div class="card-body">
@@ -263,7 +278,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                           <xsl:element name="a" >
                       <xsl:attribute name="href">
                           <xsl:value-of select="link"/>
-                          
+
                       </xsl:attribute>
                       <xsl:attribute name="class"> <!-- we need to decide if the link even exists -->
                         <xsl:choose>
@@ -274,7 +289,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             link
                           </xsl:otherwise>
                         </xsl:choose><!-- stop the choosing -->
-                          
+
                       </xsl:attribute><!-- close the class attribute -->
                       <xsl:value-of select="title"/><!-- the link should be written as the course name -->
                   </xsl:element>
@@ -284,18 +299,18 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                   <xsl:element name="a" >
                       <xsl:attribute name="href">
                           <xsl:value-of select="link"/>
-                          
+
                       </xsl:attribute>
                       <xsl:attribute name="class">
                           float-right btn btn-lg btn-success text-white
-                          
+
                       </xsl:attribute>
                       Begin
                   </xsl:element>
                 </div>
               </div>
             </xsl:if>
-    
+
     </xsl:for-each><!-- stop looping through topics -->
     </div>
     <div class="col-3">
@@ -311,7 +326,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                   <xsl:element name="a" >
                     <xsl:attribute name="href">
                         <xsl:value-of select="link"/>
-                        
+
                     </xsl:attribute>
                     <xsl:attribute name="class">
                         <xsl:choose>
@@ -322,14 +337,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         btn disabled py-0 px-0 mx-0 my-0 <!-- apparently, you cannot disable a link. Made a button and removed button-like style.-->
                       </xsl:otherwise>
                     </xsl:choose><!-- stop the choosing -->
-                        
+
                     </xsl:attribute>
                     <xsl:value-of select="name"/>
                 </xsl:element></li>
               </xsl:for-each>
             </ul>
           </xsl:otherwise>
-            
+
             </xsl:choose>
             </div>
     </div></div>
@@ -340,13 +355,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
   <script>
-    
+
     <xsl:text disable-output-escaping="yes">
     $("#navbarNavAltMarkup").on('show.bs.collapse', function () {
     if (window.scrollY &lt; 170){
     window.scrollTo(0,170);}
   })
-  
+
   $(function() {
     $('a.down').on('click', function(e) {
       e.preventDefault();
@@ -357,10 +372,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   </script>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
-  
+
   <!-- TODO: Add SDKs for Firebase products that you want to use
        https://firebase.google.com/docs/web/setup#available-libraries -->
-  
+
   <script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
   <script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
   <script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
@@ -374,50 +389,50 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       projectId: "socrathematics",
       appId: "1:809638401187:web:9608adf73f25ced6d45b16",
       measurementId: "G-2QEQZPCEZR"
-  
+
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
-  
+
     const auth=firebase.auth();
     const db = firebase.firestore();
     // Get a reference to the storage service, which is used to create references in your storage bucket
     var storage = firebase.storage();
-  
+
   </script>
   <script type="text/javascript" src="/auth/auth.js"></script>
   <script type="text/javascript">
       document.querySelector("#sque").addEventListener("search", (e) => {
   e.preventDefault();
   var query = document.getElementById("sque");
-  
-  
+
+
   const params = new URLSearchParams(location.search);
   params.set('q', query.value);
-  
+
   console.log(params.toString());
   document.location  =  "/search/?" + params.toString();
-  
-  
+
+
   });
-  
+
   document.querySelector("#sbut").addEventListener("click", (e) => {
   e.preventDefault();
   var query = document.getElementById("sque");
-  
-  
+
+
   const params = new URLSearchParams(location.search);
   params.set('q', query.value);
-  
+
   console.log(params.toString());
   document.location  =  "/search/?" + params.toString();
-  
-  
+
+
   });
   </script>
   </html>
 </xsl:template>
 
 
-</xsl:stylesheet> 
+</xsl:stylesheet>
