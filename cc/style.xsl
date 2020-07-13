@@ -13,7 +13,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   gtag('config', 'UA-163408633-2');
 </script>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8"/>
         <title>Course Catalog - SOCRATHEMATICS</title>
         <meta name="description" content="Self-paced high school math material, explained to be understood."/>
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
