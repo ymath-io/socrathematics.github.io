@@ -3,25 +3,25 @@
 
 <courses>
     <course>
-        <title>Exponents</title>
-        <link>https://socrathematics.github.io/exponents/</link>
+        <title>Exponents and More</title>
+        <link>https://socrathematics.github.io/exponents-and-more/</link>
         <description>Master the most efficient computation since multiplication!</description>
         <topics>
             <topic>
                 <title>Exponents</title>
-                <link>https://socrathematics.github.io/exponents/exponents-2/</link>
+                <link>https://socrathematics.github.io/exponents-and-more/exponents/</link>
                 <subtopics>
                     <subtopic>
                         <title>Introduction</title>
-                        <link>https://socrathematics.github.io/exponents/exponents-2/</link>
+                        <link>https://socrathematics.github.io/exponents-and-more/exponents/</link>
                     </subtopic>
                     <subtopic>
                         <title>Practice</title>
-                        <link>https://socrathematics.github.io/exponents/exponents-2/practice/</link>
+                        <link>https://socrathematics.github.io/exponents-and-more/exponents/practice/</link>
                     </subtopic>
                     <subtopic>
                         <title>Properties</title>
-                        <link>https://socrathematics.github.io/exponents/exponents-2/properties/</link>
+                        <link>https://socrathematics.github.io/exponents-and-more/exponents/properties/</link>
                     </subtopic>
                     <subtopic>
                         <title>Graphs</title>
