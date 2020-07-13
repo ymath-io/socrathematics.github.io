@@ -205,4 +205,13 @@
             </prerequisite>
         </prerequisites>
     </course>
+    <course>
+        <title>Modular Arithmetic</title>
+        <link>/modular-arithmetic</link>
+        <description>Discover the math behind computer science (and baking?)</description>
+        <topics>
+            <title>Introduction</title>
+            <link>/modular-arithmetic/introduction</link>
+        </topics>
+    </course>
     </courses>
