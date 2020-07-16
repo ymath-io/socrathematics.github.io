@@ -4,8 +4,19 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="/">
-  <html>
+  <html style="scroll-behavior: smooth;">
       <head>
+        <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163408633-2');
+</script>
+        <meta charset="UTF-8"/>
+        <title>Course Catalog - SOCRATHEMATICS</title>
+        <meta name="description" content="Self-paced high school math material, explained to be understood."/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
         <link rel="stylesheet" href="/header.css"/>
         <link rel="stylesheet" href="/style.css"/>
@@ -69,8 +80,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                          </div>
                          <div>   
                           <div class="dropdown-header"><a class=" text-dark" href="/exponents-and-more">Exponents &amp; More</a></div>
-                          <a class="dropdown-item" href="/exponents-and-more">About</a>
-                          <a class="dropdown-item" href="/exponents-and-more/exponents">Exponents</a>
+                          <a class="dropdown-item" href="/exponents-and-more/">About</a>
+                          <a class="dropdown-item" href="/exponents-and-more/exponents/">Exponents</a>
                          
                           
                          </div>
@@ -86,7 +97,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 
                 <ul class="navbar-nav ml-md-auto">
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" id="sque" aria-label="Search"/>
+                        <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" onsearch="document.getElementById('sbut').click()" id="sque" aria-label="Search"/>
                         <button class="btn btn-outline-success my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
                     </form>
                     <li class="nav-item nav-link text-dark cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
@@ -243,11 +254,18 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     </div>
     <div class="container py-5">
   <h1 class="display-4">Course Catalog</h1><hr/><!-- This is the title printed to the page-->
+  <div class="card no-def py-3 px-3 my-3">
+    <h5>Jump To</h5>
+    <xsl:for-each select="courses/course">
+    <a class="link cursor-pointer text-success" href="#{title}"><xsl:value-of select="title"/></a>
+  </xsl:for-each>
+  </div><hr/>
     <xsl:for-each select="courses/course"> <!-- within the courses tag, for each course-->
-    <div>
-      <h2><xsl:value-of select="title"/></h2><!-- write the title and description-->
+    <span id="{title}" class="pb-5 mb-5"></span>
+    <div class="pt-5 mt-5">
+      <h2><a href="{link}" class="text-dark"><xsl:value-of select="title"/></a></h2><!-- write the title and description-->
       <p><xsl:value-of select="description"/></p>
-      <div class="container row">
+      <div class="container row" >
         
             <div class="col-9">
       <xsl:for-each select="topics/topic"><!-- for every topic -->
@@ -255,7 +273,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
           <xsl:if test="link != ''">
             <div class="card pop my-3 no-def ml-5">
               <div class="card-body">
-                  <h3 class="card-title"><xsl:value-of select="title"/><p class="float-right card-title"><xsl:value-of select="difficulty"></xsl:value-of></p></h3>
+                  <h3 class="card-title"><a href="{link}" class="text-dark"><xsl:value-of select="title"/></a><p class="float-right card-title"><xsl:value-of select="difficulty"></xsl:value-of></p></h3>
                   <p class="card-text"><xsl:value-of select="description"/></p>
                   <ul class="list-group list-group-flush">
                       <xsl:for-each select="subtopics/subtopic"><!-- for every subtopic within that topic-->

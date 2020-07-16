@@ -5,6 +5,7 @@
     <course>
         <title>Exponents &amp; More</title>
         <link>https://socrathematics.github.io/exponents-and-more/</link>
+        <id>exponents</id>
         <description>Master the most efficient computation since multiplication!</description>
         <topics>
             <topic>
@@ -77,6 +78,7 @@
     <course>
         <title>Trigonometry</title>
         <link>https://socrathematics.github.io/trigonometry/</link>
+        <id>trigonometry</id>
         <description>Learn one of the most powerful tools in geometry.</description>
         <topics>
             <topic>
@@ -113,7 +115,8 @@
     <course>
         <title>Calculus</title>
         <link>https://socrathematics.github.io/calculus/</link>
-        <description>Equip yourself with Calculus - it's not scary.</description>
+        <id>calculus</id>
+        <description>Equip yourself with calculus - it's not scary.</description>
         <topics>
             <topic>
                 <title>Limits</title>
@@ -201,5 +204,16 @@
                 <link>/exponents</link>
             </prerequisite>
         </prerequisites>
+    </course>
+    <course>
+        <title>Modular Arithmetic</title>
+        <link>/modular-arithmetic</link>
+        <description>Discover the math behind computer science (and baking?)</description>
+        <topics>
+            <topic>
+                <title>Introduction</title>
+                <link>/modular-arithmetic/introduction</link>
+            </topic>
+        </topics>
     </course>
     </courses>

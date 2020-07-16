@@ -41,7 +41,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                           
                          </div>
                          <div>   
-                          <div class="dropdown-header"><a class=" text-dark" href="/exponents-and-more">Exponents &amp More</a></div>
+                          <div class="dropdown-header"><a class=" text-dark" href="/exponents-and-more">Exponents &amp; More</a></div>
                           <a class="dropdown-item" href="/exponents-and-more/">About</a>
                           <a class="dropdown-item" href="/exponents-and-more/exponents/">Exponents</a>
                          
