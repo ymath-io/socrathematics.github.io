@@ -113,12 +113,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>We can write it using an exponent as</p>
         <p> $$3^6$$ </p>
         <p>(read as 3 to the power of 6, 3 to the 6th power, or 3 to the 6th).</p>
-        <p>In this example, the "3" is called the <em>base</em>, and it is the number being multiplied by itself. The "6" is called the <em>exponent</em>, and it is the number of times that the base is multiplied by itself. This notation is called <em>exponential form</em>. </p> 
-        <p>To type this on a computer, type 3^6.</p>
+        <p>In this example, the "3" is called the <em>base</em>, and it is the number being multiplied by itself. 
+            The "6" is called the <em>exponent</em>, and it is the number of times that the base is multiplied by itself. 
+            This notation is called <em>exponential form</em>.  
+            A base together with its exponent are called a <em>power</em>. </p>
+        <p>To type a power on a computer, type {base}^{exponent}. 
+            For example, for $3^6$ we would type 3^6.</p>
         <p>Your turn! Write the following in exponential form:</p>
         <li class="card card-body no-def my-3 pop">
 
-    <p>$\displaystyle{2\cdot2\cdot2\cdot2}=$<span id="answer1" class="form-control-sm answerb"></span><svg id="tu1" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg">
+    <p>$\displaystyle{2\cdot2\cdot2\cdot2}=$ <span id="answer1" class="form-control-sm answerb"></span><svg id="tu1" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd"
         d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
 </svg></p>
@@ -127,7 +131,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!--Solution--><details><summary class="btn btn-sm btn-outline-success mt-2">Show/Hide Solution</summary>
                 <p>2 is the base, and 4 is the exponent. In exponential form, this is $2^4$.</p>
         </details>
-        </li><p></p>
+        </li>
+        <br/>
+        <h4>Tips</h4> 
+            <ol>
+                <li>
+                    For multiplication, we can think of it as a number being added multiple times to 0. 
+                    $$x\cdot 4=0+x+x+x+x$$
+                    However, for exponents, we have to think of it as being multiplied to 1 instead of 0.
+                    $$x^4=1\cdot x\cdot x\cdot x\cdot x \\
+                    \neq 0\cdot x\cdot x\cdot x\cdot x$$
+                    This is because any number added to 0 is the same number, and any number multiplied by 1 is the same. 
+                    These special numbers are called identity elements (additive identity and multiplicative identity).
+                </li>
+                <br/>
+                <li>
+                    In general, 
+                    $$x^y \neq y^x$$
+                    For example, 
+                    $$2^3=8\neq3^2=9$$
+                    Can you find an example where $x^y=y^x$?
+                    <!--Hint--><details><summary class="btn btn-outline-success btn-sm mt-2">Solution</summary>
+                        Try $2^4$ and $4^2$.</details>
+                </li>
+                <br/>
+                <li>
+                    Remember your order of operations when working with exponents. 
+                    Exponents come before all other operations except parentheses!
+                    $$x\cdot y^z = x\cdot (y^z)\neq (x\cdot y)^z$$
+                </li>
+                <br/>
+                <li>
+                    If an exponent is a power, evaluate the expression from top-right to bottom-left.
+                    $$x^{y^z} = x^{(y^z)}\neq (x^y)^z$$
+                </li>
+            </ol>
+        <br/>
         
 <nav aria-label="Page navigation example text-center">
     <ul class="pagination justify-content-center">
@@ -136,7 +175,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span aria-hidden="true">&laquo;</span>
         </a>
     </li>
-    <li class="page-item"><a class="page-link" href="../">Exponents</a></li>
+    <li class="page-item"><a class="page-link" href="../">Exponents & More</a></li>
     <li class="page-item active"><a class="page-link" href="">•</a></li>
     <li class="page-item"><a class="page-link" href="practice">Practice</a></li>
     <li class="page-item">
