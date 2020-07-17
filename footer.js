@@ -10,4 +10,5 @@ document.write(`
   </ul>
      </nav>
 `);
+  console.log("Footer written to DOM.");
 }
