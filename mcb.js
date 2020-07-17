@@ -41,7 +41,7 @@ var elem = document.querySelector("#mcb");
     elem.innerHTML  = "Mark as incomplete";
     elem.className = "btn btn-outline-dark";
         }
-        else if (window.confirm("Are you sure you want to mark this lesson as incomplete? You'll permanently lose the timestamp associated with you completion.")){
+        else if (window.confirm("Are you sure you want to mark this lesson as incomplete? You'll permanently lose the timestamp associated with your completion.")){
             eval("docRef.update({'"+selector+"': null})");
     elem.innerHTML  = "Mark as complete";
     elem.className = "btn btn-dark";
