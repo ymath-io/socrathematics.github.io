@@ -1,5 +1,5 @@
 function makeFooter(t1, l1, t2, l2, b1=false, b2=false){
-document.getElementById("bod2").innerHTML += `
+window.onload= function() {document.getElementById("bod2").innerHTML += `
 <nav>
   <ul class="pagination justify-content-center">
     
@@ -10,5 +10,5 @@ document.getElementById("bod2").innerHTML += `
   </ul>
      </nav>
 `;
-  console.log("Footer written to DOM.");
+  console.log("Footer written to DOM.");}
 }
