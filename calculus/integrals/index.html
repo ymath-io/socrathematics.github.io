@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-white" style="">
+<html lang="en" class="bg-white">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
@@ -42,6 +42,7 @@ MathJax = {
 </script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 
 <body id="bod">
@@ -86,14 +87,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Before you begin this chapter, it is integral that you are very comfortable with derivatives and you can easily replicate the reference table without any help.</p>
       <p>Now, you must be thinking, what is an integral? Most people have heard that it is the area under a curve. That is a popular example of what we can do with integrals. A differentiation is the value of one ratio between the infinitesimally small differences in two function values. An integral is the value of the sum of the infinitesimal values that the function produces over a constant interval, multiplied by the length of the interval.</p>
       <p>For example, let's try to take the integral of $y=2x.$ We'll find the area under the line from $0$ to some arbritary point $x,$ just as we found the slope at some point $x$ during differentiation.</p>
+      <iframe src="https://www.desmos.com/calculator/4np6mdyail?embed"  class="graph" style="border: 1px solid #ccc" frameborder=0 ></iframe>
+      
+      
+      
       <p>First, we visualize our function - we have a triangle, where the $y$ value is always twice the $x$ value. So, if we take the first vertical bar with a width of $dx,$ then the height of that bar would be $2dx.$ And, if we took the next vertical bar with width $dx,$ then our distance from the origin is now $2dx,$ so we can raise the bar as high as $4dx.$ And, if we take the third bar with width $dx,$ then we are now $3dx$ out from the origin, so we can raise the bar as high as $6dx.$ </p>
-      <p>Now that we have the dimensions of the first few bars, let's see what happens when we find their area:&nbsp;&nbsp; $$\left(dx\right)\left(2dx\right)+\left(dx\right)\left(4dx\right)+\left(dx\right)\left(6dx\right)=2\left(dx\right)^2\left(1+2+3\right).$$ And if we take the next few bars, we would have&nbsp;&nbsp; $$\left(dx\right)\left(2dx\right)+\left(dx\right)\left(4dx\right)+\left(dx\right)\left(6dx\right)+\left(dx\right)\left(8dx\right)+\left(dx\right)\left(10dx\right)+\left(dx\right)\left(12dx\right)=2\left(dx\right)^2\left(1+2+3+4+5+6\right).$$ How long does this series continue for? That would depend on how many bars there are.</p>
+      <p>Now that we have the dimensions of the first few bars, let's see what happens when we find their area:&nbsp;&nbsp; $$\left(dx\right)\left(2dx\right)+\left(dx\right)\left(4dx\right)+\left(dx\right)\left(6dx\right)=2\left(dx\right)^2\left(1+2+3\right).$$ And if we take the next few bars, we would have&nbsp;&nbsp; $$\left(dx\right)\left(2dx\right)+\left(dx\right)\left(4dx\right)+\left(dx\right)\left(6dx\right)+\left(dx\right)\left(8dx\right)+\left(dx\right)\left(10dx\right)+\left(dx\right)\left(12dx\right)=2\left(dx\right)^2\left(1+2+3+4+5\right).$$ How long does this series continue for? That would depend on how many bars there are.</p>
       <p>Let's see: if the total width of the area is $x,$ and the width of each bar is $dx,$ then there should be $\frac{x}{dx}$ bars. So the complete series would look like: $$2\left(dx\right)^2\left(1+2+3+\cdots+\frac{x}{dx}\right).$$ How do we find the sum of this series? We can use the Gauss method:&nbsp; $$2\left(dx\right)^2\frac{\left(1+\frac{x}{dx}\right)\left(\frac{x}{dx}\right)}{2}$$ After simplification:&nbsp;&nbsp; $$dx^2\cdot\left(\frac{x}{dx}+\frac{x^2}{\left(dx\right)^2}\right)=xdx+x^2.$$ Now, we get to decide how wide our bars should be - i.e., the value of $dx.$ Well, the smaller our bars are, the more accurate our calculation will be. So, we're going to go with infinitesimally small: $$\lim_{dx\to0}xdx+x^2=x\left(0\right)+x^2=x^2.$$ </p>
       <p>We are done! We can now write our answer as&nbsp; $$\int2x\ dx\ =\ x^2+C.$$ Why, you may ask, do we have to write " $+C$ "?&nbsp;What is $C$ ?</p>
       <p>Before we talk about that, let's ask ourselves another, explorable question - why is it, that:&nbsp; $$\frac{d\left(x^2+C\right)}{dx}=2x$$ for some constant $C,$ and&nbsp;&nbsp; $$\int2x\ dx\ =x^2+C?$$ Well, let's think about it- when we take the differentiation of the integration of something, we are asking ourselves how much the integration changes when we increase the upper bound by $dx.$ </p>
       <p>This is a question we know how to answer, because $dx$ is the width of one of our rectangles! Each time we increase the upper bound, we are adding another rectangle. Every time that we add another rectangle to the end, the height of that rectangle is going to be twice our upper bound, since $y=2x.$ And our if our upper bound is&nbsp; $x,$ (because we are trying to find a general formula here), then the area of that rectangle is going to be $2x\ dx.$ </p>
       <p>Wait a minute - isn't that the function that we were trying to integrate? Yes! This is no coincidence - it's the Fundamental Theorem of Calculus.&nbsp;&nbsp;</p>
       <p>We'll look deeper at the actual theorem and the meaning of " $+C$ " in the next lesson. See you there!&nbsp;&nbsp;</p>
+      <iframe src="https://www.desmos.com/calculator/lhmlmpcyma?embed" class="graph" style="border: 1px solid #ccc" frameborder=0></iframe>
 <pre>
 
 
@@ -110,9 +116,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 </pre>
- <script defer src="/footer.js"/>
- <script defer>makeFooter("Reference Table", "../derivatives/rt", "FToC", "ftoc", b2=true);
-        </script>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link " href="../derivatives/rt" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="../derivatives/rt">Reference Table</a></li>
+    <li class="page-item active"><a class="page-link" href="">•</a></li>
+    <li class="page-item"><a class="page-link" href="ftoc">FToC</a></li>
+    <li class="page-item">
+      <a class="page-link" href="ftoc" aria-label="Next" id="next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+     </nav>
     </div>
   </div>
 </div>
