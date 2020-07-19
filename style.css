@@ -101,7 +101,8 @@ height:80vw;
 width:80vw;
 }
 }
-
+.graph{       margin-left: auto;   /* Automatic margin from left */
+  margin-right: auto; /* Automatic margin from right */}
 /*p {white-space: pre-wrap;}*/
 .green-icon{
 filter: invert(44%) sepia(87%) saturate(442%) hue-rotate(81deg) brightness(100%) contrast(85%);}
