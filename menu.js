@@ -16,7 +16,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                       <a class="nav-link dropdown-toggle pop text-dark cursor-pointer" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        Courses
                       </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="max-height:90vh;overflow:scroll">
                         <div class="d-md-flex align-items-start justify-content-start">
                         <div>   
                           <div class="dropdown-header"><a class=" text-dark" href="/modular-arithmetic">Modular Arithmetic</a></div>
