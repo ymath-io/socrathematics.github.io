@@ -4,54 +4,81 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
   <p class="mastTitle-sub-2" ><b>Math, right at your fingertips</b></p>
 
 </div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navigation" style="opacity:0.9;">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand" href="/"><img class="rounded pop" src="https://socrathematics.github.io/favicon.png" height=40 width="40"> <span class="sr-only">(current)</span></a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item">
-        <a class="nav-link pop" href="/modular-arithmetic" id="mod">Modular Arithmetic</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link pop" href="/trigonometry" id="trig">Trigonometry</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link pop" href="/calculus" id="calc">Calculus</a>
-      </li>
-<li class="nav-item">
-        <a class="nav-link pop" href="/exponents" id="exp">Exponents</a>
-      </li>
-      <li class="nav-item" >
-        <a class="nav-link pop" href="/request-course" id="rc">Request a Course</a>
-      </li>
-      <li class="nav-item" >
-        <a class="nav-link pop" href="/faq" id="faq">FAQ</a>
-      </li>
-    </ul>
-   <div class="navbar-nav ml-md-auto">
-   <form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" aria-label="Search" id="sque">
-    <button class="btn btn-outline-success my-2 mx-1 my-sm-0" type="submit" id="sbut">Search</button>
-   </form>
-   <li class="nav-item nav-link text-dark cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
-   <li class="nav-item nav-link text-dark cursor-pointer" id="si" data-toggle="modal" data-target="#sim" style="display:none">Sign In</li>
-   <li class="nav-item nav-link text-dark cursor-pointer" id="so" data-toggle="modal" data-target="#som" style="display:none" >Sign Out</li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
+            <a class="navbar-brand pop" href="/"><img class="rounded" width="50" src="/favicon.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <ul class="navbar-nav nav nav-fill">
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle pop text-dark cursor-pointer" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Courses
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="max-height:90vh;overflow:scroll">
+                        <div class="d-md-flex align-items-start justify-content-start">
+                        <div>   
+                          <div class="dropdown-header"><a class=" text-dark" href="/modular-arithmetic">Modular Arithmetic</a></div>
+                          <a class="dropdown-item" href="/modular-arithmetic/">About</a>
+                          <a class="dropdown-item" href="/modular-arithmetic/introduction">Introduction</a>
+                         </div>
+                         <div>   
+                          <div class="dropdown-header"><a class=" text-dark" href="/trigonometry">Trigonometry</a></div>
+                          <a class="dropdown-item" href="/trigonometry/">About</a>
+                          <a class="dropdown-item" href="/trigonometry/functions/">Functions</a>
+                          <a class="dropdown-item" href="/trigonometry/identities/">Identities</a>
+                          <a class="dropdown-item" href="/trigonometry/law-of-sines/">Law of Sines</a>
+                          <a class="dropdown-item" href="/trigonometry/law-of-cosines/">Law of Cosines</a>
+                          <a class="dropdown-item" href="/trigonometry/Tilting-A-Parabola.pdf">Rotating a Parabola</a>
+                         </div>
+                         <div>   
+                          <div class="dropdown-header"><a class=" text-dark" href="/calculus">Calculus</a></div>
+                          <a class="dropdown-item" href="/calculus/">About</a>
+                          <a class="dropdown-item" href="/calculus/limits/">Limits</a>
+                          <a class="dropdown-item" href="/calculus/derivatives/">Derivatives</a>
+                          <a class="dropdown-item" href="/calculus/integrals/">Integrals</a>
+                          
+                         </div>
+                         <div>   
+                          <div class="dropdown-header"><a class=" text-dark" href="/exponents-and-more">Exponents &amp; More</a></div>
+                          <a class="dropdown-item" href="/exponents-and-more/">About</a>
+                          <a class="dropdown-item" href="/exponents-and-more/exponents/">Exponents</a>
+                         
+                          
+                         </div>
+                    
+                    </div>
+                      </div>
+                    </li>
+                    <li><a class="nav-item nav-link text-dark pop" href="/request-course" >Request a Course</a>
+                      </li>
+                      <li><a class="nav-item nav-link text-dark pop" href="/cc" >Course Catalog</a></li>
+                      <li><a class="nav-item nav-link text-dark pop" href="/faq" >FAQ</a></li>
+                </ul>
+                
+                <ul class="navbar-nav ml-md-auto">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" onsearch="document.getElementById('sbut').click()" id="sque" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
+                    </form>
+                    <li class="nav-item nav-link text-dark cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
+                    <li class="nav-item nav-link text-dark cursor-pointer" id="si" data-toggle="modal" data-target="#sim" style="display:none">Sign In</li>
 
-    <li class="nav-item dropdown" id="ma" >
-                        <a class="nav-link dropdown-toggle text-dark" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
+                    <li class="nav-item dropdown" id="ma"  style="display:none">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item cursor-pointer "  data-toggle="modal" data-target="#mam" >Account Info</a>
-                            <a class="dropdown-item cursor-pointer text-dark " href="/u/dashboard">Dashboard</a>
+                            <a class="dropdown-item cursor-pointer"  data-toggle="modal" data-target="#mam" >Account Info</a>
+                            <a class="dropdown-item cursor-pointer" href="/u/dashboard">Dashboard</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item cursor-pointer " data-toggle="modal" data-target="#som">Sign out</a>
+                            <a class="dropdown-item cursor-pointer"  data-toggle="modal" data-target="#som">Sign out</a>
 
                         </div>
                     </li>
-  </div>
- </div>
-</nav>
+
+                </ul>
+            </div>
+        </nav>
 
     <div class="modal fade" id="sum" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="suml" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">

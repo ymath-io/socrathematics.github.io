@@ -209,9 +209,10 @@ margin-bottom: .25rem!important;
 margin-top: .25rem!important;
 }
 
-  ul.nav li.dropdown:hover > .dropdown-menu {
+  /*ul.nav li.dropdown:hover > .dropdown-menu {
     display: block;
-  }
+  }*/
+/*do not activate menu on hover*/
 
 
 
@@ -240,3 +241,6 @@ html {
 
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
