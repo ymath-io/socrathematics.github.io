@@ -13,8 +13,7 @@ var nResults = sdata.searchInformation.totalResults;
 if (nResults==0){
 document.getElementById("spin").style.display="none";
 cont.innerHTML += `<p class="mt-2">There are no results for your query.</p>`;
-cont.innerHTML += `<a href=#googleStuff class="text-muted">Search results and order determined by <u>Google CSE.</u></a>`;
-return null;}
+
 console.log(nResults.length);
 results.forEach(function (currentValue){
 title = currentValue.htmlTitle;
@@ -28,7 +27,7 @@ card = `<div class="card pop my-3 no-def">
   </div>
 </div>`;
 cont.innerHTML += card;});
-cont.innerHTML += `<a href=#googleStuff class="text-muted">Search results and order determined by <u>Google CSE.</u></a>`;
+
 document.getElementById("spin").style.display="none";
 }
 
