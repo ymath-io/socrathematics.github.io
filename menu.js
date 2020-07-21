@@ -4,7 +4,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
   <p class="mastTitle-sub-2" ><b>Math, right at your fingertips</b></p>
 
 </div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:1;">
             <a class="navbar-brand pop" href="/"><img class="rounded" width="50" src="/favicon.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
