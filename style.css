@@ -50,6 +50,7 @@ font-family:lato;
 
 .page-item:not(.active), :not(.active) .page-link{
   background: var(--grey6) !important;
+  border-color: var(--grey6) !important;
 }
 /* *ummm*/
 .page-link, .page-link:hover {
