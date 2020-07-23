@@ -1,6 +1,32 @@
 :root {
   --primary: --green;
 }
+@media (prefers-color-scheme: dark) {
+  :root{
+    --grey:rgb(142,142,147);
+    --grey2:rgb(99,99,102);
+    --grey3:rgb(72,72,74);
+    --grey4:rgb(58,58,60);
+    --grey5:rgb(44,44,46);
+    --grey6:rgb(56, 56, 59);
+    --text:#cacaca;
+    --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root{
+    --grey:rgb(142,142,147);
+    --grey2:rgb(174,174,178);
+    --grey3:rgb(199,199,204);
+    --grey4:rgb(209,209,214);
+    --grey5:rgb(229, 229, 234);
+    --grey6:rgb(242,242,247);
+    --text:var(--dark);
+    --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -15,18 +41,37 @@ font-family:lato;
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: var(--green);
+  background-color: var(--green) !important;
   border-color: var(--green);}
 
 .page-link {
     color:var(--green);
 }
 
+.page-item:not(.active), :not(.active) .page-link{
+  background: var(--grey6) !important;
+}
+/* *ummm*/
+.page-link, .page-link:hover {
+  border-top-color: var(--grey6);
+  border-bottom-color: var(--grey6);
+  border-left-color: var(--grey6);
+  border-right-color: var(--grey6);
+  
+}
+
+.page-item{
+  border-radius: 10px
+}
+
 .page-link:hover{
     color: #1e7e34;}
 
-.nav-link {
-    color:var(--green);
+
+
+.navbar-light .navbar-toggler-icon{
+  background-image: var(--toggler) !important;
+  color: var(--text);
 }
 
 .nav-item.active .nav-link {
@@ -56,17 +101,7 @@ a:link:hover{
 color: #1e7e34;
 text-decoration:none;
 }
-/*
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #272727;
-    color: #ccc;
-  }
-  .nav-item .nav-link:not(.active){
-  color: #ccc;
-  }
 
-}*/
 
 @media (min-width: 768px) {
 :not(.no-def).card{
@@ -119,18 +154,20 @@ background: var(--red);}
 
 :not(.text-muted) > .pop:hover:not(.text-muted){
 box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
-
+background-color: var(--grey6) !important;
+color:var(--text) !important;
   border-radius: 0.25rem;
 
 }
-
+.pop{box-shadow:none;border-radius: 0.25rem;}
 .text-muted > *{cursor:default}
 
-.pop{box-shadow:none;border-radius: 0.25rem;}
-
-body {
-background: var(--light) !important;
+.dropdown-item:hover, .dropdown-link:hover{
+  background-color: var(--grey6) !important;
+  color:var(--text)!important;
 }
+
+
 
 .cursor-alias {cursor: alias;}
 .cursor-all-scroll {cursor: all-scroll;}
@@ -174,13 +211,35 @@ box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
   border-radius: 0.25rem;
 }
 
-.answerb{
-border-color:var(--light) !important;
-background-color:var(--light) !important;
-border-radius:0.25rem !important;
-border: 1px solid rgba(0,0,0,.125) !important;
-outline:none !important;
-height:initial
+
+
+.form-control::placeholder{
+  color:var(--text);
+  opacity: 0.6
+}
+
+.form-control, .form-control:hover, .form-control:active, .form-control:focus{
+  background-color: var(--grey4);
+  border-color: var(--grey4);
+  color: var(--text)!important
+}
+
+.modal-content, .modal-header, .modal-footer{
+  background-color: var(--grey5);
+  border-color: var(--grey4)
+}
+
+.dropdown-menu {
+  background-color:var(--grey6);
+  color: var(--text);
+}
+
+.dropdown-divider {
+  border-color: var(--grey3)
+}
+
+a.text-dark:hover, .text-dark:focus {
+  color: var(--text)!important;
 }
 
 .mq-editable-field.mq-focused,
@@ -190,6 +249,7 @@ height:initial
   box-shadow: none !important;
   border-color: rgba(0,0,0,.125) !important;
   border-radius: 0.25rem !important;
+  color: var(--text)!important
 }
 
 .pop:has(.mq-focused){
@@ -202,28 +262,28 @@ box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
 box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
 margin-bottom: .25rem!important;
 margin-top: .25rem!important;
-  border-radius: 0.25rem;}
+  border-radius: 0.25rem;
+background-color: var(--grey6);
+}
 
 .nav-pills .nav-link:not(.active){
 margin-bottom: .25rem!important;
 margin-top: .25rem!important;
 }
 
-  /*ul.nav li.dropdown:hover > .dropdown-menu {
-    display: block;
-  }*/
-/*do not activate menu on hover*/
 
 
 
-:not(.text-muted) > .dropdown-item:hover:hover:not(.text-muted), .dropdown-header:hover{
+
+:not(.text-muted) > .dropdown-item:hover:not(.text-muted), .dropdown-header:hover{
   box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
-  
+  background-color: var(--grey6);
     border-radius: 0.25rem;
   
   }
+
   
-.dropdown-item:active{background-color: #28a745;color:var(--light)}
+.dropdown-item:active{background-color: #28a745;color:var(--grey4)}
   
   .dropdown-item{box-shadow:none;border-radius: 0.25rem;}
 
@@ -244,3 +304,51 @@ html {
 html {
   scroll-behavior: smooth !important;
 }
+
+body{
+  color:var(--text) ;
+
+  background: var(--grey5) !important;
+  }
+.bg-light {
+  background-color: var(--grey5) !important;
+}
+
+.mq-cursor{
+  
+  border-color:var(--text) !important;
+
+}
+
+.card{
+  background-color: var(--grey6) !important;
+}
+
+.navbar, .text-dark{
+  color:var(--text)!important
+}
+
+.nav-pills a.nav-link:hover:not(.active),.nav-pills a.nav-link:focus:not(.active),.nav-pills a.nav-link:not(.active):not(.disabled),.nav-pills a.nav-link:not(.disabled):not(.active){
+  color:var(--green) !important;
+}
+.card .answerb{
+  border-color:var(--grey5) !important;
+  background-color:var(--grey5) !important;
+  border-radius:0.25rem !important;
+  border: 1px solid rgba(0,0,0,.125) !important;
+  outline:none !important;
+  height:initial;
+  
+  }
+
+ .answerb{
+    border-color:var(--grey6) !important;
+    background-color:var(--grey6) !important;
+    border-radius:0.25rem !important;
+    border: 1px solid rgba(0,0,0,.125) !important;
+    outline:none !important;
+    height:initial;
+    
+    }
+
+  
