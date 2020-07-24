@@ -22,20 +22,26 @@ var data = "";
 ref.on("value", function(snapshot) {
    data = snapshot.val().courseRequests;
    //console.log(data);
-   var rejb;
+   //var rejb;
    var d;
    var loctar;
    document.getElementById("crCards").innerHTML = "";
    document.getElementById("crCardsDone").innerHTML = "";
    document.getElementById("crCardsRej").innerHTML = "";
+   document.getElementById("crCardsCons").innerHTML = "";
+   
    for (d in data){
-   loctar = document.getElementById("crCards");
-   if (data[d]["Done"]==true){
+   loctar = document.getElementById("crCardsCons");
+   if (data[d]["Status"]=="done"){
     loctar = document.getElementById("crCardsDone")}
-    if (data[d]["Rejected"]==true){
+    if (data[d]["Status"]=="rejected"){
     loctar = document.getElementById("crCardsRej");
     //console.log(data[d]["Course"])
     }
+    if (data[d]["Status"]=="inprogress"){
+        loctar = document.getElementById("crCards");
+        //console.log(data[d]["Course"])
+        }
 
     //console.log(data[d]["Course"]);
     var card = document.createElement("DIV");
@@ -74,7 +80,7 @@ ref.on("value", function(snapshot) {
     cardbody.appendChild(desc);
     cardbody.appendChild(sliderHolder);
     cardbody.innerHTML += `<div class="col-1">
-     <button type="button" id="R`+ d +`" onclick="rejC('`+d+`',`+data[d]['Rejected']+`)" class="btn btn-light red-btn mt-2"> <img src="../icons/x.svg" class="red-icon"></button> <button type="button" id="D'+d+'" onclick="donC('`+d+`',`+data[d]['Done']+`)" class="btn btn-light green-btn mt-3"> <img src="../icons/check.svg" class="green-icon"></button> </div>`
+     <button type="button" id="R`+ d +`" onclick="rejC('`+d+`','`+data[d]['Status']+`')" class="btn btn-light red-btn mt-2"> <img src="/icons/x.svg" class="red-icon"></button> <button type="button" id="P'+d+'" onclick="progC('`+d+`','`+data[d]['Status']+`')" class="btn btn-light blue-btn mt-2 align-top "> \u22EF</button> <button type="button" id="D'+d+'" onclick="donC('`+d+`','`+data[d]['Status']+`')" class="btn btn-light green-btn mt-3"> <img src="/icons/check.svg" class="green-icon"></button> </div>`
     card.appendChild(cardbody);
     loctar.appendChild(card);
 
@@ -92,26 +98,46 @@ ref.on("value", function(snapshot) {
    console.log("Error: " + error.code);
 });
 
-function rejC (id,isRej) {
+function rejC (id,stat) {
         //update["/courseRequests/"+id+"/Rejected"] = true;
         var dbloc = fdb.ref("courseRequests/"+id)
-        dbloc.update({"Rejected":!isRej});
-        if (!isRej){
-        dbloc.update({"Done":false});
-        }
+        if (stat !="rejected"){
+            dbloc.update({"Status":"rejected"});
+            }
+            else {
+                dbloc.update({"Status":"inconsideration"});
+            }
         console.log("I deleted the course request!");
         return null;
 
     }
 
-function donC (id,isDon) {
+function donC (id,stat) {
         //update["/courseRequests/"+id+"/Rejected"] = true;
         var dbloc = fdb.ref("courseRequests/"+id)
-        dbloc.update({"Done":!isDon});
-        if (!isDon){
-        dbloc.update({"Rejected":false});
+        
+        if (stat !="done"){
+        dbloc.update({"Status":"done"});
+        }
+        else {
+            dbloc.update({"Status":"inconsideration"});
         }
         console.log("I finished the course request!");
+        return null;
+
+    }
+
+    function progC (id,stat) {
+        //update["/courseRequests/"+id+"/Rejected"] = true;
+        var dbloc = fdb.ref("courseRequests/"+id)
+        
+        if (stat !="inprogress"){
+        dbloc.update({"Status":"inprogress"});
+        }
+        else {
+            dbloc.update({"Status":"inconsideration"});
+        }
+        console.log("I began working on the course request!");
         return null;
 
     }
