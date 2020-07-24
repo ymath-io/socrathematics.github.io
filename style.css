@@ -101,7 +101,9 @@ font-family:lato;
 .page-link:hover{
     color: #1e7e34;}
 
-
+.list-group-item{
+  background-color: var(--grey6) !important;
+}
 
 .navbar-light .navbar-toggler-icon{
   background-image: var(--toggler) !important;
@@ -356,6 +358,10 @@ body{
 
 .card{
   background-color: var(--grey6) !important;
+}
+
+ .disabled{
+  color: var(--grey)
 }
 
 .navbar, .text-dark{
