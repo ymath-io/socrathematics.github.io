@@ -79,7 +79,7 @@ ref.on("value", function(snapshot) {
     desc.appendChild(subtext);
     cardbody.appendChild(desc);
     cardbody.appendChild(sliderHolder);
-    cardbody.innerHTML += `<div class="col-1">
+    cardbody.innerHTML += `<div class="col-1 auth-admin">
      <button type="button" id="R`+ d +`" onclick="rejC('`+d+`','`+data[d]['Status']+`')" class="btn btn-light red-btn mt-2"> <img src="/icons/x.svg" class="red-icon"></button> <button type="button" id="P'+d+'" onclick="progC('`+d+`','`+data[d]['Status']+`')" class="btn btn-light blue-btn mt-2 align-top "> \u22EF</button> <button type="button" id="D'+d+'" onclick="donC('`+d+`','`+data[d]['Status']+`')" class="btn btn-light green-btn mt-3"> <img src="/icons/check.svg" class="green-icon"></button> </div>`
     card.appendChild(cardbody);
     loctar.appendChild(card);

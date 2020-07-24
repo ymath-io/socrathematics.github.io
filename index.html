@@ -119,31 +119,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </li>
                     <li><img src="/icons/eclipse-light.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)">
-                      <script>
+                    <script>
 
-                        b = document.querySelector('body');
-  
-                        if ( localStorage.getItem("theme")=="light" ){
-                          b.setAttribute('data-theme','light'); 
-                          document.getElementById("themer").src='/icons/eclipse-dark.png';
-                          localStorage.setItem('theme', 'light');}
-                          else if (localStorage.getItem("theme")=="dark"){
-                          b.setAttribute('data-theme','dark'); 
-                          document.getElementById("themer").src='/icons/eclipse-light.png';
-                          localStorage.setItem('theme', 'dark');}
-  
-                        function toggleTheme(el){
-                          
-                          if ( b.getAttribute('data-theme')=="dark" ){
-                          b.setAttribute('data-theme','light'); 
-                          el.src='/icons/eclipse-dark.png';
-                          localStorage.setItem('theme', 'light');}
-                          else {
-                          b.setAttribute('data-theme','dark'); 
-                          el.src='/icons/eclipse-light.png';
-                          localStorage.setItem('theme', 'dark');}
-                        }
-                      </script>
+                      b = document.querySelector('body');
+
+                      if ( localStorage.getItem("theme")=="light" ){
+                        b.setAttribute('data-theme','light'); 
+                        document.getElementById("themer").src='/icons/eclipse-dark.png';
+                        localStorage.setItem('theme', 'light');}
+                        else if (localStorage.getItem("theme")=="dark"){
+                        b.setAttribute('data-theme','dark'); 
+                        document.getElementById("themer").src='/icons/eclipse-light.png';
+                        localStorage.setItem('theme', 'dark');}
+
+                      function toggleTheme(el){
+                        
+                        if ( b.getAttribute('data-theme')=="dark" ){
+                        b.setAttribute('data-theme','light'); 
+                        el.src='/icons/eclipse-dark.png';
+                        localStorage.setItem('theme', 'light');}
+                        else {
+                        b.setAttribute('data-theme','dark'); 
+                        el.src='/icons/eclipse-light.png';
+                        localStorage.setItem('theme', 'dark');}
+                      }
+                    </script>
                     </li>
                 </ul>
             </div>
@@ -198,7 +198,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             </div>
             <div class="form-group">
-                <label class="" for="signin-password">Password </label><a class="text-success cursor-pointer float-right">Forgot password?</a>
+                <label class="" for="signin-password">Password </label><a class="text-success float-right" href="/auth/forgot-password/">Forgot password?</a>
                 <input class="form-control" type="password" id="signin-password" required />
                 <p class="text-muted form-text" id="sim-e"><br></p>
             </div>

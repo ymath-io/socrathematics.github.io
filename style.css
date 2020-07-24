@@ -254,7 +254,7 @@ box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
   opacity: 0.6
 }
 
-.form-control, .form-control:hover, .form-control:active, .form-control:focus{
+:not(.btn).form-control, :not(.btn).form-control:hover, :not(.btn).form-control:active, :not(.btn).form-control:focus{
   background-color: var(--grey4);
   border-color: var(--grey4);
   color: var(--text)!important
@@ -362,6 +362,10 @@ body{
 
  .disabled{
   color: var(--grey)
+}
+
+.btn-light{
+  background-color: var(--grey6) !important;
 }
 
 .navbar, .text-dark{

@@ -155,7 +155,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
 
             </div>
             <div class="form-group">
-                <label class="" for="signin-password">Password</label>
+                <label class="" for="signin-password">Password</label><a class="text-success float-right" href="/auth/forgot-password/">Forgot password?</a>
                 <input class="form-control" type="password" id="signin-password" required />
                 <p class="text-muted form-text" id="sim-e" style=""><br></p>
             </div>
