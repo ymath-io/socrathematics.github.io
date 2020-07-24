@@ -111,7 +111,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             <a class="dropdown-item cursor-pointer"  data-toggle="modal" data-target="#som">Sign out</a>
                         </div>
                     </li>
-                  <li><img src="/icons/eclipse-light.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)">
+                  <li><img src="/icons/eclipse-light.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)"/>
                     <script>
 
                       b = document.querySelector('body');
