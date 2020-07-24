@@ -59,7 +59,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                 
                 <ul class="navbar-nav ml-md-auto">
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" onsearch="document.getElementById('sbut').click()" id="sque" aria-label="Search">
+                        <input class="form-control mr-sm-2 mx-1" type="search"  placeholder="Search"  id="sque" aria-label="Search" >
                         <button class="btn btn-outline-success my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
                     </form>
                     <li class="nav-item nav-link text-dark cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
@@ -75,7 +75,33 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
 
                         </div>
                     </li>
+                    <li><img src="/icons/eclipse-light.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)">
+                    <script>
 
+                      b = document.querySelector('body');
+
+                      if ( localStorage.getItem("theme")=="light" ){
+                        b.setAttribute('data-theme','light'); 
+                        document.getElementById("themer").src='/icons/eclipse-dark.png';
+                        localStorage.setItem('theme', 'light');}
+                        else if (localStorage.getItem("theme")=="dark"){
+                        b.setAttribute('data-theme','dark'); 
+                        document.getElementById("themer").src='/icons/eclipse-light.png';
+                        localStorage.setItem('theme', 'dark');}
+
+                      function toggleTheme(el){
+                        
+                        if ( b.getAttribute('data-theme')=="dark" ){
+                        b.setAttribute('data-theme','light'); 
+                        el.src='/icons/eclipse-dark.png';
+                        localStorage.setItem('theme', 'light');}
+                        else {
+                        b.setAttribute('data-theme','dark'); 
+                        el.src='/icons/eclipse-light.png';
+                        localStorage.setItem('theme', 'dark');}
+                      }
+                    </script>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -239,7 +265,8 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
 console.log("Menu and header successfully written to DOM.")}
 
 function activate(id){
-document.getElementById(id).className += " top active ";}
+//document.getElementById(id).className += " top active ";
+}
 
 document.querySelector("#sbut").addEventListener("click", (e) => {
 e.preventDefault();
@@ -268,3 +295,15 @@ document.location  =  "/search/?" + params.toString();
 
 
 });
+
+function searchit(){
+
+var query = document.getElementById("sque");
+
+
+const params = new URLSearchParams(location.search);
+params.set('q', query.value);
+
+console.log(params.toString());
+document.location  =  "/search/?" + params.toString();
+}

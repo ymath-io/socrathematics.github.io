@@ -12,6 +12,9 @@
     --text:#cacaca;
     --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
+  body{
+    content:"dark"
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -25,7 +28,31 @@
     --text:var(--dark);
     --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
+  body{
+    content:"light"
+  }
 }
+
+[data-theme="light"] {
+    --grey:rgb(142,142,147);
+    --grey2:rgb(174,174,178);
+    --grey3:rgb(199,199,204);
+    --grey4:rgb(209,209,214);
+    --grey5:rgb(229, 229, 234);
+    --grey6:rgb(242,242,247);
+    --text:var(--dark);
+    --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  [data-theme="dark"]{
+    --grey:rgb(142,142,147);
+    --grey2:rgb(99,99,102);
+    --grey3:rgb(72,72,74);
+    --grey4:rgb(58,58,60);
+    --grey5:rgb(44,44,46);
+    --grey6:rgb(56, 56, 59);
+    --text:#cacaca;
+    --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
 
 .center {
   display: block;
@@ -52,6 +79,12 @@ font-family:lato;
   background: var(--grey6) !important;
   border-color: var(--grey6) !important;
 }
+
+.page-item{
+  color: var(--grey6)
+}
+
+
 /* *ummm*/
 .page-link, .page-link:hover {
   border-top-color: var(--grey6);
@@ -351,5 +384,8 @@ body{
     height:initial;
     
     }
-
+    li.page-item.disabled a.page-link {
+      border-color: var(--grey6) !important;
+    
+    }
   

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- TODO : -->
-<!-- *  -->
+<!-- * Add dark mode?  -->
 <!-- TODO - DONE : -->
 <!-- * Added meta description -->
 <html lang="en">
@@ -25,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
         <link rel="icon" href="favicon.png">
@@ -36,7 +36,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </head>
 
 
-    <body class="bg-light pb-0 mb-0" >
+    <body class="bg-light pb-0 mb-0" data-theme="light" >
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -118,7 +118,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         </div>
                     </li>
+                    <li><img src="/icons/eclipse-light.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)">
+                      <script>
 
+                        b = document.querySelector('body');
+  
+                        if ( localStorage.getItem("theme")=="light" ){
+                          b.setAttribute('data-theme','light'); 
+                          document.getElementById("themer").src='/icons/eclipse-dark.png';
+                          localStorage.setItem('theme', 'light');}
+                          else if (localStorage.getItem("theme")=="dark"){
+                          b.setAttribute('data-theme','dark'); 
+                          document.getElementById("themer").src='/icons/eclipse-light.png';
+                          localStorage.setItem('theme', 'dark');}
+  
+                        function toggleTheme(el){
+                          
+                          if ( b.getAttribute('data-theme')=="dark" ){
+                          b.setAttribute('data-theme','light'); 
+                          el.src='/icons/eclipse-dark.png';
+                          localStorage.setItem('theme', 'light');}
+                          else {
+                          b.setAttribute('data-theme','dark'); 
+                          el.src='/icons/eclipse-light.png';
+                          localStorage.setItem('theme', 'dark');}
+                        }
+                      </script>
+                    </li>
                 </ul>
             </div>
         </nav>
