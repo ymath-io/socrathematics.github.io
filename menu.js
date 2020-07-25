@@ -4,7 +4,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
   <p class="mastTitle-sub-2" ><b>Math, right at your fingertips</b></p>
 
 </div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:1;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
             <a class="navbar-brand pop" href="/"><img class="rounded" width="50" src="/favicon.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -59,7 +59,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                 
                 <ul class="navbar-nav ml-md-auto">
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 mx-1" type="search" placeholder="Search" onsearch="document.getElementById('sbut').click()" id="sque" aria-label="Search">
+                        <input class="form-control mr-sm-2 mx-1" type="search"  placeholder="Search"  id="sque" aria-label="Search" >
                         <button class="btn btn-outline-success my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
                     </form>
                     <li class="nav-item nav-link text-dark cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
@@ -75,7 +75,33 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
 
                         </div>
                     </li>
+                    <li><img src="/icons/eclipse-light.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)">
+                    <script>
 
+                      b = document.querySelector('body');
+
+                      if ( localStorage.getItem("theme")=="light" ){
+                        b.setAttribute('data-theme','light'); 
+                        document.getElementById("themer").src='/icons/eclipse-dark.png';
+                        localStorage.setItem('theme', 'light');}
+                        else if (localStorage.getItem("theme")=="dark"){
+                        b.setAttribute('data-theme','dark'); 
+                        document.getElementById("themer").src='/icons/eclipse-light.png';
+                        localStorage.setItem('theme', 'dark');}
+
+                      function toggleTheme(el){
+                        
+                        if ( b.getAttribute('data-theme')=="dark" ){
+                        b.setAttribute('data-theme','light'); 
+                        el.src='/icons/eclipse-dark.png';
+                        localStorage.setItem('theme', 'light');}
+                        else {
+                        b.setAttribute('data-theme','dark'); 
+                        el.src='/icons/eclipse-light.png';
+                        localStorage.setItem('theme', 'dark');}
+                      }
+                    </script>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -83,30 +109,40 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
     <div class="modal fade" id="sum" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="suml" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="suml">Get your very own account!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form id="signup-form">
-            <div class="form-group">
-                <label class="" for="signup-email">Email Address</label>
-                <input class="form-control" type="email" id="signup-email" required />
+    <div class="modal-header">
+    <h5 class="modal-title" id="suml">Get your very own account!</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form id="signup-form" >
+        <div class="form-group">
+            <label class="" for="signup-email">Email Address</label>
+            <input class="form-control" type="email" id="signup-email" required />
 
-            </div>
-            <div class="form-group">
-                <label class="" for="signup-password">Password</label>
-                <input class="form-control" type="password" id="signup-password" required />
-                <p class="text-muted form-text" id="sum-e" style=""><br></p>
-            </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="submit" id="sub" class="btn btn-success" >Sign Up</button>
-      </div>
+        </div>
+        <div class="form-group">
+            <label class="" for="signup-password">Password</label>
+            <input class="form-control" type="password" id="signup-password" required />
+            
+        </div>
+        <div class="form-group">
+          <div class="custom-control custom-checkbox">
+            <input class="custom-control-input " type="checkbox"  id="ppagree" required>
+            <label class="custom-control-label" for="ppagree">
+              By signing up, you agree that you know what you're getting into, because you read the <a href="/faq" class="link"><u>FAQ</u></a> and you don't hold the owner liable for anything that happens to you.
+            </label>
+          </div>
+          <p class="text-muted form-text" id="sum-e"><br></p>
+        </div>
+    </form>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+    <button type="submit" id="sub" class="btn btn-success" >Sign Up</button>
+  </div>
     </div>
   </div>
 </div>
@@ -129,7 +165,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
 
             </div>
             <div class="form-group">
-                <label class="" for="signin-password">Password</label>
+                <label class="" for="signin-password">Password</label><a class="text-success float-right" href="/auth/forgot-password/">Forgot password?</a>
                 <input class="form-control" type="password" id="signin-password" required />
                 <p class="text-muted form-text" id="sim-e" style=""><br></p>
             </div>
@@ -144,27 +180,6 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
   </div>
 </div>
 
-    <div class="modal fade" id="som" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="soml" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="soml">Sign Out</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-body">
-        <p>Are you sure you want to sign out? Any progress won't be saved unless you log back in.</p>
-      </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="submit" id="sob" class="btn btn-success">Sign Out</button>
-      </div>
-    </div>
-  </div>
-</div>
 
      <div class="modal fade" id="vm" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="vml" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
@@ -239,7 +254,8 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
 console.log("Menu and header successfully written to DOM.")}
 
 function activate(id){
-document.getElementById(id).className += " top active ";}
+//document.getElementById(id).className += " top active ";
+}
 
 document.querySelector("#sbut").addEventListener("click", (e) => {
 e.preventDefault();
@@ -268,3 +284,15 @@ document.location  =  "/search/?" + params.toString();
 
 
 });
+
+function searchit(){
+
+var query = document.getElementById("sque");
+
+
+const params = new URLSearchParams(location.search);
+params.set('q', query.value);
+
+console.log(params.toString());
+document.location  =  "/search/?" + params.toString();
+}

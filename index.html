@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- TODO : -->
-<!-- *  -->
+<!-- * Add dark mode?  -->
 <!-- TODO - DONE : -->
 <!-- * Added meta description -->
 <html lang="en">
@@ -25,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
         <link rel="icon" href="favicon.png">
@@ -36,7 +36,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </head>
 
 
-    <body class="bg-light pb-0 mb-0" >
+    <body class="bg-light pb-0 mb-0" data-theme="light" >
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -118,7 +118,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         </div>
                     </li>
+                    <li><img src="/icons/eclipse-light.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)">
+                    <script>
 
+                      b = document.querySelector('body');
+
+                      if ( localStorage.getItem("theme")=="light" ){
+                        b.setAttribute('data-theme','light'); 
+                        document.getElementById("themer").src='/icons/eclipse-dark.png';
+                        localStorage.setItem('theme', 'light');}
+                        else if (localStorage.getItem("theme")=="dark"){
+                        b.setAttribute('data-theme','dark'); 
+                        document.getElementById("themer").src='/icons/eclipse-light.png';
+                        localStorage.setItem('theme', 'dark');}
+
+                      function toggleTheme(el){
+                        
+                        if ( b.getAttribute('data-theme')=="dark" ){
+                        b.setAttribute('data-theme','light'); 
+                        el.src='/icons/eclipse-dark.png';
+                        localStorage.setItem('theme', 'light');}
+                        else {
+                        b.setAttribute('data-theme','dark'); 
+                        el.src='/icons/eclipse-light.png';
+                        localStorage.setItem('theme', 'dark');}
+                      }
+                    </script>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -133,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </button>
       </div>
       <div class="modal-body">
-        <form id="signup-form">
+        <form id="signup-form" >
             <div class="form-group">
                 <label class="" for="signup-email">Email Address</label>
                 <input class="form-control" type="email" id="signup-email" required />
@@ -142,10 +168,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="form-group">
                 <label class="" for="signup-password">Password</label>
                 <input class="form-control" type="password" id="signup-password" required />
-                <p class="text-muted form-text" id="sum-e"><br></p>
+                
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input " type="checkbox"  id="ppagree" required>
+                <label class="custom-control-label" for="ppagree">
+                  By signing up, you agree that you know what you're getting into, because you read the <a href="/faq" class="link"><u>FAQ</u></a> and you don't hold the owner liable for anything that happens to you.
+                </label>
+              </div>
+              <p class="text-muted form-text" id="sum-e"><br></p>
             </div>
         </form>
       </div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         <button type="submit" id="sub" class="btn btn-success" >Sign Up</button>
@@ -172,7 +208,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             </div>
             <div class="form-group">
-                <label class="" for="signin-password">Password </label><a class="text-success cursor-pointer float-right">Forgot password?</a>
+                <label class="" for="signin-password">Password </label><a class="text-success float-right" href="/auth/forgot-password/">Forgot password?</a>
                 <input class="form-control" type="password" id="signin-password" required />
                 <p class="text-muted form-text" id="sim-e"><br></p>
             </div>

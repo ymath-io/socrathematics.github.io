@@ -111,6 +111,33 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             <a class="dropdown-item cursor-pointer"  data-toggle="modal" data-target="#som">Sign out</a>
                         </div>
                     </li>
+                  <li><img src="/icons/eclipse-light.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)"/>
+                    <script>
+
+                      b = document.querySelector('body');
+
+                      if ( localStorage.getItem("theme")=="light" ){
+                        b.setAttribute('data-theme','light'); 
+                        document.getElementById("themer").src='/icons/eclipse-dark.png';
+                        localStorage.setItem('theme', 'light');}
+                        else if (localStorage.getItem("theme")=="dark"){
+                        b.setAttribute('data-theme','dark'); 
+                        document.getElementById("themer").src='/icons/eclipse-light.png';
+                        localStorage.setItem('theme', 'dark');}
+
+                      function toggleTheme(el){
+                        
+                        if ( b.getAttribute('data-theme')=="dark" ){
+                        b.setAttribute('data-theme','light'); 
+                        el.src='/icons/eclipse-dark.png';
+                        localStorage.setItem('theme', 'light');}
+                        else {
+                        b.setAttribute('data-theme','dark'); 
+                        el.src='/icons/eclipse-light.png';
+                        localStorage.setItem('theme', 'dark');}
+                      }
+                    </script>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -305,7 +332,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                           
                       </xsl:attribute>
                       <xsl:attribute name="class">
-                          float-right btn btn-lg btn-success text-white
+                          float-right btn btn-lg btn-success text-light
                           
                       </xsl:attribute>
                       Begin

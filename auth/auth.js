@@ -26,7 +26,10 @@ signupButton.addEventListener("click",(e)=>{
     //get user info
     const email = signupForm['signup-email'].value;
     const password = signupForm['signup-password'].value;
-
+    if (!document.querySelector('#ppagree').checked){
+      document.getElementById("sum-e").innerHTML = "You must agree before proceeding.";
+      return;
+    };
 
     auth.createUserWithEmailAndPassword(email,password).then(cred => {
     var user = firebase.auth().currentUser;
@@ -55,6 +58,9 @@ signupButton.addEventListener("click",(e)=>{
     else if (error.code == "auth/email-already-in-use"){
     console.log("you already have an account!");
     document.getElementById("sum-e").innerHTML = "It looks like you already have an account. Sign in instead?";}
+    else if (error.code == "auth/invalid-email"){
+      document.getElementById("sum-e").innerHTML = "That does not look like a valid email.";
+    }
     else{console.log(error.code)}
     });
 
@@ -93,6 +99,9 @@ signinButton.addEventListener("click",(e)=>{
     else if (error.code == "auth/user-not-found"){
     console.log("user does not have an account");
     document.getElementById("sim-e").innerHTML = "We didn't find an account with that email. Sign up instead?";}
+    else if (error.code == "auth/too-many-requests"){
+      console.log("too many tries");
+      document.getElementById("sim-e").innerHTML = "It looks like you've tried to log in too many times  in the past minute. We've locked your account for the next two minutes.";}
     else{console.log(error.code)}
 });
 
@@ -171,9 +180,15 @@ user.delete().then(function() {
    document.getElementById("ma").style.display="none";
    document.getElementById("su").style.display=null;
    document.getElementById("si").style.display=null;
-   console.log(document.querySelectorAll(".auth"));
+   //console.log(document.querySelectorAll(".auth"));
    if (document.querySelectorAll(".auth").length == 0){location.reload}
-   document.querySelectorAll(".auth").forEach(function(currentValue){ //don't show auth-specific elements
+   document.querySelectorAll(".auth").forEach(function(currentValue){ //don't show auth specific elements
+    currentValue.style.display="none";
+    console.log(currentValue);
+   });
+console.log(document.querySelectorAll(".auth-admin"));
+   if (document.querySelectorAll(".auth-admin").length == 0){location.reload}
+   document.querySelectorAll(".auth-admin").forEach(function(currentValue){ //don't show auth-admin specific elements
     currentValue.style.display="none";
     console.log(currentValue);
    });
