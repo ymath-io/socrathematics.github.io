@@ -5,7 +5,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
 
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
-            <a class="navbar-brand pop" href="/"><img class="rounded" width="50" src="/favicon.png"></a>
+            <a class="navbar-brand" href="/"><img class="rounded" width="50" src="/favicon.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -60,7 +60,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                 <ul class="navbar-nav ml-md-auto">
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2 mx-1" type="search"  placeholder="Search"  id="sque" aria-label="Search" >
-                        <button class="btn btn-outline-success my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
+                        <button class="btn btn-outline-main my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
                     </form>
                     <li class="nav-item nav-link text-dark cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
                     <li class="nav-item nav-link text-dark cursor-pointer" id="si" data-toggle="modal" data-target="#sim" style="display:none">Sign In</li>
@@ -109,30 +109,40 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
     <div class="modal fade" id="sum" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="suml" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="suml">Get your very own account!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form id="signup-form">
-            <div class="form-group">
-                <label class="" for="signup-email">Email Address</label>
-                <input class="form-control" type="email" id="signup-email" required />
+    <div class="modal-header">
+    <h5 class="modal-title" id="suml">Get your very own account!</h5>
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form id="signup-form" >
+        <div class="form-group">
+            <label class="" for="signup-email">Email Address</label>
+            <input class="form-control" type="email" id="signup-email" required />
 
-            </div>
-            <div class="form-group">
-                <label class="" for="signup-password">Password</label>
-                <input class="form-control" type="password" id="signup-password" required />
-                <p class="text-muted form-text" id="sum-e" style=""><br></p>
-            </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="submit" id="sub" class="btn btn-success" >Sign Up</button>
-      </div>
+        </div>
+        <div class="form-group">
+            <label class="" for="signup-password">Password</label>
+            <input class="form-control" type="password" id="signup-password" required />
+            
+        </div>
+        <div class="form-group">
+          <div class="custom-control custom-checkbox">
+            <input class="custom-control-input " type="checkbox"  id="ppagree" required>
+            <label class="custom-control-label" for="ppagree">
+              By signing up, you agree that you know what you're getting into, because you read the <a href="/faq" class="link"><u>FAQ</u></a> and you don't hold the owner of this website liable for anything that happens to you.
+            </label>
+          </div>
+          <p class="text-muted form-text" id="sum-e"><br></p>
+        </div>
+    </form>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+    <button type="submit" id="sub" class="btn btn-success" >Sign Up</button>
+  </div>
     </div>
   </div>
 </div>
@@ -170,27 +180,6 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
   </div>
 </div>
 
-    <div class="modal fade" id="som" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="soml" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="soml">Sign Out</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="modal-body">
-        <p>Are you sure you want to sign out? Any progress won't be saved unless you log back in.</p>
-      </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="submit" id="sob" class="btn btn-success">Sign Out</button>
-      </div>
-    </div>
-  </div>
-</div>
 
      <div class="modal fade" id="vm" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="vml" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
