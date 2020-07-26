@@ -159,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </button>
       </div>
       <div class="modal-body">
-        <form id="signup-form">
+        <form id="signup-form" >
             <div class="form-group">
                 <label class="" for="signup-email">Email Address</label>
                 <input class="form-control" type="email" id="signup-email" required />
@@ -168,10 +168,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="form-group">
                 <label class="" for="signup-password">Password</label>
                 <input class="form-control" type="password" id="signup-password" required />
-                <p class="text-muted form-text" id="sum-e"><br></p>
+                
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input " type="checkbox"  id="ppagree" required>
+                <label class="custom-control-label" for="ppagree">
+                  By signing up, you agree that you know what you're getting into, because you read the <a href="/faq" class="link"><u>FAQ</u></a> and you don't hold the owner of this website liable for anything that happens to you.
+                </label>
+              </div>
+              <p class="text-muted form-text" id="sum-e"><br></p>
             </div>
         </form>
       </div>
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         <button type="submit" id="sub" class="btn btn-success" >Sign Up</button>
