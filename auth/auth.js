@@ -26,7 +26,10 @@ signupButton.addEventListener("click",(e)=>{
     //get user info
     const email = signupForm['signup-email'].value;
     const password = signupForm['signup-password'].value;
-
+    if (!document.querySelector('#ppagree').checked){
+      document.getElementById("sum-e").innerHTML = "You must agree before proceeding.";
+      return;
+    };
 
     auth.createUserWithEmailAndPassword(email,password).then(cred => {
     var user = firebase.auth().currentUser;
@@ -55,6 +58,9 @@ signupButton.addEventListener("click",(e)=>{
     else if (error.code == "auth/email-already-in-use"){
     console.log("you already have an account!");
     document.getElementById("sum-e").innerHTML = "It looks like you already have an account. Sign in instead?";}
+    else if (error.code == "auth/invalid-email"){
+      document.getElementById("sum-e").innerHTML = "That does not look like a valid email.";
+    }
     else{console.log(error.code)}
     });
 
