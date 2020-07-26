@@ -73,6 +73,10 @@
                 </subtopics>
             </topic>
         </topics>
+        <prerequisites>
+            <prerequisite><name>Basic Arithmetic</name></prerequisite>
+            <prerequisite><name>Order of Operations</name></prerequisite>
+        </prerequisites>
     </course>
 
     <course>
