@@ -1,0 +1,237 @@
+<html lang="en" >
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163408633-2');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PF58PDC');</script>
+    <!-- End Google Tag Manager -->
+    <title>Event Handler
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn Calculus, Trigonometry, and more.">
+    <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/style.css">
+    <script type="text/javascript" src="/dreamerslab-jquery.actual-d38580c/jquery.actual.js"></script>
+    <script async="" defer="" src="https://survey.g.doubleclick.net/async_survey?site=to4ks7vefdptsz3qdjfqaqvx3m"></script>
+
+</head>
+<body>
+<script src="/menu.js"></script>
+<div class="container my-5" id="reset"  >
+
+    <div class="card slide-1 my-3 no-def" style="display: none">
+        <form id="reset-form" style="margin-block-end: 0; !important;">
+        <div class="card-body">
+            <h4 class="card-title">Enter your new password</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Don't forget it!</h6>
+            <p class="card-text">Reset your password for <a id="reset-em">(error fetching email)</a>.</p>
+            <p class="card-text">Choose a strong password that you'll remember. Never reuse old passwords.</p>
+
+                <div class="form-group">
+
+                    <input id="new-pass" type="password" class="form-control bg-light mx-auto col-sm-10" placeholder="Your new password"/>
+                    <p class="text-muted text-center" id="resetErrCode"></p>
+                </div>
+
+        </div>
+        <div class="card-footer" style="overflow: auto;">
+
+
+            <button type="submit" class="float-right text-light btn btn-success mx-1" >Update Password</button>
+
+        </div>
+        </form>
+    </div>
+
+    <div class="card slide-2 my-3 no-def" style="display: none">
+
+        <div class="card-body">
+            <h4 class="card-title">Your password has been reset</h4>
+            <h6 class="card-subtitle mb-2 text-muted">You're back in!</h6>
+            <p class="card-text">You can now sign in with your new password. Click the button below to continue to your account.</p>
+
+        </div>
+        <div class="card-footer">
+            <div class="float-right">
+
+                <a href="/" class="text-light btn btn-success mx-1">Continue</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card slide-3 my-3 no-def" style="display: none">
+
+        <div class="card-body">
+            <h4 class="card-title">Invalid or expired link</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Whoops!</h6>
+            <p class="card-text">Either this link has already been used, it's too old, or an error occurred on our part. Try resetting your password again.</p>
+            <p class="card-text">If you think this is a mistake, please consider submitting a bug report at our <a class="link" href="https://github.com/socrathematics/socrathematics.github.io/issues/new/choose">Github Repository.</a></p>
+            <p class="card-text">Sorry!</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="container my-5" id="recover" >
+
+    <div class="card slide-1 my-3 no-def" style="display: none" >
+
+        <div class="card-body">
+            <h4 class="card-title">Your email has been reclaimed</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Whew!</h6>
+            <p class="card-text">Your account is safe with you.</p>
+            <p class="card-text">If you think your account may have been compromised, consider resetting your password.</p>
+            <p class="card-text">If you choose to do so, we'll send you a password reset email.</p>
+        </div>
+        <div class="card-footer">
+            <div class="float-right">
+
+                <button id="sendReset" class="text-light btn btn-success mx-1">Reset Password</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="card slide-2 my-3 no-def" style="display: none"  >
+
+        <div class="card-body">
+            <h4 class="card-title">Check your email</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Success!</h6>
+            <p class="card-text">We've sent you a password reset email at <a id="recoverUem">(error fetching email).</a></p>
+
+        </div>
+
+    </div>
+
+    <div class="card slide-3 my-3 no-def" style="display: none" >
+
+        <div class="card-body">
+            <h4 class="card-title">Invalid or expired link</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Whoops!</h6>
+            <p class="card-text">Either this link has already been used, it's too old, or an error occurred on our part. If you copied the link from somewhere, check for punctuation or missed characters.</p>
+            <p class="card-text">If you think this is a mistake, please consider submitting a bug report at our <a class="link" href="https://github.com/socrathematics/socrathematics.github.io/issues/new/choose">Github Repository.</a></p>
+            <p class="card-text">Sorry!</p>
+        </div>
+
+    </div>
+
+    <div class="card slide-4 my-3 no-def" style="display: none" >
+
+        <div class="card-body">
+            <h4 class="card-title">Error sending email</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Whoops!</h6>
+            <p class="card-text">There was an unexpected error processing your request - but don't worry! You can still reset your password <a class="link" href="/auth/forgot-password">here</a>.</p>
+            <p class="card-text">If this is a recurring error, please consider submitting a bug report at our <a class="link" href="https://github.com/socrathematics/socrathematics.github.io/issues/new/choose">Github Repository.</a></p>
+            <p class="card-text">Sorry!</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="container my-5" id="verify" >
+
+    <div class="card slide-1 my-3 no-def" >
+
+        <div class="card-body">
+            <h4 class="card-title">Your email has been verified</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Congrats! You're a human!</h6>
+            <p class="card-text">Welcome to SOCRATHEMATICS! </p>
+            <p class="card-text">Click the button below to continue to your account.</p>
+
+        </div>
+        <div class="card-footer">
+            <div class="float-right">
+
+                <a href="/" class="text-light btn btn-success mx-1">Continue</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card slide-2 my-3 no-def" >
+
+        <div class="card-body">
+            <h4 class="card-title">Invalid or expired link</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Whoops!</h6>
+            <p class="card-text">Either this link has already been used, it's too old, or an error occurred on our part. If you copied the link from somewhere, check for punctuation or missed characters.</p>
+            <p class="card-text">If you think this is a mistake, please consider submitting a bug report at our <a class="link" href="https://github.com/socrathematics/socrathematics.github.io/issues/new/choose">Github Repository.</a></p>
+            <p class="card-text">Sorry!</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="container my-5" id="error" style="display: none">
+
+    <div class="card my-3 no-def" >
+
+        <div class="card-body">
+            <h4 class="card-title">Whoops!</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Something went wrong.</h6>
+            <p class="card-text">If you're here to reset your password, please fill out the <a href="/auth/forgot-password/" class="link">form</a> again, or use one of the other options below.</p>
+            <p>If you're here to verify or recover your email, please <a class="link" href="https://github.com/socrathematics/socrathematics.github.io/issues/new/choose">report a bug</a>, or <a class="link" href="mailto:saumyasmathtutoring@gmail.com">contact me</a>.</p>
+            <p class="card-text">Sorry for the inconvenience.</p>
+
+        </div>
+        <div class="card-footer">
+            <div class="float-right">
+
+                <a  class="text-light btn btn-success mx-1" href="javascript:history.back()">Go Back</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-storage.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyA6bA3PlHiFGHB1CIWobuBUsEa9IQ7AL3I",
+        authDomain: "socrathematics.firebaseapp.com",
+        databaseURL: "https://socrathematics.firebaseio.com",
+        projectId: "socrathematics",
+        appId: "1:809638401187:web:9608adf73f25ced6d45b16",
+        measurementId: "G-2QEQZPCEZR"
+
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const auth=firebase.auth();
+    const db = firebase.firestore();
+    // Get a reference to the storage service, which is used to create references in your storage bucket
+    //var storage = firebase.storage();
+
+</script>
+<script src="index.js"></script>
+<script src="/auth/auth.js"></script>
+</body>
+</html>
