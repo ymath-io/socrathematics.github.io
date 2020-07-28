@@ -57,25 +57,25 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                       <li><a class="nav-item nav-link text-dark pop" href="/faq" >FAQ</a></li>
                 </ul>
                 
-                <ul class="navbar-nav ml-md-auto">
-                    <form class="form-inline my-2 my-lg-0">
+                <ul class="navbar-nav ml-md-auto text-center">
+                    <form class="form-inline my-2 my-lg-0 text-center justify-content-center">
                         <input class="form-control mr-sm-2 mx-1" type="search"  placeholder="Search"  id="sque" aria-label="Search" >
                         <button class="btn btn-outline-main my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
                     </form>
-                    <li class="nav-item nav-link text-dark cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
-                    <li class="nav-item nav-link text-dark cursor-pointer" id="si" data-toggle="modal" data-target="#sim" style="display:none">Sign In</li>
+                    <li class="nav-item nav-link text-dark poop cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
+                    <li class="nav-item nav-link text-dark pop cursor-pointer" id="si" data-toggle="modal" data-target="#sim" style="display:none">Sign In</li>
 
                     <li class="nav-item dropdown" id="ma"  style="display:none">
-                        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account</a>
+                        <a class="nav-link pop dropdown-toggle text-dark"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="http://placehold.it/40x40" id="top-photo" height="40px" width="40px" class="rounded-circle"> <span id="top-name">My Account</span></a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item cursor-pointer"  data-toggle="modal" data-target="#mam" >Account Info</a>
+                            <a class="dropdown-item cursor-pointer"   href="/u/my-account" >Account Info</a>
                             <a class="dropdown-item cursor-pointer" href="/u/dashboard">Dashboard</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item cursor-pointer"  data-toggle="modal" data-target="#som">Sign out</a>
 
                         </div>
                     </li>
-                    <li><img src="/icons/eclipse-light.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)">
+                    <li class="mt-1 mb-0 pop" style="height:40px"><img src="/icons/eclipse-light.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)">
                     <script>
 
                       b = document.querySelector('body');
