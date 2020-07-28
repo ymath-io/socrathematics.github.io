@@ -128,6 +128,7 @@ idenForm.addEventListener("submit",(e)=>{
             user.reauthenticateWithCredential(credential).then(function() { //reauthenticate the user
                 // User re-authenticated.
                 document.querySelector("#ram input").value = "";
+                document.querySelector("#ram .text-danger").innerHTML = "";
                 $("#ram").modal("hide"); // hide the modal if everything went smoothly
                 user.updateEmail(newEmail).then(function () {
                     // Update successful.
