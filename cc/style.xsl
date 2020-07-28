@@ -46,7 +46,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
-            <a class="navbar-brand" href="/"><img class="rounded" width="50" src="/favicon.png"></a>
+            <a class="navbar-brand" href="/"><img class="rounded" width="50" src="/favicon.png"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
