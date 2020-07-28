@@ -168,7 +168,17 @@ user.delete().then(function() {
    document.getElementById("mam-email").innerHTML=user.email;
 
         document.getElementById("mam-name").value = user.displayName;
-        console.log("User authenticated: " + document.getElementById("mam-name").value);
+        if (user.displayName==false || user.displayName==null){
+            document.getElementById("top-name").innerText = user.email;
+        }
+        else {
+      document.getElementById("top-name").innerText = user.displayName;}
+      if (user.photoURL==false || user.photoURL==null){
+          document.getElementById("top-photo").src = "/icons/greenPi.svg";
+      }
+      else {
+          document.getElementById("top-photo").src = user.photoURL;}
+        console.log("User authenticated: " + document.getElementById("top-name").value);
    //console.log(user.email);
       document.querySelectorAll(".auth").forEach(function(currentValue){
     currentValue.style.display=null;
