@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-163408633-2');
+</script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PF58PDC');</script>
+<!-- End Google Tag Manager -->
+  <title>My Account</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn Calculus, Trigonometry, and more.">
+  <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="/fonts.css">
+  <link rel="stylesheet" href="/header.css">
+  <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="slider.css"/>
+<script type="text/javascript" src="/dreamerslab-jquery.actual-d38580c/jquery.actual.js"></script>
+
+
+</head>
+<body>
+    <script src="/menu.js"></script>
+<div class="container my-5 ">
+    <h2>Account Information</h2>
+    <div class="container row">
+        <div class="col mx-0 px-0">
+            <div class="card no-def" >
+                <div class="card-body">
+                  <h5 class="card-title">Identification</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Your email, name, and password</h6>
+                    <div class="text-center col">
+                    <img height="150px" width="150px" data-toggle="modal" data-target="#exampleModal"  alt="Profile Picture" id="acc-photo" class="cursor-pointer rounded-circle img-responsive" src="https://placehold.it/150x150/b0b0b0/28a745?text=Profile+Photo">
+
+                       <button data-toggle="modal" data-target="#exampleModal" style="position:absolute;bottom:10px;left: calc(50% + 40px); background-color:#66c57c;border:none;z-index:3"  class="btn btn-circle btn-secondary mt-3"><svg height="25px" focusable="false" fill="var(--grey5)" stroke="transparent" viewBox="0 0 24 24" aria-hidden="true" ><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg></button>
+                    </div>
+                    <form class="my-4" autocomplete="off" id="iden">
+                  <div class="form-group form-row  ">
+                    
+                    <input id="acc-name" type="text" class="form-control bg-light mx-auto col-sm-10" placeholder="Name" >
+                </div>
+                        <p class="card-text text-danger text-center" id="name-err"></p>
+                        <p class="card-text text-success text-center" id="name-conf"></p>
+
+                <div class="form-group form-row">
+                    
+                    <input id="acc-email" type="email" class="form-control bg-light mx-auto col-sm-10" placeholder="Email" >
+                </div>
+                        <p class="card-text text-danger text-center" id="em-err"></p>
+                        <p class="card-text text-success text-center" id="em-conf"></p>
+                <div class=""/>
+                <h5 class="card-title">Change your password</h5>
+                <div class="form-group form-row">
+
+                    <input id="acc-oldp"  type="password" class="form-control bg-light mx-auto col-sm-10" placeholder="Old Password" >
+                </div>
+                <div class="form-group form-row">
+
+                    <input id="acc-newp" type="password" class="form-control bg-light mx-auto col-sm-10" placeholder="New Password" >
+                </div>
+                <div class="form-group form-row">
+
+                    <input id="acc-newp2" type="password" class="form-control bg-light mx-auto col-sm-10" placeholder="Confirm New Password" >
+                </div>
+                        <p class="card-text text-danger text-center" id="pw-err"></p>
+                        <p class="card-text text-success text-center" id="pw-conf"></p>
+
+                    <div class="float-right">
+                        <a href="#" class="text-light btn btn-secondary mx-1 disabled">Reset</a>
+                        <button id="idenbut" type="submit" class="text-light btn btn-success mx-1 disabled">Update Profile</button>
+                    </div>
+            </form>
+
+                </div>
+                </div>
+              </div>
+        </div>
+        <!--<hr class="d-sm-none">
+        <div class="col">
+            <div class="card no-def" >
+                <div class="card-body">
+                  <h5 class="card-title">Settings</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Your personal preferences</h6>
+                  <form id="prefs">
+                    <div class="form-group col">
+
+                      <div class="row">
+                        <div class="col"><label>Dark Mode</label></div>
+                        <div class="col-3 mt-2">
+                            <label class="switch">
+                                <input id="darkSlide" type="checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                              </div>
+
+                      </div>
+                    </div>
+                  </form>
+
+
+                  <div class="float-right">
+                    <a href="#" class="text-light btn btn-secondary mx-1 disabled">Reset</a>
+                          <a href="#" class="text-light btn btn-success mx-1 disabled">Update</a>
+                          </div>
+                </div>
+              </div>
+        </div>-->
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Change your profile picture</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body " style="min-height: 500px">
+                    <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                        <li class="nav-item " role="presentation">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#upload" role="tab" aria-controls="upload" aria-selected="true">Upload</a>
+                        </li>
+                        <li class="nav-item " role="presentation">
+                            <a class="nav-link" id="url-tab" data-toggle="tab" href="#fromUrl" role="tab" aria-controls="from-url" aria-selected="false">From URL</a>
+                        </li>
+                        <li class="nav-item " role="presentation">
+                            <a class="nav-link " id="defaults-tab" data-toggle="tab" href="#defaults" role="tab" aria-controls="defaults" aria-selected="false">Defaults</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content  pt-5 " id="myTabContent">
+                        <div class="tab-pane fade show active" id="upload" role="tabpanel" aria-labelledby="upload-tab">
+                            <div id="drop-area" >
+                                <form class="my-form text-center ">
+                                    <p>Drag and drop, or browse your filesystem.</p>
+                                    <input type="file" id="fileElem"  accept="image/*" onchange="handleFiles(this.files)">
+                                    <label class="btn btn-outline-success" for="fileElem">Browse</label>
+                                </form>
+                                <div id="gallery" class="justify-content-center text-center" ><img id="gallim" style="border: none !important" height="150px" width="150px"/></div>
+                                <style>
+                                    #drop-area {
+                                        border: 2px dashed var(--grey3);
+                                        border-radius: 20px;
+                                        width: 480px;
+                                        padding: 20px;
+                                        right:9px;
+                                        position:absolute;
+
+                                    }
+                                    #drop-area.highlight {
+                                        border-color: var(--main);
+
+                                    }
+
+                                    .my-form {
+                                        margin-bottom: 10px;
+                                    }
+                                    #gallery {
+                                        margin-top: 10px;
+                                    }
+                                    #gallery img {
+                                        width: 150px;
+                                        margin-bottom: 10px;
+                                        margin-right: 10px;
+                                        vertical-align: middle;
+                                    }
+
+                                    #fileElem {
+                                        display: none;
+                                    }
+                                </style>
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="fromUrl" role="tabpanel" aria-labelledby="url-tab">
+                            <form class="form-inline text-center">
+
+                                <input style="min-width: 300px" class="form-control" id="imgUrl" type="text" placeholder="Paste your image URL here"/>
+                                <button class=" mx-1 btn btn-outline-success" >Preview</button>
+                            </form>
+                            <div class="container justify-content-center">
+                                <img class="img-fluid" />
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="defaults" role="tabpanel" aria-labelledby="defaults-tab">
+                            <div class="form-check-inline">
+                                <input type="radio" id="customRadio1" name="customRadio" class="img-input-select">
+                                <label class="" for="customRadio1"><img class="img-select " alt="green one"  src="/icons/greenOne.png"/></label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input type="radio" id="customRadio2" name="customRadio" class="img-input-select">
+                                <label class="" for="customRadio2"><img alt="red pi" class="img-select"  src="/icons/redPi.png"/></label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input type="radio" id="customRadio3" name="customRadio" class="img-input-select">
+                                <label class="" for="customRadio3"><img alt="green pi" class="img-select" height="100px" width="100px" src="/icons/greenPi.svg"/></label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success" onclick="choosePhoto()">Choose</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="ram" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ramLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ramLabel">Please re-enter your password</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                    </form>
+                    <p class="text-danger text-center"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<style>
+    .img-input-select{
+        display:none
+    }
+    .img-input-select:checked ~ label .img-select {
+        border-color: #66c57c;
+
+    }
+
+    .img-select{
+        border: solid 7px transparent;
+        border-radius: 25px;
+        cursor: pointer;
+        height: 100px;
+        width: 100px
+
+    }
+
+    .nav-tabs {
+        border-bottom: 1px solid var(--grey6);
+    }
+
+    .nav-tabs .nav-link:hover{
+        border-color: var(--grey6) !important;
+    }
+
+    .nav-tabs .nav-link.active{
+        border-color: var(--grey6) !important;
+    }
+</style>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-storage.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA6bA3PlHiFGHB1CIWobuBUsEa9IQ7AL3I",
+    authDomain: "socrathematics.firebaseapp.com",
+    databaseURL: "https://socrathematics.firebaseio.com",
+    projectId: "socrathematics",
+    appId: "1:809638401187:web:9608adf73f25ced6d45b16",
+    measurementId: "G-2QEQZPCEZR",
+      storageBucket: "socrathematics.appspot.com",
+
+
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  const auth=firebase.auth();
+  const db = firebase.firestore();
+  // Get a reference to the storage service, which is used to create references in your storage bucket
+  var storage = firebase.storage();
+
+</script>
+<script type="text/javascript" src="/auth/auth.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
