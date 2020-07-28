@@ -1,5 +1,5 @@
 
-if (!document.getElementById("navigation")){document.write(`<div class="container-fluid text-center bg-transparent text-light masthead-sub">
+if (true){document.write(`<div class="container-fluid text-center bg-transparent text-light masthead-sub">
     <h1 class="mastTitle-sub " ><a href="/" style="text-decoration:none;color:white;"><b>SOCRATHEMATICS</b></a></h1>
   <p class="mastTitle-sub-2" ><b>Math, right at your fingertips</b></p>
 
