@@ -164,7 +164,7 @@ user.delete().then(function() {
         document.getElementById("su").style.display="none";
    document.getElementById("si").style.display="none";
    //document.getElementById("so").style.display="inline";
-   //document.getElementById("ma").style.display=null;
+   document.getElementById("ma").style.display=null;
    //document.getElementById("mam-email").innerHTML=user.email;
 
         //document.getElementById("mam-name").value = user.displayName;
