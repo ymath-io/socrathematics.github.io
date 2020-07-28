@@ -160,17 +160,17 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <form id="signup-form" >
         <div class="form-group">
             <label class="" for="signup-email">Email Address</label>
-            <input class="form-control" type="email" id="signup-email" required />
+            <input class="form-control" type="email" id="signup-email" required="" />
 
         </div>
         <div class="form-group">
             <label class="" for="signup-password">Password</label>
-            <input class="form-control" type="password" id="signup-password" required />
+            <input class="form-control" type="password" id="signup-password" required="" />
             
         </div>
         <div class="form-group">
           <div class="custom-control custom-checkbox">
-            <input class="custom-control-input " type="checkbox"  id="ppagree" required>
+            <input class="custom-control-input " type="checkbox"  id="ppagree" required="" />
             <label class="custom-control-label" for="ppagree">
               By signing up, you agree that you know what you're getting into, because you read the <a href="/faq" class="link"><u>FAQ</u></a> and you don't hold the owner of this website liable for anything that happens to you.
             </label>
@@ -202,12 +202,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <form id="signin-form">
             <div class="form-group">
                 <label class="" for="signin-email">Email Address</label>
-                <input class="form-control" type="email" id="signin-email" required />
+                <input class="form-control" type="email" id="signin-email" required="" />
 
             </div>
             <div class="form-group">
                 <label class="" for="signin-password">Password</label><a class="text-success float-right" href="/auth/forgot-password/">Forgot password?</a>
-                <input class="form-control" type="password" id="signin-password" required />
+                <input class="form-control" type="password" id="signin-password" required="" />
                 <p class="text-muted form-text" id="sim-e" style=""><br/></p>
             </div>
         </form>
