@@ -153,7 +153,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <div class="modal-header">
     <h5 class="modal-title" id="suml">Get your very own account!</h5>
     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
+      <span aria-hidden="true">&#215;</span>
     </button>
   </div>
   <div class="modal-body">
@@ -194,7 +194,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <div class="modal-header">
         <h5 class="modal-title" id="siml">Sign in to your account</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">&#215;</span>
         </button>
       </div>
       <div class="modal-body">
@@ -228,7 +228,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <div class="modal-header">
         <h5 class="modal-title" id="vml">Verify your email</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">&#215;</span>
         </button>
       </div>
       <div class="modal-body">
@@ -250,7 +250,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <div class="modal-header">
         <h5 class="modal-title" id="soml">Sign Out</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+          <span aria-hidden="true">&#215;</span>
         </button>
       </div>
       <div class="modal-body">
