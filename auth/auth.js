@@ -107,8 +107,8 @@ signinButton.addEventListener("click",(e)=>{
 
 })
 
-//update data
-const nameF = document.querySelector("#mam-name");
+//update data - this is now done in /u/my-account
+/*const nameF = document.querySelector("#mam-name");
 const mab = document.querySelector("#mab");
 var user = firebase.auth().currentUser;
 
@@ -122,7 +122,7 @@ user.updateProfile({
 }).then(function() {
     $("#mam").modal("hide");
 });
-});
+});*/
 
 //verification
 const vsob  = document.querySelector("#vsob");
