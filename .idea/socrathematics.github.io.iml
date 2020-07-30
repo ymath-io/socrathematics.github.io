@@ -15,5 +15,7 @@
     <orderEntry type="library" name="firebase-auth" level="application" />
     <orderEntry type="library" name="firebase-analytics" level="application" />
     <orderEntry type="library" name="firebase-app" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="popper.js" level="application" />
   </component>
 </module>

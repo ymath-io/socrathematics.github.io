@@ -14,7 +14,7 @@ firebase.auth().onAuthStateChanged(function(u) {
         }
     } else {
         // No user is signed in.
-        // todo: redirect user to sign in or homepage.
+        $("#sim").modal("show");
     }
 });
 
@@ -50,6 +50,7 @@ idenForm.addEventListener("submit",(e)=>{
                     photoURL: url
                 }).then(function () {
                     // Update successful.
+                    document.getElementById("top-photo").src=url;
                 }).catch(function (error) {
                     // An error happened.
                     console.log(error);
@@ -73,6 +74,23 @@ idenForm.addEventListener("submit",(e)=>{
             photoURL: newPhoto
         }).then(function () {
             // Update successful.
+            document.getElementById("top-photo").src=newPhoto;
+        }).catch(function (error) {
+            // An error happened.
+            console.log(error);
+            return;
+        });
+
+
+    }
+    else if (newPhoto !== user.photoURL && photoType==="defaults") {
+
+
+        user.updateProfile({
+            photoURL: newPhoto
+        }).then(function () {
+            // Update successful.
+            document.getElementById("top-photo").src=newPhoto;
         }).catch(function (error) {
             // An error happened.
             console.log(error);
@@ -88,6 +106,8 @@ idenForm.addEventListener("submit",(e)=>{
             displayName: newName
         }).then(function () {
             // Update successful.
+            document.getElementById("top-name").innerText = user.displayName; //update the name up above
+            document.getElementById("name-conf").innerText="Your profile was updated."
         }).catch(function (error) {
             // An error happened.
             console.log(error);
@@ -97,23 +117,56 @@ idenForm.addEventListener("submit",(e)=>{
 
     //update email
     if (newEmail !== user.email) {
-        $("#sim").modal("show");
-        user.updateEmail(newEmail).then(function () {
-            // Update successful.
-            user.sendEmailVerification().then(function () {
-                // Email sent.
-                //todo: display confirmation and ask user to check email
-            }).catch(function (error) {
-                // An error happened.
+        $("#ram").modal("show"); //prompt for password
+        document.querySelector("#ram .btn-success").addEventListener("click",(e)=>{ //when the user says they are done
+
+            const credential = firebase.auth.EmailAuthProvider.credential( //get user credentials from modal
+                user.email,
+                document.querySelector("#ram input").value
+            );
+            var oldEmail = user.email;
+            user.reauthenticateWithCredential(credential).then(function() { //reauthenticate the user
+                // User re-authenticated.
+                document.querySelector("#ram .text-danger").innerHTML = ""
+                document.querySelector("#ram input").value = "";
+                $("#ram").modal("hide"); // hide the modal if everything went smoothly
+                user.updateEmail(newEmail).then(function () {
+                    // Update successful.
+                    user.sendEmailVerification().then(function () {
+                        // Email sent.
+                        document.querySelector("#ram .text-danger").innerHTML = ""
+                        document.getElementById("em-conf").innerText = `Great! We've sent you a verification email at ${newEmail} and a recovery email at ${oldEmail}.`
+                    }).catch(function (error) {
+                        // An error happened while sending verification.
+
+                        console.log(error);
+                        return;
+                    });
+
+                }).catch(function (error) {
+                    // An error happened while updating the email. the email might not be valid..
+                    if (error.code==="auth/invalid-email"){
+                        document.getElementById("em-err").innerText="That does not look like a valid email."
+                        document.getElementById("em-conf").innerText=""
+                    }
+                    else if (error.code==="auth/email-already-in-use"){
+                        document.getElementById("em-err").innerText="There's already an account with that email.";
+                        document.getElementById("em-conf").innerText="";
+                        document.getElementById("acc-email").value = user.email;
+                    }
+                    console.log(error);
+                    return;
+                });
+
+            }).catch(function(error) {
+                // An error happened while reauthenticating the user. Likely the password given is incorrect. (the modal is still open)
+                document.querySelector("#ram .text-danger").innerHTML = "Incorrect password."
                 console.log(error);
                 return;
             });
 
-
-        }).catch(function (error) {
-            // An error happened.
-            console.log(error)
         });
+
     }
     //update password
     var oldpass = document.getElementById("acc-oldp").value;
@@ -131,14 +184,15 @@ function updatePass() {
     var slot2 = document.getElementById("acc-newp2").value;
 
 
-    // TODO: if no old password is given, display an error.
+
     if (oldpass == ""){
         document.getElementById("pw-err").innerText="You must provide your current password."
         return;
     }
 
-    // TODO: if two slots do not match, display an error.
+
     if (slot1 !== slot2){
+        document.getElementById("pw-err").innerText="The two passwords do not match. Try again."
         return;
     }
     //reauthenticate using the old slot value and email value.
@@ -153,18 +207,25 @@ function updatePass() {
         //update password using value of slot 1.
         user.updatePassword(slot1).then(function() {
             // Update successful.
+            document.getElementById("pw-err").innerText="" // clear the error field
+            document.getElementById("acc-oldp").value = "";
+            document.getElementById("acc-newp").value = "";
+            document.getElementById("acc-newp2").value = "";
+            document.getElementById("pw-conf").innerText="Success! Your password was changed."
         }).catch(function(error) {
-            // An error happened.
+            if (error.code==="auth/weak-password"){
+                document.getElementById("pw-err").innerText="Your password must be at least 6 characters."
+            }
             console.log(error)
         });
 
-        // TODO: display confirmation
+
 
     }).catch(function(error) {
         // An error happened.
         console.log(error)
-
-        //todo: display error.message in the error paragraph.
+        document.getElementById("pw-err").innerText="The current password provided is incorrect."
+        return;
     });
 
 
@@ -253,7 +314,11 @@ function choosePhoto(){
         uploadedPhoto = document.querySelector("#exampleModal .img-fluid").src; //get the value and store it in a variable
         photoType = "url"
     }
-    document.getElementById("acc-photo").src=uploadedPhoto; //preview it
+    else if (document.querySelector("#exampleModal .nav-link.active").id==="defaults-tab") {
+        uploadedPhoto = document.querySelector("#exampleModal .img-input-select:checked + label img").src; //get the value and store it in a variable
+        photoType = "defaults"
+    }
+    document.getElementById("acc-photo").src=uploadedPhoto; //preview it in the card
     $("#exampleModal").modal("hide");
     document.querySelector(".modal-backdrop.fade.in").style.display="none";
     $("#idenbut").toggleClass("disabled",false);

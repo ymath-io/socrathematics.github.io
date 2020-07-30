@@ -178,7 +178,7 @@ user.delete().then(function() {
       }
       else {
           document.getElementById("top-photo").src = user.photoURL;}
-        console.log("User authenticated: " + document.getElementById("top-name").value);
+        console.log("User authenticated: " + document.getElementById("mam-name").value);
    //console.log(user.email);
       document.querySelectorAll(".auth").forEach(function(currentValue){
     currentValue.style.display=null;
