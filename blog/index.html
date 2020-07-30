@@ -21,6 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/30a0cbcf71.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <link rel="icon" href="/favicon.png">
@@ -33,9 +34,40 @@
 <script src="/menu.js"></script>
 
 
+<div class="container-fluid" id="postHolder">
+    <div class="card no-def" >
+        <div class="card-body">
+            <h5 class="card-title"><img height="40px" src="/favicon.png" class="rounded-circle">&nbsp;&nbsp;&nbsp; Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
+            <details><summary><h5 class="card-title">Comments  <i class="fas fa-angle-down pt-1"></i></h5></summary>
+            <ul class="list-group">
+                <li class="list-group-item pb-0"><h5><img height="30px" src="/icons/landscape.jpg" class="rounded-circle">&nbsp;&nbsp;&nbsp;Saumya Singhal</h5>
+                    <div class="pl-5">
+                        <p>Wow! I had no idea!</p>
+                    </div>
 
+                </li>
+                <li class="list-group-item pb-0"><h5><img height="30px" src="/icons/greenOne.png" class="rounded-circle">&nbsp;&nbsp;&nbsp;Ada Lovelace</h5>
+                    <div class="pl-5">
+                        <p>Me neither!</p>
+                    </div>
 
+                </li>
+
+            </ul>
+            </details>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* remove the summary caret */
+    details summary { list-style-type: none; } /* Firefox */
+    details summary::-webkit-details-marker { display: none; } /* Chrome */
+    details summary::marker { display: none; }
+</style>
 
 
 <!--All the scripts-->
@@ -49,6 +81,8 @@
 <script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
 <script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
 <script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-performance.js"></script>
+
 <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -66,10 +100,11 @@
 
     const auth=firebase.auth();
     const db = firebase.firestore();
-    // Get a reference to the storage service, which is used to create references in your storage bucket
     var storage = firebase.storage();
+    var perf = firebase.performance();
 
 </script>
 <script type="text/javascript" src="/auth/auth.js"></script>
+<script type="text/javascript" src="postlister.js"></script>
 </body>
 </html>
