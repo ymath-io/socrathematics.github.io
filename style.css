@@ -436,7 +436,7 @@ body{
     border-color:var(--grey6) !important;
     background-color:var(--grey6) !important;
     border-radius:0.25rem !important;
-    border: 1px solid !important;
+    border: 1px solid var(--grey6) !important;
     outline:none !important;
     height:initial;
     
