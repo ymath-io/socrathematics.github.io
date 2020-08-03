@@ -5,7 +5,6 @@
     <course>
         <title>Exponents &amp; More</title>
         <link>https://socrathematics.github.io/exponents-and-more/</link>
-        <id>exponents</id>
         <description>Master the most efficient computation since multiplication!</description>
         <topics>
             <topic>
@@ -73,12 +72,15 @@
                 </subtopics>
             </topic>
         </topics>
+        <prerequisites>
+            <prerequisite><name>Basic Arithmetic</name></prerequisite>
+            <prerequisite><name>Order of Operations</name></prerequisite>
+        </prerequisites>
     </course>
 
     <course>
         <title>Trigonometry</title>
         <link>https://socrathematics.github.io/trigonometry/</link>
-        <id>trigonometry</id>
         <description>Learn one of the most powerful tools in geometry.</description>
         <topics>
             <topic>
@@ -115,7 +117,6 @@
     <course>
         <title>Calculus</title>
         <link>https://socrathematics.github.io/calculus/</link>
-        <id>calculus</id>
         <description>Equip yourself with calculus - it's not scary.</description>
         <topics>
             <topic>

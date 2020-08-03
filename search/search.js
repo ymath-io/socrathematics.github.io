@@ -41,4 +41,6 @@ fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyA6bA3PlHiFGHB1CIWobu
 .then(response => {return response.json()})
 .then(data => {console.log(data);showR(data)})
 return sdata;
+
 }
+

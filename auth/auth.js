@@ -107,8 +107,8 @@ signinButton.addEventListener("click",(e)=>{
 
 })
 
-//update data
-const nameF = document.querySelector("#mam-name");
+//update data - this is now done in /u/my-account
+/*const nameF = document.querySelector("#mam-name");
 const mab = document.querySelector("#mab");
 var user = firebase.auth().currentUser;
 
@@ -122,7 +122,7 @@ user.updateProfile({
 }).then(function() {
     $("#mam").modal("hide");
 });
-});
+});*/
 
 //verification
 const vsob  = document.querySelector("#vsob");
@@ -165,9 +165,12 @@ user.delete().then(function() {
    document.getElementById("si").style.display="none";
    //document.getElementById("so").style.display="inline";
    document.getElementById("ma").style.display=null;
-   document.getElementById("mam-email").innerHTML=user.email;
 
-        document.getElementById("mam-name").value = user.displayName;
+
+   //document.getElementById("mam-email").innerHTML=user.email;
+
+        //document.getElementById("mam-name").value = user.displayName;
+
         if (user.displayName==false || user.displayName==null){
             document.getElementById("top-name").innerText = user.email;
         }
@@ -178,7 +181,9 @@ user.delete().then(function() {
       }
       else {
           document.getElementById("top-photo").src = user.photoURL;}
-        console.log("User authenticated: " + document.getElementById("mam-name").value);
+
+        console.log("User authenticated: " + user.displayName);
+
    //console.log(user.email);
       document.querySelectorAll(".auth").forEach(function(currentValue){
     currentValue.style.display=null;

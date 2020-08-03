@@ -127,6 +127,7 @@ idenForm.addEventListener("submit",(e)=>{
             var oldEmail = user.email;
             user.reauthenticateWithCredential(credential).then(function() { //reauthenticate the user
                 // User re-authenticated.
+
                 document.querySelector("#ram .text-danger").innerHTML = ""
                 document.querySelector("#ram input").value = "";
                 $("#ram").modal("hide"); // hide the modal if everything went smoothly
