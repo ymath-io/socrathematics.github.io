@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163408633-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163408633-2');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PF58PDC');</script>
+    <!-- End Google Tag Manager -->
+    <title>Modular Arithmetic: Introduction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-title" content="SOCRATHEMATICS">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script src="/menu.js"></script>
+<script>activate("mod");</script>
+
+<div class="container" style="margin-top:30px">
+    <div class="row">
+        <div class="col-sm-3">
+            <h3>Subtopics</h3>
+            <p>Topics within Modular Arithmetic</p>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link " href="../">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Chapter 1 - Coming Soon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Chapter 2 - Coming Soon</a>
+                </li>
+
+            </ul>
+            <hr class="d-sm-none">
+        </div>
+
+        <div class="col-sm-8">
+            <div class="container">
+                <h2>INTRODUCTION</h2>
+            </div>
+            <div class="container">
+                <ol>
+                    <li>Anthony owns a 12 hour clock. For all questions below, assume that it is midnight. (And yes, people bake in the middle of the night. Don’t ask why.)</li>
+                    <li>Anthony wants to bake many pumpkin pies, but his oven is too small so he has to bake them one by one and it will take 17 hours to finish the project. What time will his clock show once he is finished?
+                        <div id="q2" class="form-group"></div>
+                        <button class="btn btn-success" id="s2">Check</button>
+                        <div id="r2" class="alert" role="alert"></div>
+                        <script type="text/javascript" src="/quiz.js">
+                        </script>
+                        <script type="text/javascript">
+                            var quizContainer = document.getElementById('q2');
+                            var resultsContainer = document.getElementById('r2');
+                            var submitButton = document.getElementById('s2');
+                            var myQuestions = [{answers: {a: ''}, correctAnswer: '5'}];
+                            generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+                        </script></li>
+                    <li>Anthony was jailed for not passing a metal detector test until he was forced to reveal his secret identity: a humanoid robot with expert baking skills but no time management skills. Do you like Anthony? Why or why not? (We need to know this.)</li>
+                    <li>Anthony takes on a new baking project: the world’s biggest red velvet cake. It will take 187 hours. What time will his clock show at the end of the project?
+                        <div id="q3" ></div>
+                        <button class="button" id="s3">Check</button>
+                        <div id="r3" class="alert" role="alert"></div>
+                        </script>
+                        <script type="text/javascript">
+                        var quizContainer = document.getElementById('q3');
+                        var resultsContainer = document.getElementById('r3');
+                        var submitButton = document.getElementById('s3');
+                        var myQuestions = [{answers: {a: ''}, correctAnswer: '7'}];
+                        generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+                        </script></li>
+                    <li>The aliens on Neptune (what?! You didn’t hear about them? Yes, of COURSE, there are aliens on Neptune!!) use 8-hour clocks, because one Neptunian day is 16 earth hours. The Neptunians are jealous of the citizens of earth for having a robot-made pumpkin pie (honestly, I would have gone for the cake), so they call Anthony to make one for them, too. However, Anthony must use their 8-hour clock instead. What time will the clock show when he has finished?
+                        <div id="q4" ></div>
+                        <button class="btn btn-success" id="s4">Check</button>
+                        <div id="r4" class="alert" role="alert"></div>
+                        </script>
+                        <script type="text/javascript">
+                        var quizContainer = document.getElementById('q4');
+                        var resultsContainer = document.getElementById('r4');
+                        var submitButton = document.getElementById('s4');
+                        var myQuestions = [{answers: {a: ''}, correctAnswer: '1'}];
+                        generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+                        </script></li>
+                    <li>Saturn’s aliens are much more reasonable (and also love the color red) so they hired Anthony to bake the red velvet cake for them in their military kitchen (which uses military time). If one day on Saturn is 11 hours, what time will the clock show when Anthony finishes baking his cake?
+                        <div id="q5" ></div>
+                        <button class="button" id="s5">Check</button>
+                        <div id="r5" class="alert" role="alert"></div>
+                        </script>
+                        <script type="text/javascript">
+                        var quizContainer = document.getElementById('q5');
+                        var resultsContainer = document.getElementById('r5');
+                        var submitButton = document.getElementById('s5');
+                        var myQuestions = [{answers: {a: ''}, correctAnswer: '0'}];
+                        generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+                        </script></li>
+                    <li>Make your own example of a planet with different clock lengths and new recipes for cake (but no peanuts, this is a nut-free zone).</li>
+                    <li>Anthony goes home and realizes that with all of the extra-terrestrial travel, he missed an entire two months of school! When he walks into math class, he sees the following warm-up questions on the board:
+                        <br>8 (mod 3)≡ ____
+                        <br>71 (mod 11)≡ ____
+                        <br>Anthony is very confused and asks his friend Eric for the answers. (Bad Anthony! Bad!). Eric tells him, “I got 2 for the first one and 5 for the other. What did you get?” Anthony shrugs. He needs your help! What do these weird symbols and words mean?! Can Anthony’s baking experience be of any help here? It better be, because it’s all he’s got! Explain with examples and tell Anthony how to show his work on the warm-ups. (Hint: Eric was right.)</li>
+                </ol>
+            </div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center border-success">
+                    <li class="page-item text-success">
+                        <a class="page-link text-success" href="./"  aria-disabled="true">&laquo</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="./">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">&raquo</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script  src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyA6bA3PlHiFGHB1CIWobuBUsEa9IQ7AL3I",
+        authDomain: "socrathematics.firebaseapp.com",
+        databaseURL: "https://socrathematics.firebaseio.com",
+        projectId: "socrathematics",
+        appId: "1:809638401187:web:9608adf73f25ced6d45b16",
+        measurementId: "G-2QEQZPCEZR"
+
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const auth=firebase.auth();
+    const db = firebase.firestore();
+</script>
+<script src="/auth/auth.js"></script>
+</body>
+</html>

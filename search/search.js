@@ -7,6 +7,10 @@ var card ;
 const cont =  document.getElementById("sres");
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('q');
+if (myParam==null){
+  cont.innerHTML = `<h1>Enter your query in the search box above.</h1>`;
+  return null
+}
 cont.innerHTML += `<h1>Search: ${myParam}</h1>`;
 var results = sdata.items
 var nResults = sdata.searchInformation.totalResults;
@@ -37,4 +41,6 @@ fetch(`https://www.googleapis.com/customsearch/v1?key=AIzaSyA6bA3PlHiFGHB1CIWobu
 .then(response => {return response.json()})
 .then(data => {console.log(data);showR(data)})
 return sdata;
+
 }
+

@@ -37,6 +37,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
       </head>
   <body class="">
+
       
     <xsl:choose>
          <xsl:when test="system-property('xsl:vendor')='Transformiix'">
@@ -272,6 +273,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
           <script src="/menu.js"></script>
          </xsl:otherwise>
        </xsl:choose>
+
 
     <div class="container py-5">
   <h1 class="display-4">Course Catalog</h1><hr/><!-- This is the title printed to the page-->

@@ -93,36 +93,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
               </div>
         </div>
-        <!--<hr class="d-sm-none">
-        <div class="col">
-            <div class="card no-def" >
-                <div class="card-body">
-                  <h5 class="card-title">Settings</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Your personal preferences</h6>
-                  <form id="prefs">
-                    <div class="form-group col">
-
-                      <div class="row">
-                        <div class="col"><label>Dark Mode</label></div>
-                        <div class="col-3 mt-2">
-                            <label class="switch">
-                                <input id="darkSlide" type="checkbox">
-                                <span class="slider round"></span>
-                              </label>
-                              </div>
-
-                      </div>
-                    </div>
-                  </form>
-
-
-                  <div class="float-right">
-                    <a href="#" class="text-light btn btn-secondary mx-1 disabled">Reset</a>
-                          <a href="#" class="text-light btn btn-success mx-1 disabled">Update</a>
-                          </div>
-                </div>
-              </div>
-        </div>-->
     </div>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" data-backdrop="static" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -195,6 +165,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <input style="min-width: 300px" class="form-control" id="imgUrl" type="text" placeholder="Paste your image URL here"/>
                                 <button class=" mx-1 btn btn-outline-success" >Preview</button>
                             </form>
+
                             <div class="container text-center mt-5  justify-content-center">
                                 <img class="img-fluid rounded-circle" height="250px" width="250px" />
                             </div>
@@ -210,10 +181,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </div>
                             <div class="form-check-inline">
                                 <input type="radio" id="customRadio3" name="customRadio" class="img-input-select">
-                                <label class="" for="customRadio3"><img alt="green pi" class="img-select" height="100px" width="100px" src="/icons/greenPi.svg"/></label>
+
+                                <label class="" for="customRadio3"><img alt="green pi" class="img-select"  src="/icons/greenPi.svg"/></label>
                             </div>
-                          
-                        <div class="form-check-inline">
+                            <div class="form-check-inline">
+
                                 <input type="radio" id="customRadio4" name="customRadio" class="img-input-select">
                                 <label class="" for="customRadio4"><img alt="blue alpha" class="img-select"  src="/icons/blueAlpha.png"/></label>
                             </div>
@@ -281,6 +253,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     }
 
+
+    .img-select:hover{
+        border-color: var(--grey4);
+    }
+
     .img-select{
         border: solid 7px transparent;
         border-radius: 25px;
@@ -288,10 +265,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         height: 100px;
         width: 100px
 
-    }
-  
-  .img-select:hover{
-        border-color: var(--grey4);
     }
 
     .nav-tabs {
@@ -343,4 +316,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript" src="/auth/auth.js"></script>
 <script src="index.js"></script>
 </body>
+
 </html>
+

@@ -1,0 +1,1 @@
+//# sourceMappingURL=footer.vue.js.map

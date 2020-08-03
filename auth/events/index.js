@@ -4,7 +4,9 @@ function getParameterByName(name) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+
 $("#vm").remove();
+
   // Get the action to complete.
   const mode = getParameterByName('mode');
   // Get the one-time code from the query parameter.

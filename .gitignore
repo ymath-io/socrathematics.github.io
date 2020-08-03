@@ -1,2 +1,6 @@
 rootCA.key
 rootCA.key
+.vscode/launch.json
+node_modules/
+
+functions/

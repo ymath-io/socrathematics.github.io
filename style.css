@@ -23,9 +23,6 @@
     --text:#cacaca;
     --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   }
-  body{
-    content:"dark"
-  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -116,6 +113,7 @@ font-family:lato;
 .page-link:hover{
     color: var(--main-dark);}
 
+
 .list-group-item{
   background-color: var(--grey6) !important;
 }
@@ -141,6 +139,7 @@ a:link{
 }
 .dropdown-item:visited{color:var(--main)}
 .dropdown-item{color:var(--main)}
+.dropdown-item:hover{color:var(--main)}
 .link {
 color:var(--main) ;
 }
@@ -172,6 +171,7 @@ color:var(--main) ;
   background-color: var(--main) !important;
   border-color:var(--main)!important ;
 }
+
 
 .link:hover{
 color: var(--main-dark) ;
@@ -242,10 +242,6 @@ color:var(--text) !important;
 .pop{box-shadow:none;border-radius: 0.25rem;}
 .text-muted > *{cursor:default}
 
-.dropdown-item:hover, .dropdown-link:hover{
-  background-color: var(--grey6) !important;
-  color:var(--text)!important;
-}
 
 
 
@@ -304,6 +300,19 @@ box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
   color: var(--text)!important
 }
 
+
+.card .form-control{
+    border-color: var(--grey5) !important;
+    background-color:var(--grey5) !important;
+    color: var(--text)!important;
+
+}
+
+.form-control.no-hl:focus{
+    box-shadow: none !important;
+}
+
+r
 .modal-content, .modal-header, .modal-footer{
   background-color: var(--grey5);
   border-color: var(--grey4)
@@ -338,7 +347,7 @@ box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
   border-radius: 0.25rem;
 }
 
-.nav-pills .nav-link:hover:not(.active){
+.nav-pills .nav-link:hover:not(.active):not(.disabled){
 box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
 margin-bottom: .25rem!important;
 margin-top: .25rem!important;
@@ -436,7 +445,9 @@ body{
     border-color:var(--grey6) !important;
     background-color:var(--grey6) !important;
     border-radius:0.25rem !important;
+
     border: 1px solid var(--grey6) !important;
+
     outline:none !important;
     height:initial;
     
