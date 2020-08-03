@@ -1,0 +1,126 @@
+/**
+* Copyright (c) Tiny Technologies, Inc. All rights reserved.
+* Licensed under the LGPL or a commercial license.
+* For LGPL see License.txt in the project root for license information.
+* For commercial licenses see https://www.tiny.cloud/
+*/
+
+:root {
+  --main: #28a745;
+  --main-dark: hsl(134, 59%, 28%);
+  --success: var(--main);
+  --grey:rgb(142,142,147);
+  --grey2:rgb(174,174,178);
+  --grey3:rgb(199,199,204);
+  --grey4: rgb(209, 209, 214);
+  --grey5:rgb(229, 229, 234);
+  --grey6: rgb(242, 242, 247);
+  --text:var(--dark);
+  --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --accent:#66c57c;
+}
+@media (prefers-color-scheme: dark) {
+  :root{
+    --grey:rgb(142,142,147);
+    --grey2:rgb(99,99,102);
+    --grey3:rgb(72,72,74);
+    --grey4:rgb(58,58,60);
+    --grey5:rgb(44,44,46);
+    --grey6: rgb(56, 56, 59);
+    --text:#cacaca;
+    --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root{
+    --grey:rgb(142,142,147);
+    --grey2:rgb(174,174,178);
+    --grey3:rgb(199,199,204);
+    --grey4: rgb(209, 209, 214);
+    --grey5:rgb(229, 229, 234);
+    --grey6: rgb(242, 242, 247);
+    --text:var(--dark);
+    --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  body{
+    content:"light"
+  }
+}
+
+[data-theme="light"] {
+
+  --grey:rgb(142,142,147);
+  --grey2:rgb(174,174,178);
+  --grey3:rgb(199,199,204);
+  --grey4: rgb(209, 209, 214);
+  --grey5:rgb(229, 229, 234);
+  --grey6:rgb(242,242,247);
+  --text:var(--dark);
+  --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+[data-theme="dark"]{
+
+  --grey:rgb(142,142,147);
+  --grey2:rgb(99,99,102);
+  --grey3:rgb(72,72,74);
+  --grey4:rgb(58,58,60);
+  --grey5:rgb(44,44,46);
+  --grey6:rgb(56, 56, 59);
+  --text: #cacaca;
+  --toggler: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@font-face {
+  font-family: lato;
+  src: url(https://socrathematics.github.io/Lato/Lato-Regular.ttf);
+  font-weight: 100;
+}
+body {
+  font-family: lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.4;
+  margin: 1rem;
+}
+table {
+  border-collapse: collapse;
+}
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 0.4rem;
+}
+figure {
+  display: table;
+  margin: 1rem auto;
+}
+figure figcaption {
+  color: #999;
+  display: block;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+hr {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+}
+code {
+  background-color: #f2f2f7;
+  border-radius: 3px;
+  padding: 0.1rem 0.2rem;
+}
+.mce-content-body:not([dir=rtl]) {
+  background-color: var(--grey5);
+  border-radius: 0.25rem;
+}
+.mce-content-body:not([dir=rtl]) blockquote {
+  border-left: 2px solid #ccc;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+.mce-content-body[dir=rtl] blockquote {
+  border-right: 2px solid #ccc;
+  margin-right: 1.5rem;
+  padding-right: 1rem;
+}

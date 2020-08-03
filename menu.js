@@ -4,7 +4,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
   <p class="mastTitle-sub-2" ><b>Math, right at your fingertips</b></p>
 
 </div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:1;">
             <a class="navbar-brand" href="/"><img class="rounded" width="50" src="/favicon.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -12,7 +12,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
             <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                 <ul class="navbar-nav nav nav-fill">
                     
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" >
                       <a class="nav-link dropdown-toggle pop text-dark cursor-pointer" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                        Courses
                       </a>
@@ -22,6 +22,10 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                           <div class="dropdown-header"><a class=" text-dark" href="/modular-arithmetic">Modular Arithmetic</a></div>
                           <a class="dropdown-item" href="/modular-arithmetic/">About</a>
                           <a class="dropdown-item" href="/modular-arithmetic/introduction">Introduction</a>
+                          <div class="dropdown-header"><a class=" text-dark" href="/math-prog">Math Programming</a></div>
+                          <a class="dropdown-item" href="/math-prog/">About</a>
+                          <a class="dropdown-item" href="/math-prog/min-max">Min and Max</a>
+                          <a class="dropdown-item" href="/math-prog/x_y">x | y</a>
                          </div>
                          <div>   
                           <div class="dropdown-header"><a class=" text-dark" href="/trigonometry">Trigonometry</a></div>
@@ -59,7 +63,7 @@ if (!document.getElementById("navigation")){document.write(`<div class="containe
                 
                 <ul class="navbar-nav ml-md-auto text-center">
                     <form class="form-inline my-2 my-lg-0 text-center justify-content-center">
-                        <input class="form-control mr-sm-2 mx-1" type="search"  placeholder="Search"  id="sque" aria-label="Search" >
+                        <input class="form-control no-hl mr-sm-2 mx-1" type="search"  placeholder="Search"  id="sque" aria-label="Search" >
                         <button class="btn btn-outline-main my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
                     </form>
                     <li class="nav-item nav-link text-dark poop cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>

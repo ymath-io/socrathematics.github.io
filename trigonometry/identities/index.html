@@ -25,13 +25,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
-      <link rel="icon" href="../../favicon.png">
+      <link rel="icon" href="../../favicon.svg">
       <link rel="stylesheet" href="../../fonts.css">
       <link rel="stylesheet" href="../../header.css">
       <link rel="stylesheet" href="../../style.css">
+
+       <link rel=”mask-icon” href="../../mask-icon.svg" color=”#28a745">
+       <meta name="theme-color" content="#28a745">
 
       <!--mathjax-->
       <script>
@@ -43,13 +46,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </script>
       <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-   <link rel="stylesheet" href="../../mathquill-0.10.1/mathquill.css"/>
-<script src="../../mathquill-0.10.1/mathquill.js"></script>
+   <link rel="stylesheet" href="/mathquill-0.10.1/mathquill.css"/>
+<script src="/mathquill-0.10.1/mathquill.js"></script>
 <script>
 var MQ = MathQuill.getInterface(2);
 </script>
    </head>
    <body>
+
    <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF58PDC"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -92,7 +96,155 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                </div>
                <p>Trigonometric identities are the most important part of the entire subject - if you read only one page from this course, it should be this one.</p>
                <p>We're going to start exploring the following rectangle:</p>
-                <img src="id.png">
+
+                <!--<script type="text/tikz">
+  \begin{tikzpicture}
+    \draw (0,0) node[anchor=north east,distance=3]{$F$} --(6,0) node[anchor=north west,distance=3]{$E$}--(6,7) node[anchor=south west,distance=3]{$C$}--(0,7) node[anchor=south east,distance=3]{$A$}--cycle;
+    \draw [fill=blue,opacity=0.2,draw=black](0,0)--(6, 4)--(4,7)--cycle;
+    \draw [black](0,0)--(6, 4) node[anchor=west,distance=3]{$E$}--(4,7)node[anchor=south,distance=3]{$B$}--cycle;
+    \node at (0.8,0.8) {$\beta$};
+    \node at (1,0.3) {$\alpha$};
+    \node at (1.8,3.6) {$1$};
+    \draw (6,0) rectangle (5.7,0.3);
+    \draw (6,7) rectangle (5.7,6.7);
+    \draw (0,7) rectangle (0.3,6.7);
+    \draw (0,0) rectangle (0.3,0.3);
+  \end{tikzpicture}
+</script>-->
+                <div class="text-center justify-content-center">
+                <svg width="200.22614pt" height="226.56773pt" viewBox="-72 -72 200.22614 226.56773" ><g transform="translate(-57.584594726562486,142.59846496582028) scale(1,-1)"><g>
+                    <g stroke="var(--text)">
+                        <g fill="var(--text)">
+                            <g stroke-width="0.4pt">
+                                <g>
+                                    <path d=" M  0.0 0.0 L  170.71646 0.0 L  170.71646 199.1692 L  0.0 199.1692 Z  " style="fill:none"></path>
+                                    <g>
+                                        <g>
+                                            <g transform="matrix(1.0,0.0,0.0,1.0,-11.35243,-10.36629)">
+                                                <g stroke="var(--text)">
+                                                    <g fill="var(--text)">
+                                                        <g stroke="none" transform="scale(-1,1) translate(-57.584594726562486,140.59846496582028) scale(-1,-1)"><text alignment-baseline="baseline" y="140.59846496582028" x="-57.584594726562486" style="font-family: cmmi10; font-size: 10;">F</text>
+                                                        </g></g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <g transform="matrix(1.0,0.0,0.0,1.0,174.24944,-10.36629)">
+                                                <g stroke="var(--text)">
+                                                    <g fill="var(--text)">
+                                                        <g stroke="none" transform="scale(-1,1) translate(-57.584594726562486,140.59846496582028) scale(-1,-1)"><text alignment-baseline="baseline" y="140.59846496582028" x="-57.584594726562486" style="font-family: cmmi10; font-size: 10;">E</text>
+                                                        </g></g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <g transform="matrix(1.0,0.0,0.0,1.0,174.24944,202.70218)">
+                                                <g stroke="var(--text)">
+                                                    <g fill="var(--text)">
+                                                        <g stroke="none" transform="scale(-1,1) translate(-57.584594726562486,140.59846496582028) scale(-1,-1)"><text alignment-baseline="baseline" y="140.59846496582028" x="-57.584594726562486" style="font-family: cmmi10; font-size: 10;">C</text>
+                                                        </g></g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <g transform="matrix(1.0,0.0,0.0,1.0,-11.03297,202.70218)">
+                                                <g stroke="var(--text)">
+                                                    <g fill="var(--text)">
+                                                        <g stroke="none" transform="scale(-1,1) translate(-57.584594726562486,140.59846496582028) scale(-1,-1)"><text alignment-baseline="baseline" y="140.59846496582028" x="-57.584594726562486" style="font-family: cmmi10; font-size: 10;">A</text>
+                                                        </g></g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g fill="var(--main)">
+                                            <g stroke-opacity="0.3">
+                                                <g fill-opacity="0.3">
+                                                    <g stroke="var(--text)">
+                                                        <path d=" M  0.0 0.0 L  170.71646 113.81097 L  113.81097 199.1692 Z  "></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g stroke="var(--text)">
+                                            <g fill="var(--text)">
+                                                <path d=" M  0.0 0.0 L  170.71646 113.81097 L  113.81097 199.1692 Z  " style="fill:none"></path>
+                                                <g>
+                                                    <g>
+                                                        <g transform="matrix(1.0,0.0,0.0,1.0,174.24944,110.39432)">
+                                                            <g stroke="var(--text)">
+                                                                <g fill="var(--text)">
+                                                                    <g stroke="none" transform="scale(-1,1) translate(-57.584594726562486,140.59846496582028) scale(-1,-1)"><text alignment-baseline="baseline" y="140.59846496582028" x="-57.584594726562486" style="font-family: cmmi10; font-size: 10;">E</text>
+                                                                    </g></g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <g transform="matrix(1.0,0.0,0.0,1.0,109.76758,202.70218)">
+                                                            <g stroke="var(--text)">
+                                                                <g fill="var(--text)">
+                                                                    <g stroke="none" transform="scale(-1,1) translate(-57.584594726562486,140.59846496582028) scale(-1,-1)"><text alignment-baseline="baseline" y="140.59846496582028" x="-57.584594726562486" style="font-family: cmmi10; font-size: 10;">B</text>
+                                                                    </g></g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <g transform="matrix(1.0,0.0,0.0,1.0,19.67026,20.26227)">
+                                                <g stroke="var(--text)">
+                                                    <g fill="var(--text)">
+                                                        <g stroke="none" transform="scale(-1,1) translate(-57.584594726562486,140.59846496582028) scale(-1,-1)"><text alignment-baseline="baseline" y="140.59846496582028" x="-57.584594726562486" style="font-family: cmmi10; font-size: 10;">¯</text>
+                                                        </g></g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <g transform="matrix(1.0,0.0,0.0,1.0,25.23573,6.38313)">
+                                                <g stroke="var(--text)">
+                                                    <g fill="var(--text)">
+                                                        <g stroke="none" transform="scale(-1,1) translate(-57.584594726562486,140.59846496582028) scale(-1,-1)"><text alignment-baseline="baseline" y="140.59846496582028" x="-57.584594726562486" style="font-family: cmmi10; font-size: 10;">®</text>
+                                                        </g></g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <g transform="matrix(1.0,0.0,0.0,1.0,48.71501,99.20782)">
+                                                <g stroke="var(--text)">
+                                                    <g fill="var(--text)">
+                                                        <g stroke="none" transform="scale(-1,1) translate(-57.584594726562486,140.59846496582028) scale(-1,-1)"><text alignment-baseline="baseline" y="140.59846496582028" x="-57.584594726562486" style="font-family: cmr10; font-size: 10;">1</text>
+                                                        </g></g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <path d=" M  170.71646 0.0 M  170.71646 0.0 L  170.71646 8.5359 L  162.18054 8.5359 L  162.18054 0.0 Z M  162.18054 8.5359  " style="fill:none"></path>
+                                    <path d=" M  170.71646 199.1692 M  170.71646 199.1692 L  170.71646 190.63329 L  162.18054 190.63329 L  162.18054 199.1692 Z M  162.18054 190.63329  " style="fill:none"></path>
+                                    <path d=" M  0.0 199.1692 M  0.0 199.1692 L  0.0 190.63329 L  8.5359 190.63329 L  8.5359 199.1692 Z M  8.5359 190.63329  " style="fill:none"></path>
+                                    <path d=" M  0.0 0.0 M  0.0 0.0 L  0.0 8.5359 L  8.5359 8.5359 L  8.5359 0.0 Z M  8.5359 8.5359  " style="fill:none"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                </g></svg></div>
                 <p>Copy the diagram down, and try to fill in all the blanks in the order below.</p>
                 <p>When you're done, plug in your answers to check them.</p>
 <ol>
@@ -155,7 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </li>
 
     </ol>
-                <script>MathJax.typeset();</script>
+
 
             </div>
          </div>

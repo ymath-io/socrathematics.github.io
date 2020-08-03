@@ -17,5 +17,12 @@
     <orderEntry type="library" name="firebase-app" level="application" />
     <orderEntry type="library" name="firebase-performance" level="application" />
     <orderEntry type="library" name="30a0cbcf71" level="application" />
+    <orderEntry type="library" name="firebase-database" level="application" />
+    <orderEntry type="library" name="katex" level="application" />
+    <orderEntry type="library" name="tinymce" level="application" />
+    <orderEntry type="library" name="mathjax" level="application" />
+    <orderEntry type="library" name="fonts" level="application" />
+    <orderEntry type="library" name="tikzjax" level="application" />
+    <orderEntry type="library" name="codemirror" level="application" />
   </component>
 </module>
