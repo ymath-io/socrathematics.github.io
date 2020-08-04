@@ -1,0 +1,62 @@
+/*
+
+    Name:       yoncé
+    Author:     Thomas MacLean (http://github.com/thomasmaclean)
+
+    Original yoncé color scheme by Mina Markham (https://github.com/minamarkham)
+
+*/
+
+.cm-s-y-cust.CodeMirror { background: var(--grey4); color: var(--text);border-radius: 0.25rem } /**/
+.cm-s-y-cust div.CodeMirror-selected { background: rgba(102, 197, 124, 0.52);z-index: -1;
+} /**/
+.cm-s-y-cust .CodeMirror-selectedtext,
+.cm-s-y-cust .CodeMirror-selected,
+.cm-s-y-cust .CodeMirror-line::selection,
+.cm-s-y-cust .CodeMirror-line > span::selection,
+.cm-s-y-cust .CodeMirror-line > span > span::selection,
+.cm-s-y-cust .CodeMirror-line::-moz-selection,
+.cm-s-y-cust .CodeMirror-line > span::-moz-selection,
+.cm-s-y-cust .CodeMirror-line > span > span::-moz-selection { background: var(--accent) }
+
+.cm-s-y-cust.CodeMirror pre { padding-left: 0px; }
+.cm-s-y-cust .CodeMirror-gutters {background: var(--grey4); border-right: 0px;}
+.cm-s-y-cust .CodeMirror-linenumber {color: #777777;  padding-right: 10px; }
+.cm-s-y-cust .CodeMirror-activeline .CodeMirror-linenumber.CodeMirror-gutter-elt
+{ background: var(--grey3);
+  color: var(--main);!important }
+.cm-s-y-cust .CodeMirror-linenumber { color: #777; }
+.cm-s-y-cust .CodeMirror-cursor { border-left: 2px solid var(--main); }
+.cm-s-y-cust .cm-searching { background: rgba(243, 155, 53, .3) !important; outline: 1px solid #F39B35; }
+.cm-s-y-cust .cm-searching.CodeMirror-selectedtext { background: rgba(243, 155, 53, .7) !important; color: white; }
+
+.cm-s-y-cust .cm-keyword { color: #00A7AA; } /**/
+.cm-s-y-cust .cm-atom { color: #F39B35; }
+.cm-s-y-cust .cm-number, .cm-s-y-cust span.cm-type { color:  #A06FCA; } /**/
+.cm-s-y-cust .cm-def { color: #98E342; }
+.cm-s-y-cust .cm-property,
+.cm-s-y-cust span.cm-variable { color:var(--grey); font-style: italic; }
+.cm-s-y-cust span.cm-variable-2 { color: #da7dae; font-style: italic; }
+.cm-s-y-cust span.cm-variable-3 { color: #A06FCA; }
+.cm-s-y-cust .cm-type.cm-def { color: var(--main); font-style: normal; text-decoration: underline; }
+.cm-s-y-cust .cm-property.cm-def { color: var(--main); font-style: normal; }
+.cm-s-y-cust .cm-callee { color: var(--main); font-style: normal; }
+.cm-s-y-cust .cm-operator { color: var(--main); } /**/
+.cm-s-y-cust .cm-qualifier,
+.cm-s-y-cust .cm-tag { color: var(--main); }
+.cm-s-y-cust .cm-tag.cm-bracket { color: var(--accent); }
+.cm-s-y-cust .cm-attribute { color: #A06FCA; font-weight: bold }
+.cm-s-y-cust .cm-comment { color:#696d70; font-style:italic; font-weight:normal; } /**/
+.cm-s-y-cust .cm-comment.cm-tag { color: var(--main) }
+.cm-s-y-cust .cm-comment.cm-attribute { color:var(--grey) }
+.cm-s-y-cust .cm-string { color:var(--info); } /**/
+.cm-s-y-cust .cm-string-2 { color:#F39B35; } /*?*/
+.cm-s-y-cust .cm-meta { color:var(--grey); background: inherit; }
+.cm-s-y-cust .cm-builtin { color: var(--main); } /*?*/
+.cm-s-y-cust .cm-header { color: #da7dae; }
+.cm-s-y-cust .cm-hr { color: #98E342; }
+.cm-s-y-cust .cm-link { color:#696d70; font-style:italic; text-decoration:none; } /**/
+.cm-s-y-cust .cm-error { border-bottom: 1px solid #C42412; }
+
+.cm-s-y-cust .CodeMirror-activeline-background { background: var(--grey3); }
+.cm-s-y-cust .CodeMirror-matchingbracket { outline:1px solid var(--grey); color:var(--grey) !important; }
