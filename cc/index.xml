@@ -5,6 +5,7 @@
     <course>
         <title>Exponents &amp; More</title>
         <link>https://socrathematics.github.io/exponents-and-more/</link>
+        <id>exponents</id>
         <description>Master the most efficient computation since multiplication!</description>
         <topics>
             <topic>
@@ -72,15 +73,12 @@
                 </subtopics>
             </topic>
         </topics>
-        <prerequisites>
-            <prerequisite><name>Basic Arithmetic</name></prerequisite>
-            <prerequisite><name>Order of Operations</name></prerequisite>
-        </prerequisites>
     </course>
 
     <course>
         <title>Trigonometry</title>
         <link>https://socrathematics.github.io/trigonometry/</link>
+        <id>trigonometry</id>
         <description>Learn one of the most powerful tools in geometry.</description>
         <topics>
             <topic>
@@ -117,6 +115,7 @@
     <course>
         <title>Calculus</title>
         <link>https://socrathematics.github.io/calculus/</link>
+        <id>calculus</id>
         <description>Equip yourself with calculus - it's not scary.</description>
         <topics>
             <topic>
@@ -191,6 +190,26 @@
                         <title>Introduction</title>
                         <link>https://socrathematics.github.io/calculus/integrals/</link>
                     </subtopic>
+                    <subtopic>
+                        <title>Fundamental Theorem of Calculus</title>
+                        <link>/calculus/integrals/ftoc</link>
+                    </subtopic>
+                    <subtopic>
+                        <title>Practice</title>
+                        <link><!--/calculus/integrals/practice--></link>
+                    </subtopic>
+                    <subtopic>
+                        <title>Substitution</title>
+                        <link><!--/calculus/integrals/substitution--></link>
+                    </subtopic>
+                    <subtopic>
+                        <title>By Parts</title>
+                        <link><!--/calculus/integrals/parts--></link>
+                    </subtopic>
+                    <subtopic>
+                        <title>Reference Table</title>
+                        <link><!--/calculus/integrals/rt--></link>
+                    </subtopic>
                 </subtopics>
             </topic>
         </topics>
@@ -203,6 +222,29 @@
             <prerequisite>
                 <name>Exponents</name>
                 <link>/exponents</link>
+            </prerequisite>
+        </prerequisites>
+    </course>
+    <course>
+        <title>Mathematical Programming</title>
+        <link>/math-prog</link>
+        <description>Sometimes you can't solve things - you have to <i>program</i> them.</description>
+        <topics>
+            <topic>
+                <title>Min and Max</title>
+                <link>/math-prog/min-max</link>
+            </topic>
+            <topic>
+                <title>$x \mid y$</title>
+                <link>/math-prog/x_y</link>
+            </topic>
+        </topics>
+        <prerequisites>
+            <prerequisite>
+                <name>Basic Algebra</name>
+            </prerequisite>
+            <prerequisite>
+                <name>Basic Number Theory</name>
             </prerequisite>
         </prerequisites>
     </course>
