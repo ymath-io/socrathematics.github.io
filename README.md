@@ -1,4 +1,4 @@
-# socrathematics.github.io
+# YMath.io
 Here, you can find a bunch of math courses. Enjoy. If you can. If you want to. 
 https://socrathematics.github.io
 ## Courses
@@ -13,3 +13,6 @@ Currently the site has courses on trigonometry and calculus. Modular Arithmetic 
 |June 28, 2020 | Debugged entire site. |
 |July 01, 2020 | Added FAQ tab to homepage. Changed trigonometry thumbnail. |
 |July 02, 2020 | Fixed misleading 404 page. |
+|July 05, 2020 | Created and launched a working CMS. |
+|Aug  07, 2020 | Rebranded SOCRATHEMATICS to YMath. |
+

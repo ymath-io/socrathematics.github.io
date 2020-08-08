@@ -1,7 +1,7 @@
 
 if (true){document.write(`<div class="container-fluid text-center bg-transparent text-light masthead-sub">
-    <h1 class="mastTitle-sub " ><a href="/" style="text-decoration:none;color:white;"><b>SOCRATHEMATICS</b></a></h1>
-  <p class="mastTitle-sub-2" ><b>Math, right at your fingertips</b></p>
+    <h1 class="mastTitle-sub " ><a href="/" style="text-decoration:none;color:white;"><b>YMath</b></a></h1>
+  <p class="mastTitle-sub-2" ><b>Math - explained to be understood.</b></p>
 
 </div>
 
@@ -200,7 +200,7 @@ if (true){document.write(`<div class="container-fluid text-center bg-transparent
       </div>
       <div class="modal-body">
        <p> It looks like you're using an unverified email. If you want to continue using this email, please verify your email.</p>
-          <p>If you would like to activate your account at a later time, you can sign out and continue using SOCRATHEMATICS.</p>
+          <p>If you would like to activate your account at a later time, you can sign out and continue using YMath.</p>
       </div>
       <div class="modal-footer">
         <button type="button" id="vdb"  class="btn btn-danger">Delete my account</button>

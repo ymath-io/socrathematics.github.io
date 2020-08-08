@@ -1,5 +1,5 @@
 rootCA.key
-rootCA.key
+rootCA.pem
 .vscode/launch.json
 node_modules/
 
