@@ -1,5 +1,5 @@
 {
-  "name": "socrathematics.github.io",
+  "name": "ymath.io",
   "version": "1.0.0",
   "description": "a website of math courses",
   "main": "index.html",
@@ -21,6 +21,8 @@
   "homepage": "https://github.com/saumyasinghal747/socrathematics.github.io#readme",
   "dependencies": {
     "firebase-admin": "^9.0.0",
-    "firebase-functions": "^3.8.0"
-  }
+    "firebase-functions": "^3.8.0",
+    "firebase-tools": "^8.7.0"
+  },
+  "devDependencies": {}
 }
