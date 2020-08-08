@@ -83,7 +83,7 @@ if (true){document.write(`<div class="container-fluid text-center bg-transparent
 
                         </div>
                     </li>
-                    <li class="mt-1 mb-0 pop" style="height:40px"><img src="/icons/eclipse-light.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)">
+                    <li class="mt-1 mb-0 pop" style="height:40px"><img src="/icons/eclipse-dark.png" height="40px" id="themer" class="btn" onclick="toggleTheme(this)">
                     <script>
 
                       b = document.querySelector('body');

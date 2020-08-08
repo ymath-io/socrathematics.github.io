@@ -4,25 +4,25 @@
 <courses>
     <course>
         <title>Exponents &amp; More</title>
-        <link>https://socrathematics.github.io/exponents-and-more/</link>
+        <link>https://ymath.io/exponents-and-more/</link>
         <id>exponents</id>
         <description>Master the most efficient computation since multiplication!</description>
         <topics>
             <topic>
                 <title>Exponents</title>
-                <link>https://socrathematics.github.io/exponents-and-more/exponents/</link>
+                <link>https://ymath.io/exponents-and-more/exponents/</link>
                 <subtopics>
                     <subtopic>
                         <title>Introduction</title>
-                        <link>https://socrathematics.github.io/exponents-and-more/exponents/</link>
+                        <link>https://ymath.io/exponents-and-more/exponents/</link>
                     </subtopic>
                     <subtopic>
                         <title>Practice</title>
-                        <link>https://socrathematics.github.io/exponents-and-more/exponents/practice/</link>
+                        <link>https://ymath.io/exponents-and-more/exponents/practice/</link>
                     </subtopic>
                     <subtopic>
                         <title>Properties</title>
-                        <link>https://socrathematics.github.io/exponents-and-more/exponents/properties/</link>
+                        <link>https://ymath.io/exponents-and-more/exponents/properties/</link>
                     </subtopic>
                     <subtopic>
                         <title>Graphs</title>
@@ -77,21 +77,21 @@
 
     <course>
         <title>Trigonometry</title>
-        <link>https://socrathematics.github.io/trigonometry/</link>
+        <link>https://ymath.io/trigonometry/</link>
         <id>trigonometry</id>
         <description>Learn one of the most powerful tools in geometry.</description>
         <topics>
             <topic>
                 <title>Functions</title>
-                <link>https://socrathematics.github.io/trigonometry/functions/</link>
+                <link>https://ymath.io/trigonometry/functions/</link>
             </topic>
             <topic>
                 <title>Identities</title>
-                <link>https://socrathematics.github.io/trigonometry/identities/</link>
+                <link>https://ymath.io/trigonometry/identities/</link>
             </topic>
             <topic>
                 <title>Law of Sines</title>
-                <link>https://socrathematics.github.io/trigonometry/law-of-sines/</link>
+                <link>https://ymath.io/trigonometry/law-of-sines/</link>
             </topic>
             <topic>
                 <title>Extended Law of Sines</title>
@@ -99,11 +99,11 @@
             </topic>
             <topic>
                 <title>Law of Cosines</title>
-                <link>https://socrathematics.github.io/trigonometry/law-of-cosines/</link>
+                <link>https://ymath.io/trigonometry/law-of-cosines/</link>
             </topic>
             <topic>
                 <title>Rotating a Parabola</title>
-                <link>https://socrathematics.github.io/trigonometry/Tilting-A-Parabola.pdf</link>
+                <link>https://ymath.io/trigonometry/Tilting-A-Parabola.pdf</link>
             </topic>
         </topics>
         <prerequisites>
@@ -114,67 +114,67 @@
 
     <course>
         <title>Calculus</title>
-        <link>https://socrathematics.github.io/calculus/</link>
+        <link>https://ymath.io/calculus/</link>
         <id>calculus</id>
         <description>Equip yourself with calculus - it's not scary.</description>
         <topics>
             <topic>
                 <title>Limits</title>
-                <link>https://socrathematics.github.io/calculus/limits/</link>
+                <link>https://ymath.io/calculus/limits/</link>
                 <subtopics>
                     <subtopic>
                         <title>Introduction</title>
-                        <link>https://socrathematics.github.io/calculus/limits/</link>
+                        <link>https://ymath.io/calculus/limits/</link>
                     </subtopic>
                     <subtopic>
                         <title>Definition</title>
-                        <link>https://socrathematics.github.io/calculus/limits/definition/</link>
+                        <link>https://ymath.io/calculus/limits/definition/</link>
                     </subtopic>
                     <subtopic>
                         <title>Practice</title>
-                        <link>https://socrathematics.github.io/calculus/limits/practice/</link>
+                        <link>https://ymath.io/calculus/limits/practice/</link>
                     </subtopic>
                     <subtopic>
                         <title>Applications</title>
-                        <link>https://socrathematics.github.io/calculus/limits/applications/</link>
+                        <link>https://ymath.io/calculus/limits/applications/</link>
                     </subtopic>
                     <subtopic>
                         <title>Before you go</title>
-                        <link>https://socrathematics.github.io/calculus/limits/byg/</link>
+                        <link>https://ymath.io/calculus/limits/byg/</link>
                     </subtopic>
                 </subtopics>
             </topic>
             <topic>
                 <title>Derivatives</title>
-                <link>https://socrathematics.github.io/calculus/derivatives/</link>
+                <link>https://ymath.io/calculus/derivatives/</link>
                 <subtopics>
                     <subtopic>
                         <title>Introduction</title>
-                        <link>https://socrathematics.github.io/calculus/derivatives/</link>
+                        <link>https://ymath.io/calculus/derivatives/</link>
                     </subtopic>
                     <subtopic>
                         <title>Practice</title>
-                        <link>https://socrathematics.github.io/calculus/derivatives/practice/</link>
+                        <link>https://ymath.io/calculus/derivatives/practice/</link>
                     </subtopic>
                     <subtopic>
                         <title>Methods</title>
-                        <link>https://socrathematics.github.io/calculus/derivatives/methods/</link>
+                        <link>https://ymath.io/calculus/derivatives/methods/</link>
                     </subtopic>
                     <subtopic>
                         <title>$x^n$ Derivative</title>
-                        <link>https://socrathematics.github.io/calculus/derivatives/xn-der/</link>
+                        <link>https://ymath.io/calculus/derivatives/xn-der/</link>
                     </subtopic>
                     <subtopic>
                         <title>Chain Rule</title>
-                        <link>https://socrathematics.github.io/calculus/derivatives/chain-rule/</link>
+                        <link>https://ymath.io/calculus/derivatives/chain-rule/</link>
                     </subtopic>
                     <subtopic>
                         <title>More Practice</title>
-                        <link>https://socrathematics.github.io/calculus/derivatives/m-practice/</link>
+                        <link>https://ymath.io/calculus/derivatives/m-practice/</link>
                     </subtopic>
                     <subtopic>
                         <title>Physics</title>
-                        <link>https://socrathematics.github.io/calculus/derivatives/physics/</link>
+                        <link>https://ymath.io/calculus/derivatives/physics/</link>
                     </subtopic>
                     <subtopic>
                         <title>Reference Table</title>
@@ -184,11 +184,11 @@
             </topic>
             <topic>
                 <title>Integrals</title>
-                <link>https://socrathematics.github.io/calculus/integrals/</link>
+                <link>https://ymath.io/calculus/integrals/</link>
                 <subtopics>
                     <subtopic>
                         <title>Introduction</title>
-                        <link>https://socrathematics.github.io/calculus/integrals/</link>
+                        <link>https://ymath.io/calculus/integrals/</link>
                     </subtopic>
                     <subtopic>
                         <title>Fundamental Theorem of Calculus</title>
