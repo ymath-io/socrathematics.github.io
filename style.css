@@ -333,7 +333,7 @@ a.text-dark:hover, .text-dark:focus {
 }
 
 .mq-editable-field.mq-focused,
-.mq-math-mode .mq-editable-field.mq-focused {
+.mq-math-mode .mq-editable-field.mq-focused, .answerb {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
@@ -443,11 +443,11 @@ body{
   }
 
  .answerb{
-    border-color:var(--grey6) !important;
+
     background-color:var(--grey6) !important;
     border-radius:0.25rem !important;
-    border: 1px solid !important;
-    outline:none !important;
+    border-color: rgba(0,0,0,0.125) !important;
+
     height:initial;
     
     }
