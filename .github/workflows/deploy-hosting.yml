@@ -1,4 +1,4 @@
-ame: deploy_to_firebase_hosting
+name: deploy_to_firebase_hosting
 
 on:
   push:
