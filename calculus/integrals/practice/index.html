@@ -27,10 +27,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/30a0cbcf71.js" crossorigin="anonymous"></script> <link rel="icon" href="/favicon.png"/>
+<script src="https://kit.fontawesome.com/30a0cbcf71.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/favicon.png"/>
+    <link rel="stylesheet" href="/mathquill-0.10.1/mathquill.css"/>
+    <script src="/mathquill-0.10.1/mathquill.js"></script>
     <link rel="stylesheet" href="/fonts.css"/>
     <link rel="stylesheet" href="/header.css"/>
     <link rel="stylesheet" href="/style.css"/>
+    <script>
+        var MQ = MathQuill.getInterface(2);
+    </script>
               <!--mathjax-->
   <script>
 MathJax = {
@@ -79,7 +85,10 @@ MathJax = {
                 <h2>Practice</h2>
                 <p>Now that you've had some time to play around with antiderivatives, it's time to see what you can accomplish with them!</p><li class="card card-body no-def my-3 pop">
 
-    <p>$\displaystyle{\int \sec^{2} x \ dx = }$ <span id="answer1" class="form-control-sm or answerb"></span><svg id="tu1" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg"></svg><script>initfield(1,"", ["\\tan x","tan x"])</script> $+C$ </p>
+    <p>$\displaystyle{\int \sec^{2} x \ dx = }$ <span id="answer1" class="form-control-sm or answerb"></span><svg id="tu1" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+              d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+    </svg> $+C$ </p>
             <!--Hints--><details><summary class="btn btn-outline-success btn-sm mt-2">Hint</summary> <p>What function do we differentiate to get $\sec^{2} x$ ?</p></details>
             <!--Solution--><details><summary class="btn btn-sm btn-outline-success mt-2">Show/Hide Solution</summary>
                 <p>We know that $$\frac{d \tan x + C}{dx} = \sec^{2} x.$$ Therefore, $$\int sec^{2} x dx = \tan x +C.$$</p>
@@ -131,6 +140,6 @@ MathJax = {
     const db = firebase.firestore();
 </script>
 <script src="/auth/auth.js"></script>
-
+<script>initfield(1,"", ["\\tan x","tan x"])</script>
 </body>
 </html>
