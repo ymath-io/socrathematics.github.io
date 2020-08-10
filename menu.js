@@ -1,6 +1,6 @@
 
 if (true){document.write(`<div class="container-fluid text-center bg-transparent text-light masthead-sub">
-    <h1 class="mastTitle-sub " ><a href="/" style="text-decoration:none;color:white;"><b>YMath</b></a></h1>
+    <h1 class="mastTitle-sub " ><a href="/" style="text-decoration:none;color:white;"><b>YMath.io</b></a></h1>
   <p class="mastTitle-sub-2" ><b>Math, explained to be understood.</b></p>
 
 </div>

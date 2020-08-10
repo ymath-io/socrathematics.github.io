@@ -23,6 +23,7 @@ results.forEach(function (currentValue){
 title = currentValue.htmlTitle;
 desc = currentValue.snippet;
 link = currentValue.formattedUrl;
+link = link.replace("socrathematics.github","ymath");
 card = `<div class="card pop my-3 no-def">
 <div class="card-body">
     <h5 class="card-title">${title}</h5>

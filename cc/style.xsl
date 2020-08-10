@@ -108,7 +108,7 @@
                                     <li class="nav-item nav-link text-dark pop cursor-pointer" id="si" data-toggle="modal" data-target="#sim" style="display:none">Sign In</li>
 
                                     <li class="nav-item dropdown" id="ma"  style="display:none">
-                                        <a class="nav-link pop dropdown-toggle text-dark"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="http://placehold.it/40x40" id="top-photo" height="40px" width="40px" class="rounded-circle"/> <span id="top-name">&#160;&#160;My Account</span></a>
+                                        <a class="nav-link pop dropdown-toggle text-dark"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://placehold.it/40x40" id="top-photo" height="40px" width="40px" class="rounded-circle"/> <span id="top-name">&#160;&#160;My Account</span></a>
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item cursor-pointer"   href="/u/my-account" >Account Info</a>
                                             <a class="dropdown-item cursor-pointer" href="/u/dashboard">Dashboard</a>
