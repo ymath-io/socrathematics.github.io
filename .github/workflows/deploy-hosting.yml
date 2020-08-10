@@ -8,7 +8,7 @@ on:
 jobs:
   deploy_to_firebase_hosting:
 
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     
     steps:
       - name: Checkout the repository
