@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "socrathematics"
+  },
+  "targets": {
+    "socrathematics": {
+      "hosting": {
+        "development": [
+          "socrathematics"
+        ]
+      }
+    }
   }
 }
