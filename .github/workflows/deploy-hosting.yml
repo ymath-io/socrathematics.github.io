@@ -1,0 +1,17 @@
+name: Deploy Hosting
+on:
+  push:
+    branches:
+    - master
+jobs:
+  main:
+    name: Build and Deploy Hosting
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy to Firebase
+      uses: doonstore/firebase-deploy@v1
+      with:
+        params: --only hosting
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        FIREBASE_PROJECT: ${{ secrets.FIREBASE_PROJECT }}
