@@ -1,20 +1,22 @@
-name: Deploy Hosting
+ame: deploy_to_firebase_hosting
 
 on:
   push:
-    branches:
+    branches: 
       - master
 
 jobs:
-  build:
-    runs-on: macos-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: Build
-      run: |
-        npm install
-    - name: Firebase Deploy
-      run: |
-        sudo npm install -g firebase-tools
-        firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+  deploy_to_firebase_hosting:
 
+    runs-on: macos-latest
+    
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@master
+      
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
