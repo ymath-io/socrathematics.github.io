@@ -112,13 +112,21 @@ MathJax = {
   <p></p><li class="card card-body no-def my-3 pop">
 
     <p>$\displaystyle{ \int e^{x} dx= }$ <span id="answer3" class="form-control-sm or answerb"></span><svg id="tu3" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
-        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg><script>initfield(3,"", ["e^x"])</script> </p>
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg><script>initfield(3,"", ["e^x"])</script>$+C$</p>
             <!--Hints--><details><summary class="btn btn-outline-success btn-sm mt-2">Hint</summary> <p>Try differentiating the function instead. What do you notice or remember about $e^x$? <br></p></details>
             
             <!--Solution--><details><summary class="btn btn-sm btn-outline-success mt-2">Show/Hide Solution</summary>
                 <p>We know that $$\frac{d e^x + C}{dx}= e^x .$$ So, we can say that $$\int e^x dx = e^x + C.$$<br></p>
         </details>
         </li>
+        <p></p><p></p><li class="card card-body no-def my-3 pop">
+
+    <p>$\displaystyle{\frac{1}{n} \int n\cdot x^{n-1} dx = }$ <span id="answer4" class="form-control-sm or answerb"></span><svg id="tu4" class="bi bi-hand-thumbs-up" width="2em" height="2em" style="display:none" viewBox="0 0 16 16" fill="var(--success)" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/></svg><script>initfield(4,"", ["\\frac{x^n}{n}"])</script>$+C$</p>
+            <!--Hints--><details><summary class="btn btn-outline-success btn-sm mt-2">Hint</summary> <p>Evaluate $$\frac{d x^n}{dx}.$$ How can you use this information?<br></p></details>
+            
+            <!--Solution--><details><summary class="btn btn-sm btn-outline-success mt-2">Show/Hide Solution</summary>
+                <p>We know that $$\frac{d x^n}{dx} = n\cdot x^{n-1}.$$ We can use this to conclude that $$\int n\cdot x^{n-1} dx = x^n+C.$$ But wait! We also had to worry about a fraction. So, we multiply both sides by $\frac{1}{n}$, and we get $$\frac{x^n}{n} +C.$$ (Note that " $+C$ " represents an arbitrary constant, and " $C/n$"&nbsp; is still a constant. Hence, we just write "$+C.$")<br></p><p></p></details></li>
         <p></p><p><br><br></p>
 
 
