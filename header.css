@@ -180,7 +180,7 @@
   font-family:lato;
   font-style:normal;
   background-image: url('https://ymath.io/backsplash.jpg');
-  background-size:cover;
+  background-size: auto 100vh;
   background-attachment:fixed
   }
 
