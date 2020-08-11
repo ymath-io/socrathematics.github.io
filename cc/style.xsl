@@ -14,7 +14,7 @@
                     gtag('config', 'UA-163408633-2');
                 </script>
                 <meta charset="UTF-8"/>
-                <title>Course Catalog - SOCRATHEMATICS</title>
+                <title>Course Catalog - YMath.io</title>
                 <meta name="description" content="Self-paced high school math material, explained to be understood."/>
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
@@ -42,8 +42,8 @@
                 <xsl:choose>
                     <xsl:when test="system-property('xsl:vendor')='Transformiix'">
                         <div class="container-fluid text-center bg-transparent text-light masthead-sub">
-                            <h1 class="mastTitle-sub " ><a href="/" style="text-decoration:none;color:white;"><b>SOCRATHEMATICS</b></a></h1>
-                            <p class="mastTitle-sub-2" ><b>Math, right at your fingertips</b></p>
+                            <h1 class="mastTitle-sub " ><a href="/" style="text-decoration:none;color:white;"><b>YMath.io</b></a></h1>
+                            <p class="mastTitle-sub-2" ><b>Math, explained to be understood.</b></p>
 
                         </div>
                         <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="opacity:0.9;">
@@ -108,7 +108,7 @@
                                     <li class="nav-item nav-link text-dark pop cursor-pointer" id="si" data-toggle="modal" data-target="#sim" style="display:none">Sign In</li>
 
                                     <li class="nav-item dropdown" id="ma"  style="display:none">
-                                        <a class="nav-link pop dropdown-toggle text-dark"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://placehold.it/40x40" id="top-photo" height="40px" width="40px" class="rounded-circle"/> <span id="top-name">&#160;&#160;My Account</span></a>
+                                        <a class="nav-link pop dropdown-toggle text-dark"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://placehold.it/40x40" id="top-photo" height="40px" width="40px" class="rounded-circle"/> <span class="ml-2" id="top-name">&#160;&#160;My Account</span></a>
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item cursor-pointer"   href="/u/my-account" >Account Info</a>
                                             <a class="dropdown-item cursor-pointer" href="/u/dashboard">Dashboard</a>
@@ -379,6 +379,11 @@
                 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                <div class="page-footer">
+                    <page-footer></page-footer>
+                </div>
+                <script src="/vue/Vue.js"></script>
+                <script src="/vue/pageFooter.js"></script>
             </body>
             <script>
     
