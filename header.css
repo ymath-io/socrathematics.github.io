@@ -1,20 +1,21 @@
 @media (min-width: 300px) {
 
-  .mastTitle{
-  height:10%;
-   position:absolute;
-    bottom:110px;
-    left:20vw;
-    font-size:3vh
-  }
-    .mastTitle-2{
-  height:10%;
-   position:absolute;
-    bottom:40px;
-    left:20vw;
-    font-size:2vh;
-    opacity:0.8;
-  }
+    .mastTitle {
+        height: 10%;
+        position: absolute;
+        bottom: 150px;
+        left: 20vw;
+        font-size: 6vh;
+    }
+    .mastTitle-2 {
+        text-align: left;
+        height: 10%;
+        position: absolute;
+        bottom: 70px;
+        left: 20vw;
+        font-size: 3vh;
+        opacity: 0.8;
+    }
     .mastTitle-sub{
   height:10%;
    position:absolute;
@@ -123,21 +124,21 @@
   }
 @media (min-width: 1200px) {
 
-  .mastTitle{
-  height:10%;
-   position:absolute;
-    bottom:110px;
-    left:40vh;
-    font-size:5vh
-  }
-    .mastTitle-2{
-  height:10%;
-   position:absolute;
-    bottom:40px;
-    left:40vh;
-    font-size:2.3vh;
-    opacity:0.8;
-  }
+    .mastTitle {
+        height: 10%;
+        position: absolute;
+        bottom: 250px;
+        left: 40vh;
+        font-size: 7vh;
+    }
+    .mastTitle-2 {
+        height: 10%;
+        position: absolute;
+        bottom: 150px;
+        left: 40vh;
+        font-size: 3vh;
+        opacity: 0.8;
+    }
     .mastTitle-sub{
   height:10%;
    position:absolute;
@@ -165,12 +166,12 @@
 
 .masthead{
   margin-bottom:0;
-  height: 90vh;
-  overflow: auto;
+  height: 85vh;
+  overflow: hidden;
   font-family:lato;
   font-style:normal;
   background-image: url('https://ymath.io/backsplash.jpg');
-  background-size:cover;
+  background-size: auto 120vh;
   background-attachment:fixed
   }
     .masthead-sub{
@@ -180,7 +181,7 @@
   font-family:lato;
   font-style:normal;
   background-image: url('https://ymath.io/backsplash.jpg');
-  background-size: auto 100vh;
+  background-size: 100vw auto;
   background-attachment:fixed
   }
 
