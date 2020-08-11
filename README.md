@@ -15,4 +15,7 @@ Currently the site has courses on trigonometry and calculus. Modular Arithmetic 
 |July 02, 2020 | Fixed misleading 404 page. |
 |July 05, 2020 | Created and launched a working CMS. |
 |Aug  07, 2020 | Rebranded SOCRATHEMATICS to YMath. |
+## Todo
+* Add firebase to ALL practice problems
+* Fix all navigation links
 
