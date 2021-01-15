@@ -24,5 +24,7 @@
     <orderEntry type="library" name="fonts" level="application" />
     <orderEntry type="library" name="tikzjax" level="application" />
     <orderEntry type="library" name="codemirror" level="application" />
+    <orderEntry type="library" name="draggabilly" level="application" />
+    <orderEntry type="library" name="packery" level="application" />
   </component>
 </module>

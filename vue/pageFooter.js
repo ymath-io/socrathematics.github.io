@@ -1,6 +1,6 @@
 Vue.component('page-footer', {
     props: ["alt"],
-    template: `<div style="position:relative;bottom:0;width:100vw;left:0">
+    template: `<div style="position:relative;bottom:0;width:100%;left:0">
 <div style="height:7vh"></div>
 <footer class="jumbotron  mb-0 py-3 pt-4 footer" style="background-color: var(--grey4)">
 
@@ -20,4 +20,4 @@ Vue.component('page-footer', {
 
 var pageFoot = new Vue({
     el:".page-footer"
-})
+});

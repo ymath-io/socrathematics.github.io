@@ -5,8 +5,7 @@
 .grid-item.is-dragging,
 /* Packery adds class while transitioning to drop position */
 .grid-item.is-positioning-post-drag {
-  background: var(--dark);
-  color: var(--light);
+  color: var(--info);
   z-index: 2; /* keep dragged item on top */
 }
 

@@ -1,0 +1,95 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://ymath.io/xml"
+           xmlns="https://ymath.io/xml"
+           elementFormDefault="qualified">
+    <xs:import namespace="http://www.w3.org/2001/XMLSchema"/>
+
+    <xs:element name="math" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>Display style LaTeX.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="i" type="xs:string">
+    </xs:element>
+    <xs:element name="h2" type="xs:string">
+    </xs:element>
+    <xs:element name="imath" type="xs:string">
+    </xs:element>
+    <xs:element name="hint">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:any minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="p">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:any minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="course">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">
+                A container for course content.
+            </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title" type="xs:string">
+                    <xs:annotation>
+                        <xs:documentation>
+                            Defines the title of the course. Appears at the top of the page and defines the tab title.
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="subtitle" type="xs:string"/>
+                <xs:element name="body">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:any minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="problem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="question" >
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:any minOccurs="0"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="answerbox">
+                    <xs:complexType>
+                        <xs:attribute name="answer" type="xs:string" >
+                            <xs:annotation>
+                                <xs:documentation>
+                                    Defines the correct answer to the question.
+                                </xs:documentation>
+                            </xs:annotation>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element ref="hint" maxOccurs="unbounded">
+
+                </xs:element>
+                <xs:element name="solution">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:any minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

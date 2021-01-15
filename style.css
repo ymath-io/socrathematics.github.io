@@ -183,7 +183,7 @@ text-decoration:none;
 
 
 @media (min-width: 768px) {
-:not(.no-def).card{
+.special.card{
 width: 30vw;height:24em;}
 
 .graph{
@@ -201,7 +201,7 @@ width:80vw;
 }
 
 @media (min-width: 992px) {
-:not(.no-def).card{
+.special.card{
 width: 18rem;height:24em;}
 .graph{
 height:500px;
@@ -231,7 +231,7 @@ filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(308deg) brightness(103%) 
 .red-btn:hover{
 background: var(--red);}
 
-:not(.text-muted) > .pop:hover:not(.text-muted){
+:not(.text-muted) > .pop:hover:not(.text-muted), :not(.text-muted) > .pop:focus:not(.text-muted){
 box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
 background-color: var(--grey6) !important;
 color:var(--text) !important;
@@ -348,7 +348,7 @@ box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
   border-radius: 0.25rem;
 }
 
-.nav-pills .nav-link:hover:not(.active):not(.disabled){
+.nav-pills .nav-link:hover:not(.active):not(.disabled), .nav-pills .nav-link:focus:not(.active):not(.disabled){
 box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
 margin-bottom: .25rem!important;
 margin-top: .25rem!important;
@@ -365,7 +365,7 @@ margin-top: .25rem!important;
 
 
 
-:not(.text-muted) > .dropdown-item:hover:not(.text-muted), .dropdown-header:hover{
+:not(.text-muted) > .dropdown-item:hover:not(.text-muted), :not(.text-muted) > .dropdown-item:focus:not(.text-muted), .dropdown-header:hover, .dropdown-header:focus{
   box-shadow: 0 0rem 3rem rgba(0, 0, 0, 0.175) ;
   background-color: var(--grey6);
     border-radius: 0.25rem;
@@ -403,8 +403,9 @@ body{
 
   background: var(--grey5) !important;
   }
-.bg-light {
+.bg-light{
   background-color: var(--grey5) !important;
+
 }
 
 .mq-cursor{
@@ -528,3 +529,4 @@ body{
 
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
+

@@ -99,10 +99,10 @@ $$\frac{y}{x}$$
 $$x\mid y.$$
  Dang! How are you supposed to battle with that? How do we even figure out if an arbritary number divides another?&nbsp;&nbsp;</p>
 <p>Here's one way.</p>
-<p>Whenever $x\mid y,$ we will have that $\frac{y}{x}$ is an integer.&nbsp; We could simply compute that, and if it is an integer, then bingo! But, our function does not know how to test for an integer. So, we'll have to explicitly have to output $0$ or $1.$ </p>
+<p>Whenever $x\mid y,$ we will have that $\frac{y}{x}$ is an integer.&nbsp; We could simply compute that, and if it is an integer, then bingo! But, our function does not know how to test for an integer. So, we'll explicitly have to output $0$ or $1.$ </p>
               <p>There's a nice way we can get&nbsp;&nbsp; $0:$ </p>
               <p>$$x\ \mid\ y\ =\ \frac{y}{x}-\left\lfloor\frac{y}{x}\right\rfloor\Rightarrow\left\{\text{true}:\ 0,\ \text{false}:\ \left(0&lt;?&lt;1\right)\right\}$$</p>
-              <p>Right now, when it's false, we get whatever the residue of the floor is.&nbsp; That isn't very pretty - we'd ideally output the same thing every time it's false.&nbsp; We can do this easily with a ceiling function, but we'd much rather use a floor function since we've alread used it once.</p>
+              <p>Right now, when it's false, we get whatever the residue of the floor is.&nbsp; That isn't very pretty - we'd ideally output the same thing every time it's false.&nbsp; We can do this easily with a ceiling function, but we'd much rather use a floor function since we've already used it once.</p>
               <p>$$x\ \mid\ y\ =\ \frac{y}{x}-\left\lfloor\frac{y}{x}\right\rfloor-1\Rightarrow\left\{\text{true}:\ -1,\ \text{false}:\ \left(-1&lt;?&lt;0\right)\right\}$$</p>
 
 <p>$$x\ \mid\ y\ =\ -\left(\frac{y}{x}-\left\lfloor\frac{y}{x}\right\rfloor-1\right)\Rightarrow\left\{\text{true}:\ 1,\ \text{false}:\ \left(1&gt;?&gt;0\right)\right\}$$</p>

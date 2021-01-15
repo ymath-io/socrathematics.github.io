@@ -70,7 +70,7 @@ if (true){document.write(`<div class="container-fluid text-center bg-transparent
 
                         <button class="btn btn-outline-main my-2 mx-1 my-sm-0" id="sbut" type="button">Search</button>
                     </form>
-                    <li class="nav-item nav-link text-dark poop cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
+                    <li class="nav-item nav-link text-dark pop cursor-pointer" id="su" data-toggle="modal" data-target="#sum" style="display:none">Sign Up</li>
                     <li class="nav-item nav-link text-dark pop cursor-pointer" id="si" data-toggle="modal" data-target="#sim" style="display:none">Sign In</li>
 
                     <li class="nav-item dropdown" id="ma"  style="display:none">

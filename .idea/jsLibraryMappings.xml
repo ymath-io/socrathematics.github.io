@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{30a0cbcf71, codemirror, firebase, firebase-analytics, firebase-app, firebase-auth, firebase-database, firebase-firestore, firebase-performance, firebase-storage, fonts, jquery, katex, mathjax, tikzjax, tinymce}" />
+    <file url="PROJECT" libraries="{30a0cbcf71, codemirror, draggabilly, firebase, firebase-analytics, firebase-app, firebase-auth, firebase-database, firebase-firestore, firebase-performance, firebase-storage, fonts, jquery, katex, mathjax, packery, tikzjax, tinymce}" />
   </component>
 </project>

@@ -8,7 +8,13 @@
       "package.json",
       "package-lock.json",
       "ts-config.json",
-      "emails/**"
+      "emails/**",
+      "blog/write/**",
+      "publish.sh",
+      "publish-alt.sh",
+      "serve",
+      "*.md",
+      "tsconfig.json"
     ],
     "redirects": [
       {

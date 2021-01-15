@@ -57,7 +57,7 @@ signupButton.addEventListener("click",(e)=>{
     document.getElementById("sum-e").innerHTML = "Your password should be at least 6 characters.";}
     else if (error.code == "auth/email-already-in-use"){
     console.log("you already have an account!");
-    document.getElementById("sum-e").innerHTML = "It looks like you already have an account. Sign in instead?";}
+    document.getElementById("sum-e").innerHTML = "It looks like you already have an account. <a class=\"link\" onclick='$(\"#sum\").modal(\"hide\");$(\"#sim\").modal(\"show\");'>Sign in</a> instead?";}
     else if (error.code == "auth/invalid-email"){
       document.getElementById("sum-e").innerHTML = "That does not look like a valid email.";
     }
@@ -98,7 +98,7 @@ signinButton.addEventListener("click",(e)=>{
     document.getElementById("sim-e").innerHTML = "Incorrect password.";}
     else if (error.code == "auth/user-not-found"){
     console.log("user does not have an account");
-    document.getElementById("sim-e").innerHTML = "We didn't find an account with that email. Sign up instead?";}
+    document.getElementById("sim-e").innerHTML = "We didn't find an account with that email. </p><p><a class=\"link\" onclick='$(\"#sim\").modal(\"hide\");$(\"#sum\").modal(\"show\");'>Sign up</a> instead?</p>";}
     else if (error.code == "auth/too-many-requests"){
       console.log("too many tries");
       document.getElementById("sim-e").innerHTML = "It looks like you've tried to log in too many times  in the past minute. We've locked your account for the next two minutes.";}

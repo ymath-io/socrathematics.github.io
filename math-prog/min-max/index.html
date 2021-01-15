@@ -107,7 +107,7 @@ $$\text{isPositive}\left(x-y\right)\ =\ \frac{\left|x-y\right|}{x-y}\Rightarrow\
 $$\text{isPositive}\left(x-y\right)\ =\ \frac{\left|x-y\right|}{x-y}+1\Rightarrow\left\{+\rightarrow2,\ -\rightarrow0\right\}$$
   
 $$\text{isPositive}\left(x-y\right)\ =\ \frac{\frac{\left|x-y\right|}{x-y}+1}{2}\Rightarrow\left\{+\rightarrow1,\ -\rightarrow0\right\}$$
- Okay, cool. Now, when the function returns positive, I want to return $x.$ I can do that by multiplying by $x:$  
+ Okay, cool. Now, when the function returns positive, we want to return $x.$ We can do that by multiplying by $x:$
 $$\max\left(x,y\right)\ =\ x\cdot\frac{\frac{\left|x-y\right|}{x-y}+1}{2}\Rightarrow\left\{x\rightarrow x,\ y\rightarrow0\right\}$$
  Oh, but now we get $0$ when the maximum is $y!$ We can add the same function, but comparing against $y:$  
 $$\max\left(x,y\right)\ =\ x\cdot\frac{\frac{\left|x-y\right|}{x-y}+1}{2}+y\cdot\frac{\frac{\left|x-y\right|}{y-x}+1}{2}\Rightarrow\left\{x\rightarrow x,\ y\rightarrow y\right\}$$
