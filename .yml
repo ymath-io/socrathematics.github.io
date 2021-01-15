@@ -1,2 +1,0 @@
-- name: Firebase CLI Deployment
-  uses: doonstore/firebase-deploy@v1
