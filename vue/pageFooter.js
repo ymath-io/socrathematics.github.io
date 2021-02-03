@@ -8,7 +8,7 @@ Vue.component('page-footer', {
   
 <div class="row ">
   <div class="col">
-  <p class=""><img height="40px" class="mr-3" src="/faviconGrey.png"/><u><a class="text-dark" href="/faq/copyright-notice">© Copyright 2020 {{ alt==undefined? "Saumya Singhal" : "Sophia Zhu" }} - all rights reserved.</a></u></p> 
+  <p class=""><img height="40px" class="mr-3" src="/faviconGrey.png"/><u><a class="text-dark" href="/faq/copyright-notice">© Copyright 2021 {{ alt==undefined? "Saumya Singhal" : "Sophia Zhu" }} - all rights reserved.</a></u></p> 
 </div>
 <div class="col text-right">
  <p class=""></p>
